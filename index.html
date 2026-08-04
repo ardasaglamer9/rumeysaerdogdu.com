@@ -1,195 +1,302 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klinik Psikolog Rümeysa Erdoğdu | Ankara</title>
-  <meta name="description" content="Klinik Psikolog Rümeysa Erdoğdu — Ankara. Yetişkinlerle şema terapi odaklı psikoterapi.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klinik Psikolog Rümeysa Erdoğdu | Ankara</title>
+<meta name="description" content="Klinik Psikolog Rümeysa Erdoğdu — Ankara. Yetişkinlerle şema terapi odaklı psikoterapi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#2C4A38;
+    --forest-deep:#223829;
+    --sage:#8AA399;
+    --sage-dark:#5E7A6A;
+    --cream:#F4EFE6;
+    --cream-soft:#FBF8F2;
+    --ink:#223229;
+    --clay:#C77B54;
+    --gold:#D8A64C;
+    --lav:#9B8FA6;
+    --line:#E4DCCC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Mulish',sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Fraunces',serif;line-height:1.15;font-weight:600;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 26px;}
+  .narrow{max-width:760px;margin:0 auto;}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Mulish:wght@400;500;600&display=swap" rel="stylesheet">
+  /* pill button */
+  .btn{display:inline-block;background:var(--sage);color:#fff;font-weight:700;font-size:15px;padding:15px 30px;border-radius:999px;transition:background .2s,transform .2s;border:none;cursor:pointer;}
+  .btn:hover{background:var(--sage-dark);transform:translateY(-1px);}
+  .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.6);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);}
 
-  <style>
-    :root {
-      --cream: #F4EFE6;
-      --sage: #8AA399;
-      --sage-dark: #5E7A6A;
-      --ink: #2C3A30;
-      --lavender: #9B8FA6;
-      --line: #E0D9CC;
-    }
+  /* nav */
+  nav{position:sticky;top:0;z-index:20;background:rgba(244,239,230,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 26px;}
+  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:var(--forest);}
+  .navlinks{display:flex;gap:28px;font-size:15px;font-weight:600;}
+  .navlinks a{color:var(--forest);opacity:.8;}
+  .navlinks a:hover{opacity:1;}
+  @media(max-width:720px){.navlinks{display:none;}}
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* hero */
+  .hero{background:var(--forest);color:var(--cream);text-align:center;padding:82px 0 120px;position:relative;}
+  .hero .eyebrow{font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--sage);font-weight:700;margin-bottom:22px;}
+  .hero h1{font-size:clamp(38px,6vw,60px);font-weight:600;margin-bottom:22px;color:#fff;}
+  .hero p{font-size:19px;max-width:600px;margin:0 auto 34px;color:rgba(255,255,255,.85);}
 
-    html { scroll-behavior: smooth; }
+  /* wave dividers */
+  .wave{display:block;width:100%;height:auto;}
 
-    body {
-      font-family: 'Mulish', sans-serif;
-      color: var(--ink);
-      background: var(--cream);
-      line-height: 1.7;
-      font-size: 17px;
-    }
+  /* generic section */
+  section{padding:76px 0;}
+  .sec-cream{background:var(--cream);}
+  .sec-soft{background:var(--cream-soft);}
+  .sec-forest{background:var(--forest);color:var(--cream);}
+  .kicker{font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--sage-dark);margin-bottom:14px;}
+  .sec-forest .kicker{color:var(--sage);}
+  h2{font-size:clamp(28px,4vw,38px);margin-bottom:26px;}
+  .lead{font-size:18px;}
+  section p+p{margin-top:15px;}
 
-    h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 500; line-height: 1.2; }
+  /* about with shape */
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center;}
+  @media(max-width:800px){.about-grid{grid-template-columns:1fr;gap:32px;}}
+  .blob{width:100%;height:auto;}
 
-    a { color: inherit; }
+  /* area cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
+  @media(max-width:800px){.cards{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.cards{grid-template-columns:1fr;}}
+  .card{border-radius:18px;padding:26px 24px;min-height:120px;display:flex;align-items:flex-end;font-family:'Fraunces',serif;font-size:20px;font-weight:600;color:#fff;line-height:1.25;}
+  .c1{background:var(--sage-dark);}
+  .c2{background:var(--clay);}
+  .c3{background:var(--gold);color:var(--forest-deep);}
+  .c4{background:var(--lav);}
+  .c5{background:var(--forest);}
+  .c6{background:var(--sage);color:var(--forest-deep);}
 
-    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  /* steps */
+  .steps{max-width:640px;margin:40px auto 0;}
+  .step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:26px 28px;}
+  .step .num{font-family:'Fraunces',serif;font-size:15px;font-weight:600;color:var(--sage);letter-spacing:1px;margin-bottom:8px;}
+  .step h3{font-size:22px;color:#fff;margin-bottom:8px;}
+  .step p{color:rgba(255,255,255,.82);font-size:16px;}
+  .arrow{display:flex;justify-content:center;padding:14px 0;color:var(--sage);}
 
-    /* Nav */
-    nav {
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(244, 239, 230, 0.85);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-    nav .wrap {
-      display: flex; justify-content: space-between; align-items: center;
-      padding-top: 18px; padding-bottom: 18px;
-    }
-    .brand { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 600; letter-spacing: 0.2px; }
-    .nav-links { display: flex; gap: 26px; font-size: 15px; }
-    .nav-links a { text-decoration: none; opacity: 0.75; transition: opacity 0.2s; }
-    .nav-links a:hover { opacity: 1; }
-    @media (max-width: 620px) { .nav-links { display: none; } }
+  /* training */
+  .training{list-style:none;margin-top:26px;}
+  .training li{padding:18px 0;border-bottom:1px solid var(--line);font-size:16px;display:flex;gap:14px;}
+  .training li:last-child{border-bottom:none;}
+  .training .dot{flex:0 0 auto;width:9px;height:9px;border-radius:50%;background:var(--sage);margin-top:9px;}
 
-    /* Hero */
-    header.hero { padding: 90px 0 70px; }
-    .eyebrow {
-      font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
-      color: var(--sage-dark); margin-bottom: 20px;
-    }
-    header.hero h1 { font-size: 46px; margin-bottom: 20px; }
-    header.hero p { font-size: 19px; max-width: 560px; opacity: 0.85; }
+  /* faq */
+  .faq{margin-top:30px;max-width:760px;}
+  .faq details{border-bottom:1px solid var(--line);}
+  .faq summary{list-style:none;cursor:pointer;padding:20px 0;font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--forest);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .chev{transition:transform .2s;flex:0 0 auto;color:var(--sage-dark);}
+  .faq details[open] summary .chev{transform:rotate(180deg);}
+  .faq .ans{padding:0 0 22px;color:var(--ink);font-size:16px;max-width:640px;}
 
-    /* Sections */
-    section { padding: 46px 0; border-top: 1px solid var(--line); }
-    section h2 { font-size: 28px; margin-bottom: 22px; }
-    section p + p { margin-top: 16px; }
-
-    /* Areas grid */
-    .areas { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .areas li {
-      background: #fff; border: 1px solid var(--line); border-radius: 10px;
-      padding: 16px 18px; font-weight: 500;
-    }
-    @media (max-width: 620px) { .areas { grid-template-columns: 1fr; } }
-
-    /* Training list */
-    .training { list-style: none; }
-    .training li {
-      padding: 14px 0; border-bottom: 1px solid var(--line);
-      font-size: 16px;
-    }
-    .training li:last-child { border-bottom: none; }
-
-    /* Contact */
-    .contact-box {
-      background: var(--ink); color: var(--cream);
-      border-radius: 14px; padding: 34px;
-    }
-    .contact-box h2 { color: var(--cream); }
-    .contact-box a { color: var(--sage); font-weight: 600; }
-    .contact-item { margin-top: 10px; }
-
-    /* Footer */
-    footer { padding: 40px 0 60px; font-size: 14px; opacity: 0.7; }
-    .note {
-      background: #fff; border: 1px solid var(--line); border-radius: 10px;
-      padding: 16px 18px; font-size: 14px; margin-top: 22px;
-    }
-  </style>
+  /* footer */
+  footer{background:var(--forest-deep);color:rgba(255,255,255,.8);padding:60px 0 46px;}
+  footer .brand-f{font-family:'Fraunces',serif;font-size:22px;color:#fff;margin-bottom:10px;}
+  footer .crisis{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px 22px;font-size:14px;margin:24px 0;color:rgba(255,255,255,.85);}
+  footer .copy{font-size:13px;color:rgba(255,255,255,.55);}
+</style>
 </head>
 <body>
 
-  <nav>
-    <div class="wrap">
-      <span class="brand">Rümeysa Erdoğdu</span>
-      <div class="nav-links">
-        <a href="#hakkimda">Hakkımda</a>
-        <a href="#alanlar">Çalışma Alanları</a>
-        <a href="#yaklasim">Yaklaşım</a>
-        <a href="#iletisim">İletişim</a>
+<nav>
+  <div class="wrap">
+    <span class="brand">Rümeysa Erdoğdu</span>
+    <div class="navlinks">
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#alanlar">Çalışma Alanları</a>
+      <a href="#yaklasim">Yaklaşım</a>
+      <a href="#sss">S.S.S.</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Klinik Psikolog · Ankara</p>
+    <h1>Zorlukları birlikte<br>anlamaya başlayalım.</h1>
+    <p>Yetişkinlerle, şema terapi odağında; yaşanan güçlüklerin köklerini anlamaya ve daha işlevsel baş etme yolları geliştirmeye dayalı bir psikoterapi süreci.</p>
+    <a href="#hakkimda" class="btn">Daha fazlasını öğren</a>
+  </div>
+</header>
+
+<!-- wave forest -> cream -->
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:-1px;">
+  <path fill="#2C4A38" d="M0,0 L1440,0 L1440,32 C1140,86 900,86 720,54 C520,18 260,18 0,58 Z"></path>
+  <path fill="#F4EFE6" d="M0,58 C260,18 520,18 720,54 C900,86 1140,86 1440,32 L1440,90 L0,90 Z"></path>
+</svg>
+
+<!-- ABOUT -->
+<section class="sec-cream" id="hakkimda">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="kicker">Hakkımda</p>
+        <h2>Bütüncül ve şefkatli bir çerçeve</h2>
+        <p>Lisans eğitimimi Orta Doğu Teknik Üniversitesi Psikoloji Bölümü'nde tamamladım. Ardından ODTÜ Gelişim Psikolojisi Yüksek Lisans Programı'ndan mezun oldum; bu süreçte ODTÜ Dil ve Bilişsel Gelişim Laboratuvarı'nda proje araştırmacısı olarak TÜBİTAK destekli projelerde yer aldım.</p>
+        <p>Klinik psikoloji alanındaki uzmanlık eğitimimi Başkent Üniversitesi Klinik Psikoloji Yüksek Lisans Programı'nda sürdürüyorum. Mesleki gelişim sürecimde Ankara Gülhane Eğitim ve Araştırma Hastanesi Psikiyatri Kliniği'nde klinik stajımı tamamladım.</p>
+        <p>Danışanlarımı yalnızca mevcut belirtileri üzerinden değil; yaşam öyküleri, ilişkisel deneyimleri ve tekrar eden örüntüleriyle birlikte bütüncül bir çerçevede ele almayı önemsiyorum.</p>
+      </div>
+      <div>
+        <svg class="blob" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <path d="M320,210 C340,150 300,80 230,62 C170,46 90,70 66,140 C44,204 70,300 150,330 C226,358 300,290 320,210 Z" fill="#8AA399"/>
+          <path d="M250,150 C230,120 190,118 176,150 C168,168 176,190 196,198 C160,196 138,224 150,256 C160,282 196,292 224,278 C250,266 262,232 250,206 C270,208 288,190 286,168 C284,150 268,140 250,150 Z" fill="#F4EFE6" opacity="0.92"/>
+          <circle cx="200" cy="120" r="20" fill="#F4EFE6" opacity="0.92"/>
+        </svg>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <header class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Klinik Psikolog · Ankara</p>
-      <h1>Rümeysa Erdoğdu</h1>
-      <p>Yetişkinlerle, şema terapi odağında; yaşanan zorlukların kökenlerini birlikte anlamaya ve daha işlevsel baş etme yolları geliştirmeye dayalı bir psikoterapi süreci.</p>
+<!-- AREAS -->
+<section class="sec-soft" id="alanlar">
+  <div class="wrap">
+    <p class="kicker">Çalışma Alanları</p>
+    <h2>Yetişkinlerle çalıştığım başlıca konular</h2>
+    <p class="lead narrow" style="margin-left:0;">Her süreç kişiye özeldir. Aşağıdaki konular, danışanlarımla en sık birlikte ele aldığımız temalardan bazıları.</p>
+    <div class="cards">
+      <div class="card c1">Depresyon</div>
+      <div class="card c2">Kaygı</div>
+      <div class="card c3">Özdeğer sorunları</div>
+      <div class="card c4">İlişkilerde tekrarlayan örüntüler</div>
+      <div class="card c5">Duygusal zorlanmalar</div>
+      <div class="card c6">Yaşam dönemi güçlükleri</div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section id="hakkimda">
-    <div class="wrap">
-      <h2>Hakkımda</h2>
-      <p>Lisans eğitimimi Orta Doğu Teknik Üniversitesi Psikoloji Bölümü'nde tamamladım. Ardından ODTÜ Gelişim Psikolojisi Yüksek Lisans Programı'ndan mezun oldum; bu süreçte ODTÜ Dil ve Bilişsel Gelişim Laboratuvarı'nda proje araştırmacısı olarak TÜBİTAK destekli projelerde yer aldım.</p>
-      <p>Klinik psikoloji alanındaki uzmanlık eğitimimi Başkent Üniversitesi Klinik Psikoloji Yüksek Lisans Programı'nda sürdürüyorum. Mesleki gelişim sürecimde Ankara Gülhane Eğitim ve Araştırma Hastanesi Psikiyatri Kliniği'nde klinik stajımı tamamladım.</p>
-      <p>Terapi çalışmalarımda ağırlıklı olarak şema terapi yaklaşımından yararlanıyorum. Danışanlarımı yalnızca mevcut belirtileri üzerinden değil; yaşam öyküleri, ilişkisel deneyimleri ve tekrar eden örüntüleriyle birlikte bütüncül bir çerçevede ele almayı önemsiyorum.</p>
-    </div>
-  </section>
+<!-- wave cream -> forest -->
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:-1px;">
+  <path fill="#FBF8F2" d="M0,0 L1440,0 L1440,34 C1150,84 920,84 720,52 C520,20 250,20 0,60 Z"></path>
+  <path fill="#2C4A38" d="M0,60 C250,20 520,20 720,52 C920,84 1150,84 1440,34 L1440,90 L0,90 Z"></path>
+</svg>
 
-  <section id="alanlar">
-    <div class="wrap">
-      <h2>Çalışma Alanları</h2>
-      <p>Çalışmalarımı yetişkinlerle sürdürüyorum. Başlıca çalıştığım konular:</p>
-      <ul class="areas" style="margin-top: 22px;">
-        <li>Depresyon</li>
-        <li>Kaygı</li>
-        <li>Özdeğer sorunları</li>
-        <li>İlişkilerde tekrarlayan örüntüler</li>
-        <li>Duygusal zorlanmalar</li>
-        <li>Yaşam dönemlerine eşlik eden güçlükler</li>
-      </ul>
-    </div>
-  </section>
+<!-- APPROACH / how it works -->
+<section class="sec-forest" id="yaklasim">
+  <div class="wrap" style="text-align:center;">
+    <p class="kicker">Yaklaşım</p>
+    <h2 style="color:#fff;">Şema terapi süreci nasıl ilerler</h2>
+    <p class="lead narrow" style="color:rgba(255,255,255,.85);">Tekrar eden duygu, düşünce ve davranış örüntülerinin köklerini anlamaya odaklanan, güvene dayalı ve işbirlikçi bir süreç.</p>
 
-  <section id="yaklasim">
-    <div class="wrap">
-      <h2>Yaklaşım</h2>
-      <p>Şema terapi, tekrar eden duygu, düşünce ve davranış örüntülerinin köklerini anlamaya odaklanan bütüncül bir yaklaşımdır. Süreçte danışanlarımla güvene dayalı, işbirlikçi ve şefkatli bir ilişki kurmayı hedefliyorum.</p>
-      <p>Şema mod terapisi odağında, Dr. Elif Üzümcü Özdemir'in süpervizyonunda klinik çalışmalar yürütmekteyim.</p>
-    </div>
-  </section>
-
-  <section id="egitimler">
-    <div class="wrap">
-      <h2>Eğitimler</h2>
-      <ul class="training">
-        <li>Şema Terapisi Eğitimi ve Süpervizyonu (2024–2026, Başkent Üniversitesi, Dr. Elif Üzümcü Özdemir)</li>
-        <li>Psikolojik Testler Eğitimi (2025, GATA) — MMPI, SCL-90, Stroop, Mini Mental (MMSE) ve diğer ölçme araçları</li>
-        <li>EFPSA Social Impact Initiative — Atölye Eğitmenliği ve Uygulayıcılığı</li>
-        <li>Aile Danışmanlığı Sertifika Programı — MEB onaylı (devam ediyor)</li>
-        <li>20. Ulusal Psikoloji Kongresi — Katılım (2018, Ankara)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="iletisim">
-    <div class="wrap">
-      <div class="contact-box">
-        <h2>İletişim</h2>
-        <p>Randevu ve sorularınız için iletişime geçebilirsiniz.</p>
-        <p class="contact-item">Telefon: <a href="tel:+90XXXXXXXXXX">[telefon numarası]</a></p>
-        <p class="contact-item">E-posta: <a href="mailto:ornek@rumeysaerdogdu.com">[e-posta adresi]</a></p>
-        <p class="contact-item">Ankara</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Anlamak</h3>
+        <p>Yaşam öykünüzü, ilişkisel deneyimlerinizi ve şu an sizi zorlayan konuları güvenli bir alanda birlikte ele alırız.</p>
+      </div>
+      <div class="arrow">
+        <svg width="26" height="34" viewBox="0 0 26 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 0v30M13 30l-10-10M13 30l10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Fark etmek</h3>
+        <p>Tekrar eden örüntüleri ve bunları besleyen şema ve baş etme modlarını fark eder, kökenlerini anlamlandırırız.</p>
+      </div>
+      <div class="arrow">
+        <svg width="26" height="34" viewBox="0 0 26 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 0v30M13 30l-10-10M13 30l10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Değiştirmek</h3>
+        <p>Daha işlevsel baş etme yolları geliştirerek, duygularınızla daha sağlıklı bir ilişki kurmanıza destek oluruz.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="wrap">
-      <div class="note">
-        Bu web sitesi bilgilendirme amaçlıdır ve acil yardım hizmeti değildir.
-        Acil bir durumdaysanız lütfen 112'yi arayın.
-      </div>
-      <p style="margin-top: 22px;">© 2026 Klinik Psikolog Rümeysa Erdoğdu · Ankara</p>
+<!-- wave forest -> cream -->
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:-1px;">
+  <path fill="#2C4A38" d="M0,0 L1440,0 L1440,32 C1140,86 900,86 720,54 C520,18 260,18 0,58 Z"></path>
+  <path fill="#F4EFE6" d="M0,58 C260,18 520,18 720,54 C900,86 1140,86 1440,32 L1440,90 L0,90 Z"></path>
+</svg>
+
+<!-- TRAINING -->
+<section class="sec-cream" id="egitimler">
+  <div class="wrap narrow">
+    <p class="kicker">Eğitimler</p>
+    <h2>Uygulayıcı eğitimleri</h2>
+    <ul class="training">
+      <li><span class="dot"></span><span>Şema Terapisi Eğitimi ve Süpervizyonu (2024–2026, Başkent Üniversitesi, Dr. Elif Üzümcü Özdemir)</span></li>
+      <li><span class="dot"></span><span>Psikolojik Testler Eğitimi (2025, GATA) — MMPI, SCL-90, Stroop, Mini Mental (MMSE) ve diğer ölçme ve değerlendirme araçları</span></li>
+      <li><span class="dot"></span><span>EFPSA Social Impact Initiative — Atölye Eğitmenliği Eğitimi ve Uygulayıcılığı</span></li>
+      <li><span class="dot"></span><span>Aile Danışmanlığı Sertifika Programı — MEB onaylı (devam ediyor)</span></li>
+      <li><span class="dot"></span><span>20. Ulusal Psikoloji Kongresi — Katılım (2018, Ankara)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec-soft" id="sss">
+  <div class="wrap narrow">
+    <p class="kicker">Sık Sorulan Sorular</p>
+    <h2>Merak edilenler</h2>
+    <div class="faq">
+      <details open>
+        <summary>Şema terapi nedir?
+          <span class="chev"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </summary>
+        <div class="ans">Şema terapi; çocukluktan itibaren gelişen ve yaşam boyu tekrar eden duygu, düşünce ve davranış örüntülerini (şemaları) anlamaya odaklanan bütüncül bir yaklaşımdır. Amaç, bu örüntülerin köklerini fark edip daha sağlıklı baş etme yolları geliştirmektir.</div>
+      </details>
+      <details>
+        <summary>Kimlerle çalışıyorsunuz?
+          <span class="chev"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </summary>
+        <div class="ans">Çalışmalarımı yetişkinlerle sürdürüyorum. Depresyon, kaygı, özdeğer sorunları, ilişkilerde tekrarlayan örüntüler ve yaşam dönemlerine eşlik eden güçlükler başlıca çalıştığım konular arasında.</div>
+      </details>
+      <details>
+        <summary>Terapi sürecinde neyi önemsiyorsunuz?
+          <span class="chev"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </summary>
+        <div class="ans">Danışanlarımla güvene dayalı, işbirlikçi ve şefkatli bir ilişki kurmayı; yaşanan zorlukların kökenlerini anlamaya ve daha işlevsel baş etme yolları geliştirmeye destek olmayı hedefliyorum.</div>
+      </details>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- wave soft -> forest -->
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:-1px;">
+  <path fill="#FBF8F2" d="M0,0 L1440,0 L1440,34 C1150,84 920,84 720,52 C520,20 250,20 0,60 Z"></path>
+  <path fill="#2C4A38" d="M0,60 C250,20 520,20 720,52 C920,84 1150,84 1440,34 L1440,90 L0,90 Z"></path>
+</svg>
+
+<!-- CONTACT -->
+<section class="sec-forest" id="iletisim">
+  <div class="wrap narrow" style="text-align:center;">
+    <p class="kicker">İletişim</p>
+    <h2 style="color:#fff;">Randevu ve sorularınız için</h2>
+    <p class="lead" style="color:rgba(255,255,255,.85);margin-bottom:30px;">Bir görüşme planlamak ya da merak ettiklerinizi sormak için ulaşabilirsiniz.</p>
+    <p style="font-family:'Fraunces',serif;font-size:26px;color:#fff;margin-bottom:26px;">
+      <a href="tel:+905333947135">0533 394 71 35</a>
+    </p>
+    <a href="https://rolapsikoloji.com/iletisim/" class="btn" target="_blank" rel="noopener">İletişim sayfasına git</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap narrow">
+    <div class="brand-f">Klinik Psikolog Rümeysa Erdoğdu</div>
+    <p style="font-size:15px;">Ankara</p>
+    <p class="copy" style="margin-top:24px;">© 2026 Rümeysa Erdoğdu. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
 
 </body>
 </html>
