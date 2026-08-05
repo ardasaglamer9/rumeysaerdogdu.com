@@ -1,0 +1,57 @@
+# ---- Site bilgileri (tek yerden yönetilir) ----
+title: "Klinik Psikolog Rümeysa Erdoğdu"
+tagline: "Ankara"
+description: "Klinik Psikolog Rümeysa Erdoğdu — Ankara. Yetişkinlerle şema terapi odağında online ve yüz yüze psikoterapi."
+url: "https://rumeysaerdogdu.com"
+baseurl: ""
+lang: "tr"
+
+author:
+  name: "Rümeysa Erdoğdu"
+  title: "Klinik Psikolog"
+  bio: "ODTÜ Psikoloji ve Gelişim Psikolojisi mezunu; klinik psikoloji uzmanlık eğitimini Başkent Üniversitesi'nde sürdürüyor. Yetişkinlerle şema terapi odağında çalışıyor. Ankara."
+  photo: "rumeysaerdogdu2.jpeg"
+
+contact:
+  email: "info@rumeysaerdogdu.com"
+  instagram_url: "https://www.instagram.com/psikologrumeysaerdogdu/"
+  instagram_handle: "@psikologrumeysaerdogdu"
+
+office:
+  name: "Rola Psikoloji"
+  street: "Büyükesat Mah. Uğur Mumcu Cad. No: 61/6"
+  locality: "Çankaya"
+  region: "Ankara"
+  country: "TR"
+
+# ---- Menü (bir kez düzenle, her sayfada değişir) ----
+nav:
+  - title: "Hakkımda"
+    url: "/#hakkimda"
+  - title: "Çalışma Alanları"
+    url: "/#alanlar"
+  - title: "Yaklaşım"
+    url: "/#yaklasim"
+  - title: "Blog"
+    url: "/blog.html"
+  - title: "İletişim"
+    url: "/#iletisim"
+
+# ---- Jekyll ayarları ----
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:title.html
+timezone: Europe/Istanbul
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - KURULUM.md
+  - vendor

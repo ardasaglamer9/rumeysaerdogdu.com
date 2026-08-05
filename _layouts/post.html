@@ -1,0 +1,77 @@
+---
+layout: default
+---
+{% assign months = "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık" | split: "," %}
+{% assign mi = page.date | date: "%-m" | plus: 0 | minus: 1 %}
+{% assign tarih = page.date | date: "%-d" | append: " " | append: months[mi] | append: " " | append: page.date | date: "%Y" %}
+{% assign kelime = content | number_of_words %}
+{% assign sure = kelime | divided_by: 140 | plus: 1 %}
+
+{% capture metaline %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ months[mi] }} {{ page.date | date: "%Y" }}</time> · {{ sure }} dk okuma · {{ site.author.title }} {{ site.author.name }}{% endcapture %}
+{% include banner.html eyebrow=page.category_name title=page.title meta=metaline %}
+
+<div class="article-wrap">
+  <div class="breadcrumb reveal"><a href="{{ '/' | relative_url }}">Ana sayfa</a> &nbsp;›&nbsp; <a href="{{ '/blog.html' | relative_url }}">Blog</a></div>
+
+  {% if page.summary %}
+  <div class="summary reveal">
+    <h3>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16l-7-3.5L5 20V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      Özet
+    </h3>
+    <p>{{ page.summary }}</p>
+  </div>
+  {% endif %}
+
+  <nav class="toc reveal" aria-label="İçindekiler">
+    <div class="toc-head">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <h3>İçindekiler</h3>
+    </div>
+    <ol id="tocList"></ol>
+  </nav>
+
+  <article class="article reveal">
+    {{ content }}
+
+    {% if page.faq %}
+    <div class="postfaq">
+      <h2 id="sss">Sık sorulan sorular</h2>
+      {% for f in page.faq %}
+      <details><summary>{{ f.q }}<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="a">{{ f.a }}</div></details>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="cta-box">
+      <h3>Birlikte bakmak ister misiniz?</h3>
+      <p>Yetişkinlerle şema terapi odağında, online ve yüz yüze çalışıyorum.</p>
+      <a href="{{ '/#iletisim' | relative_url }}">İletişime geç
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
+    {% if others.size > 0 %}
+    <div class="related">
+      <h3>İlgili yazılar</h3>
+      <div class="rel-list">
+        {% for p in others limit: 3 %}
+        <a class="rel-item" href="{{ p.url | relative_url }}"><span>{{ p.title }}</span><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="author">
+      <div class="av"><img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.title }} {{ site.author.name }}" onerror="this.style.display='none';"></div>
+      <div>
+        <h4>{{ site.author.title }} {{ site.author.name }}</h4>
+        <p>{{ site.author.bio }}</p>
+        <a href="{{ '/#hakkimda' | relative_url }}">Hakkımda →</a>
+      </div>
+    </div>
+
+    <a href="{{ '/blog.html' | relative_url }}" class="backblog">← Tüm yazılara dön</a>
+  </article>
+</div>

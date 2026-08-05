@@ -1,0 +1,47 @@
+<script>
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){ if(window.scrollY>12){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');} },{passive:true});
+
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    document.querySelectorAll('.stagger').forEach(function(g){ g.querySelectorAll('.reveal').forEach(function(el,i){ el.style.transitionDelay=(i*0.08)+'s'; }); });
+    if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+    var io=new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:0.1});
+    els.forEach(function(e){io.observe(e);});
+  })();
+
+  // --- İçindekiler: yazıdaki h2 başlıklarından otomatik oluşturulur ---
+  (function(){
+    var art=document.querySelector('.article'), list=document.getElementById('tocList');
+    if(!art||!list)return;
+    var map={'ç':'c','ğ':'g','ı':'i','ö':'o','ş':'s','ü':'u','â':'a','î':'i','û':'u'};
+    function slug(t){
+      return t.toLowerCase().replace(/[çğıöşüâîû]/g,function(c){return map[c]||c;})
+        .replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-').substring(0,50);
+    }
+    var hs=art.querySelectorAll('h2'), used={};
+    if(!hs.length){ var box=document.querySelector('.toc'); if(box) box.style.display='none'; return; }
+    hs.forEach(function(h){
+      var id=h.id||slug(h.textContent);
+      if(used[id]){ id=id+'-'+(++used[id]); } else { used[id]=1; }
+      h.id=id;
+      var li=document.createElement('li');
+      var a=document.createElement('a');
+      a.href='#'+id; a.textContent=h.textContent;
+      li.appendChild(a); list.appendChild(li);
+    });
+    var links=[].slice.call(list.querySelectorAll('a'));
+    if(!('IntersectionObserver' in window))return;
+    var m={};
+    links.forEach(function(a){ m[a.getAttribute('href').slice(1)]=a; });
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(l){l.classList.remove('active');});
+          if(m[en.target.id]) m[en.target.id].classList.add('active');
+        }
+      });
+    },{rootMargin:'-100px 0px -65% 0px'});
+    hs.forEach(function(h){ obs.observe(h); });
+  })();
+</script>
