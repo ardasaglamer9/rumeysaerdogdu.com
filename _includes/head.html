@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {% if page.seo_title %}{% assign ttl = page.seo_title %}{% else %}{% assign ttl = page.title %}{% endif %}
-{% if page.url == "/" %}<title>{{ site.title }} | {{ site.tagline }}</title>
+{% if page.url == "/" %}<title>{{ site.home_title }}</title>
 {% else %}<title>{{ ttl }}{% unless page.no_suffix %} | {{ site.author.title }} {{ site.author.name }}{% endunless %}</title>{% endif %}
 
 {% if page.description %}{% assign desc = page.description %}{% else %}{% assign desc = site.description %}{% endif %}
@@ -15,13 +15,13 @@
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{% if page.url == '/' %}{{ site.title }} | {{ site.tagline }}{% else %}{{ page.title }}{% endif %}">
+<meta property="og:title" content="{% if page.url == '/' %}{{ site.home_title }}{% else %}{{ page.title }}{% endif %}">
 <meta property="og:description" content="{{ desc }}">
 <meta property="og:url" content="{{ page.url | replace: 'index.html','' | absolute_url }}">
 {% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
 <meta property="article:section" content="{{ page.category_name }}">{% endif %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
+<meta name="twitter:title" content="{% if page.url == '/' %}{{ site.home_title }}{% else %}{{ page.title }}{% endif %}">
 <meta name="twitter:description" content="{{ desc }}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
