@@ -4,7 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Klinik Psikolog Rümeysa Erdoğdu | Ankara</title>
-<meta name="description" content="Klinik Psikolog Rümeysa Erdoğdu — Ankara. Yetişkinlerle şema terapi odağında, online ve yüz yüze psikoterapi.">
+<meta name="description" content="Klinik Psikolog Rümeysa Erdoğdu — Ankara. Yetişkinlerle şema terapi odağında online ve yüz yüze psikoterapi.">
+<meta name="keywords" content="Ankara klinik psikolog, şema terapi Ankara, online terapi, psikolog Rümeysa Erdoğdu, yetişkin psikoterapi">
+<meta name="author" content="Klinik Psikolog Rümeysa Erdoğdu">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://rumeysaerdogdu.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Klinik Psikolog Rümeysa Erdoğdu">
+<meta property="og:title" content="Klinik Psikolog Rümeysa Erdoğdu | Ankara">
+<meta property="og:description" content="Yetişkinlerle şema terapi odağında online ve yüz yüze psikoterapi. Ankara.">
+<meta property="og:url" content="https://rumeysaerdogdu.com/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"https://rumeysaerdogdu.com/#person",
+ "name":"Rümeysa Erdoğdu","jobTitle":"Klinik Psikolog","url":"https://rumeysaerdogdu.com/",
+ "email":"info@rumeysaerdogdu.com","knowsLanguage":"tr",
+ "sameAs":["https://www.instagram.com/psikologrumeysaerdogdu/"],
+ "alumniOf":[{"@type":"CollegeOrUniversity","name":"Orta Doğu Teknik Üniversitesi"},{"@type":"CollegeOrUniversity","name":"Başkent Üniversitesi"}],
+ "knowsAbout":["Şema terapi","Psikoterapi","Kaygı","Depresyon","İlişki örüntüleri"]},
+{"@type":["ProfessionalService","MedicalBusiness"],"@id":"https://rumeysaerdogdu.com/#practice",
+ "name":"Klinik Psikolog Rümeysa Erdoğdu",
+ "description":"Yetişkinlerle şema terapi odağında online ve yüz yüze psikoterapi.",
+ "url":"https://rumeysaerdogdu.com/","email":"info@rumeysaerdogdu.com",
+ "areaServed":{"@type":"City","name":"Ankara"},
+ "availableLanguage":"tr",
+ "address":{"@type":"PostalAddress","streetAddress":"Büyükesat Mah. Uğur Mumcu Cad. No: 61/6","addressLocality":"Çankaya","addressRegion":"Ankara","addressCountry":"TR"},
+ "provider":{"@id":"https://rumeysaerdogdu.com/#person"}},
+{"@type":"WebSite","url":"https://rumeysaerdogdu.com/","name":"Klinik Psikolog Rümeysa Erdoğdu","inLanguage":"tr-TR","publisher":{"@id":"https://rumeysaerdogdu.com/#person"}}
+]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -128,6 +158,23 @@
 
   .contact-inner{text-align:center;}
 
+  /* blog teaser */
+  .blog-teaser{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;}
+  @media(max-width:860px){.blog-teaser{grid-template-columns:1fr;}}
+  .bt-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s;}
+  .bt-card:hover{transform:translateY(-6px);box-shadow:0 20px 42px rgba(34,49,42,.13);}
+  .bt-top{position:relative;height:96px;display:flex;align-items:flex-end;padding:16px;overflow:hidden;}
+  .bt-top .cat{position:relative;z-index:1;background:rgba(255,255,255,.92);color:var(--forest);font-size:11.5px;font-weight:700;letter-spacing:.4px;padding:5px 12px;border-radius:999px;}
+  .bt-top .lw{position:absolute;right:-6px;bottom:-14px;width:96px;opacity:.3;z-index:0;transform-origin:50% 92%;animation:sway 9s ease-in-out infinite;}
+  .bt1{background:linear-gradient(135deg,#6f8b7c,#5E7A6A);} .bt2{background:linear-gradient(135deg,#d9a94e,#c68f38);} .bt3{background:linear-gradient(135deg,#a99cb4,#8f80a0);}
+  .bt-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;}
+  .bt-body h3{font-size:19px;color:var(--forest);margin-bottom:9px;line-height:1.3;}
+  .bt-body p{color:var(--ink-soft);font-size:15px;flex:1;}
+  .bt-more{display:inline-flex;align-items:center;gap:7px;margin-top:16px;color:var(--sage-dark);font-weight:700;font-size:14px;transition:gap .2s;}
+  .bt-card:hover .bt-more{gap:11px;}
+  .blog-all{display:flex;justify-content:center;margin-top:40px;}
+  @keyframes sway{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+
   /* footer */
   footer{background:var(--forest-deep);color:rgba(255,255,255,.78);padding:74px 0 40px;}
   .footer-grid{display:grid;grid-template-columns:1.5fr 1.2fr 1fr;gap:52px;}
@@ -165,6 +212,7 @@
       <a href="#alanlar">Çalışma Alanları</a>
       <a href="#gorusmeler">Görüşmeler</a>
       <a href="#yaklasim">Yaklaşım</a>
+      <a href="blog.html">Blog</a>
       <a href="#sss">S.S.S.</a>
       <a href="#iletisim">İletişim</a>
     </div>
@@ -181,10 +229,10 @@
     <div class="hero-portrait">
       <div class="ring"></div>
       <div class="photo-frame round">
-        <img class="photo-img" src="portre.jpg" alt="Klinik Psikolog Rümeysa Erdoğdu" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <img class="photo-img" src="rumeysaerdogdu.jpeg" alt="Klinik Psikolog Rümeysa Erdoğdu" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="photo-ph">
           <svg width="38" height="38" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <span><b>portre.jpg</b></span>
+          <span><b>rumeysaerdogdu.jpeg</b></span>
         </div>
       </div>
       <svg class="leaf-a" viewBox="0 0 40 44" fill="none"><path d="M20 2C7 11 7 31 20 42C33 31 33 11 20 2Z" fill="#8AA399"/><path d="M20 6v32" stroke="#F5F1E9" stroke-width="1.4"/></svg>
@@ -261,10 +309,10 @@
 <section class="sec-soft">
   <div class="wrap reveal">
     <div class="photo-frame wide">
-      <img class="photo-img" src="ofis.jpg" alt="Çalışma alanı" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <img class="photo-img" src="rumeysaerdogduofis.jpeg" alt="Rola Psikoloji çalışma alanı, Ankara" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
       <div class="photo-ph">
         <svg width="46" height="46" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.4"/><path d="M4 18l5-4 4 3 3-2 4 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Ortam / çalışma alanı fotoğrafı<br><b>ofis.jpg</b></span>
+        <span>Fotoğraf<br><b>rumeysaerdogduofis.jpeg</b></span>
       </div>
     </div>
   </div>
@@ -298,8 +346,50 @@
   <path fill="#F5F1E9" d="M0,50 C120,36 240,34 360,44 C720,74 1080,74 1440,26 L1440,80 L0,80 Z"></path>
 </svg>
 
+<!-- BLOG TEASER -->
+<section class="sec-cream" id="blog">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="kicker">Blog</p>
+      <h2>Notlar &amp; yazılar</h2>
+      <p class="lead">Şema terapi, duygular ve kendini anlama üzerine düşünceler.</p>
+    </div>
+    <div class="blog-teaser">
+      <a class="bt-card reveal" href="blog-sema-terapi-nedir.html">
+        <div class="bt-top bt1"><span class="cat">Şema Terapi</span><svg class="lw" viewBox="0 0 40 44" fill="none"><path d="M20 2C7 11 7 31 20 42C33 31 33 11 20 2Z" fill="#fff"/><path d="M20 6v32" stroke="#5E7A6A" stroke-width="1.4"/></svg></div>
+        <div class="bt-body">
+          <h3>Şema terapi nedir?</h3>
+          <p>Şemalar nasıl oluşur ve tekrar eden örüntülerimizi yargılamadan tanımak neye alan açar?</p>
+          <span class="bt-more">Devamını oku <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="bt-card reveal" href="blog-kaygi-neden-tekrar-eder.html">
+        <div class="bt-top bt2"><span class="cat">Kaygı</span><svg class="lw" viewBox="0 0 40 44" fill="none"><path d="M20 2C7 11 7 31 20 42C33 31 33 11 20 2Z" fill="#fff"/><path d="M20 6v32" stroke="#c68f38" stroke-width="1.4"/></svg></div>
+        <div class="bt-body">
+          <h3>Kaygı neden tekrar eder?</h3>
+          <p>Kaygı neden geçmiyor ve neden aynı temalarda tekrar ediyor? Kaçınmanın rolü üzerine.</p>
+          <span class="bt-more">Devamını oku <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="bt-card reveal" href="blog-iliskilerde-tekrarlayan-oruntuler.html">
+        <div class="bt-top bt3"><span class="cat">İlişkiler</span><svg class="lw" viewBox="0 0 40 44" fill="none"><path d="M20 2C7 11 7 31 20 42C33 31 33 11 20 2Z" fill="#fff"/><path d="M20 6v32" stroke="#8f80a0" stroke-width="1.4"/></svg></div>
+        <div class="bt-body">
+          <h3>İlişkilerde tekrarlayan örüntüler</h3>
+          <p>Kişiler değişir, hikâye benzer kalır. Tanıdık olan neden bu kadar çekici hissettirir?</p>
+          <span class="bt-more">Devamını oku <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+    </div>
+    <div class="blog-all">
+      <a href="blog.html" class="btn">Tüm yazıları gör
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
-<section class="sec-cream" id="sss">
+<section class="sec-soft" id="sss">
   <div class="wrap narrow reveal">
     <p class="kicker">Sık Sorulan Sorular</p>
     <h2>Merak edilenler</h2>
@@ -336,6 +426,9 @@
       <div class="footer-brand">
         <div class="brand-f">Klinik Psikolog<br>Rümeysa Erdoğdu</div>
         <p>Yetişkinlerle şema terapi odağında, online ve yüz yüze psikoterapi. Ankara.</p>
+        <a href="blog.html" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:var(--sage);font-weight:700;font-size:15px;">Blog &amp; yazılar
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
       <div class="footer-col">
         <h4>İletişim Bilgileri</h4>
