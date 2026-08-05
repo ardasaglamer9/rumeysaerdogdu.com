@@ -38,17 +38,12 @@
   .hero .inner{position:relative;z-index:1;}
   .hero-portrait{position:relative;width:184px;margin:0 auto 38px;opacity:0;animation:fadeUp .8s ease .1s forwards;}
   .hero-portrait .ring{position:absolute;inset:-14px;border-radius:50%;border:1.5px dashed rgba(138,163,153,.65);animation:spinSlow 40s linear infinite;}
-  .hero-portrait .leaf-a{position:absolute;bottom:2px;right:2px;width:46px;transform-origin:50% 92%;animation:sway 6s ease-in-out infinite;z-index:2;}
   @media(max-width:600px){.hero-portrait{width:152px;}}
   .hero .eyebrow{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:700;margin-bottom:26px;opacity:0;animation:fadeUp .8s ease .28s forwards;}
   .hero h1{font-size:clamp(40px,6.4vw,66px);font-weight:600;margin-bottom:24px;color:#fff;letter-spacing:-0.02em;opacity:0;animation:fadeUp .8s ease .42s forwards;}
   .hero p{font-size:19px;max-width:600px;margin:0 auto 40px;color:rgba(255,255,255,.86);opacity:0;animation:fadeUp .8s ease .56s forwards;}
   .hero .btn{opacity:0;animation:fadeUp .8s ease .7s forwards;}
   .scrollcue{position:absolute;bottom:74px;left:50%;transform:translateX(-50%);z-index:1;color:rgba(255,255,255,.5);animation:bob 2.2s ease-in-out infinite;}
-  .leaf{position:absolute;pointer-events:none;transform-origin:50% 92%;z-index:1;}
-  .leaf-1{top:110px;left:8%;width:44px;animation:sway 6s ease-in-out infinite;}
-  .leaf-2{top:220px;right:10%;width:58px;animation:sway2 8s ease-in-out infinite;}
-  .leaf-3{bottom:120px;left:15%;width:36px;animation:sway 7s ease-in-out infinite .5s;}
 
   .wave{display:block;width:100%;height:auto;line-height:0;}
 
@@ -195,7 +190,6 @@
   .page-hero .blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;pointer-events:none;}
   .ph-b1{width:320px;height:320px;background:radial-gradient(circle,rgba(138,163,153,.5),transparent 70%);top:-80px;left:-40px;animation:floatY 10s ease-in-out infinite;}
   .ph-b2{width:360px;height:360px;background:radial-gradient(circle,rgba(155,143,166,.4),transparent 70%);bottom:-140px;right:-60px;animation:floatY2 12s ease-in-out infinite;}
-  .page-hero .leaf{position:absolute;pointer-events:none;transform-origin:50% 92%;}
   .page-hero .lf1{top:60px;left:11%;width:40px;animation:sway 6s ease-in-out infinite;}
   .page-hero .lf2{bottom:70px;right:12%;width:52px;animation:sway2 8s ease-in-out infinite;}
   .page-hero .inner{position:relative;z-index:1;}
@@ -226,7 +220,7 @@
   .featured:hover{transform:translateY(-5px);box-shadow:0 26px 52px rgba(34,49,42,.16);}
   .feat-thumb{position:relative;min-height:330px;display:flex;align-items:flex-end;padding:26px;overflow:hidden;}
   .feat-thumb .cat{position:relative;z-index:1;background:rgba(255,255,255,.92);color:var(--forest);font-size:12px;font-weight:700;letter-spacing:.5px;padding:7px 15px;border-radius:999px;}
-  .feat-thumb .lw{position:absolute;right:-20px;bottom:-24px;width:220px;opacity:.3;z-index:0;transform-origin:50% 92%;animation:sway 9s ease-in-out infinite;}
+  .feat-thumb .lw{position:absolute;right:-18px;bottom:-22px;width:210px;opacity:.26;z-index:0;}
   .feat-body{padding:46px 48px;display:flex;flex-direction:column;justify-content:center;}
   .feat-body h2{font-size:clamp(25px,3vw,33px);color:var(--forest);margin:12px 0 14px;line-height:1.2;}
   .feat-body p{color:var(--ink-soft);font-size:17px;}
@@ -309,7 +303,6 @@
   .page-hero .blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;pointer-events:none;}
   .ph-b1{width:320px;height:320px;background:radial-gradient(circle,rgba(138,163,153,.5),transparent 70%);top:-80px;left:-40px;animation:floatY 10s ease-in-out infinite;}
   .ph-b2{width:360px;height:360px;background:radial-gradient(circle,rgba(155,143,166,.4),transparent 70%);bottom:-140px;right:-60px;animation:floatY2 12s ease-in-out infinite;}
-  .page-hero .leaf{position:absolute;pointer-events:none;transform-origin:50% 92%;}
   .page-hero .lf1{top:56px;left:10%;width:38px;animation:sway 6s ease-in-out infinite;}
   .page-hero .lf2{bottom:66px;right:11%;width:50px;animation:sway2 8s ease-in-out infinite;}
   .ink{position:absolute;pointer-events:none;opacity:.12;z-index:0;stroke:#F5F1E9;fill:none;}
@@ -421,3 +414,16 @@
 .brand-logo{height:38px;width:auto;display:block;flex:0 0 auto;}
 .footer-logo{height:54px;width:auto;display:block;margin-bottom:14px;}
 @media(max-width:520px){.brand span{display:none;} .brand-logo{height:34px;}}
+
+
+/* ---- YAPRAK MOTİFLERİ ---- */
+.leaf{position:absolute;pointer-events:none;transform-origin:50% 92%;z-index:1;}
+.hero .leaf-1{top:110px;left:8%;width:44px;animation:sway 6s ease-in-out infinite;}
+.hero .leaf-2{top:220px;right:10%;width:58px;animation:sway2 8s ease-in-out infinite;}
+.hero .leaf-3{bottom:120px;left:15%;width:36px;animation:sway 7s ease-in-out infinite .5s;}
+.page-hero .lf1{top:56px;left:10%;width:38px;animation:sway 6s ease-in-out infinite;}
+.page-hero .lf2{bottom:66px;right:11%;width:50px;animation:sway2 8s ease-in-out infinite;}
+.hero-portrait .leaf-a{position:absolute;bottom:2px;right:2px;width:46px;transform-origin:50% 92%;animation:sway 6s ease-in-out infinite;z-index:2;}
+.feat-thumb .lw{position:absolute;right:-20px;bottom:-24px;width:220px;opacity:.3;z-index:0;transform-origin:50% 92%;animation:sway 9s ease-in-out infinite;}
+@media(max-width:760px){.hero .leaf-3{display:none;}}
+@media(prefers-reduced-motion:reduce){.leaf,.leaf-a,.lw{animation:none !important;}}
