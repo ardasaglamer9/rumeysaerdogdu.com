@@ -1,0 +1,58 @@
+---
+layout: default
+title: "Blog"
+seo_title: "Blog"
+description: "Şema terapi, kaygı ve ilişkilerde tekrar eden örüntüler üzerine yazılar — Klinik Psikolog Rümeysa Erdoğdu, Ankara."
+permalink: /blog/
+---
+
+{% include banner.html eyebrow="Blog" title="Notlar &amp; Yazılar" sub="Şema terapi, duygular ve kendini anlama üzerine düşünceler." %}
+
+{% assign months = "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık" | split: "," %}
+{% assign renkler = "t1,t2,t3,t4" | split: "," %}
+
+<section class="posts">
+  <div class="wrap">
+
+    {% if site.posts.size > 0 %}
+    {% assign one = site.posts.first %}
+    {% assign mi = one.date | date: "%-m" | plus: 0 | minus: 1 %}
+    <a class="featured reveal" href="{{ one.url | relative_url }}">
+      <div class="feat-thumb t1">
+        <span class="cat">Öne Çıkan · {{ one.category_name }}</span>
+        <svg class="lw" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 7 C45 7 53 19 53 31 C53 44 42 53 29 53 C18 53 10 45 10 34 C10 25 17 19 26 19 C34 19 39 25 39 32 C39 38 35 42 30 42 C26 42 23 39 23 35" stroke="#fff" stroke-width="4.4" stroke-linecap="round"/></svg>
+      </div>
+      <div class="feat-body">
+        <div class="post-date">{{ one.date | date: "%-d" }} {{ months[mi] }} {{ one.date | date: "%Y" }}</div>
+        <h2>{{ one.title }}</h2>
+        <p>{{ one.excerpt_text | default: one.description }}</p>
+        <span class="feat-cta">Yazıyı oku
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+    </a>
+    {% endif %}
+
+    <div class="post-grid">
+      {% for post in site.posts offset: 1 %}
+      {% assign mi = post.date | date: "%-m" | plus: 0 | minus: 1 %}
+      {% assign ri = forloop.index0 | modulo: 4 %}
+      <a class="post-card reveal" href="{{ post.url | relative_url }}">
+        <div class="post-thumb {{ renkler[ri] }}">
+          <span class="cat">{{ post.category_name }}</span>
+          <svg class="lw" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 7 C45 7 53 19 53 31 C53 44 42 53 29 53 C18 53 10 45 10 34 C10 25 17 19 26 19 C34 19 39 25 39 32 C39 38 35 42 30 42 C26 42 23 39 23 35" stroke="#fff" stroke-width="4.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="post-body">
+          <div class="post-date">{{ post.date | date: "%-d" }} {{ months[mi] }} {{ post.date | date: "%Y" }}</div>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt_text | default: post.description }}</p>
+          <span class="readmore">Devamını oku
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
