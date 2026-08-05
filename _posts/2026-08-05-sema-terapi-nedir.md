@@ -4,7 +4,7 @@ seo_title: "Şema Terapi Nedir? Tekrar Eden Örüntüleri Anlamak"
 description: "Şema terapi nedir, şemalar nasıl oluşur ve tekrar eden duygu-düşünce örüntülerimizi anlamak neyi mümkün kılar? Klinik psikolog gözünden sade bir anlatım."
 keywords: "şema terapi, şema terapi nedir, şema, baş etme modları, Ankara klinik psikolog, yetişkin psikoterapi"
 category_name: "Şema Terapi"
-permalink: /blog-sema-terapi-nedir.html
+permalink: /sema-terapi-nedir/
 excerpt_text: "Şemalar nasıl oluşur, zorlandığımızda hangi baş etme biçimleri devreye girer ve bu örüntüleri yargılamadan tanımak neye alan açar? Yaklaşımın temellerine sade bir bakış."
 summary: "Şema terapi; çocukluktan itibaren biçimlenen ve yaşam boyu tekrar eden duygu, düşünce ve davranış örüntülerini anlamaya odaklanan bütüncül bir yaklaşımdır. Bu yazıda şemaların nasıl oluştuğunu, zorlandığımız anlarda devreye giren baş etme biçimlerini ve bu örüntüleri yargılamadan tanımanın neye alan açtığını sade bir dille ele alıyorum."
 faq:

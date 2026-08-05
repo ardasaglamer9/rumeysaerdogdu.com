@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Sayfa taşındı</title>
+<link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+<meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
+<meta name="robots" content="noindex, follow">
+<script>location.replace("{{ page.redirect_to | relative_url }}");</script>
+</head>
+<body style="font-family:sans-serif;padding:40px;">
+<p>Bu sayfa taşındı. Yeni adres: <a href="{{ page.redirect_to | relative_url }}">{{ page.redirect_to }}</a></p>
+</body>
+</html>

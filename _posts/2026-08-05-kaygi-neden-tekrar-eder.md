@@ -4,7 +4,7 @@ seo_title: "Kaygı Neden Tekrar Eder? Altındaki Örüntüler"
 description: "Kaygı neden geçmiyor ve neden aynı konularda tekrar ediyor? Anksiyetenin altındaki örüntüler ve kaçınmanın rolü üzerine sade bir anlatım."
 keywords: "kaygı, anksiyete, kaygı neden tekrar eder, kaygıyla baş etme, kaçınma, şema terapi, Ankara psikolog"
 category_name: "Kaygı"
-permalink: /blog-kaygi-neden-tekrar-eder.html
+permalink: /kaygi-neden-tekrar-eder/
 excerpt_text: "Kaygı neden geçmiyor ve neden aynı temalarda tekrar ediyor? Kaçınmanın rolü ve kaygıyla daha yumuşak bir ilişki kurmak üzerine."
 summary: "Kaygı çoğu zaman tek bir olayla ilgili değildir; belirli durumlarda tekrar tekrar devreye giren bir örüntünün parçasıdır. Bu yazıda kaygının ne işe yaradığına, kaçınmanın kaygıyı nasıl beslediğine ve kaygıyı bastırmaya çalışmadan onunla daha yumuşak bir ilişki kurmanın ne anlama geldiğine bakıyoruz."
 faq:
@@ -28,7 +28,7 @@ Burada önemli bir ayrım var: kaygı bir karakter zayıflığı değildir. Bede
 
 Kaygının rastgele dağılmadığını fark etmişsinizdir. Çoğu insanda belirli temalar öne çıkar: değerlendirilmek, hata yapmak, reddedilmek, kontrolü kaybetmek, yakınlarına bir şey olması.
 
-Bu temalar tesadüf değildir. Genellikle bizim için erkenden hassas hâle gelmiş alanlarla ilgilidir. Şema terapi bu hassas alanları, çocuklukta biçimlenen ve yaşam boyu tekrar eden örüntüler —şemalar— üzerinden ele alır. Şemaların nasıl oluştuğunu [şema terapiyi anlattığım yazıda]({{ '/blog-sema-terapi-nedir.html' | relative_url }}) daha ayrıntılı bulabilirsiniz.
+Bu temalar tesadüf değildir. Genellikle bizim için erkenden hassas hâle gelmiş alanlarla ilgilidir. Şema terapi bu hassas alanları, çocuklukta biçimlenen ve yaşam boyu tekrar eden örüntüler —şemalar— üzerinden ele alır. Şemaların nasıl oluştuğunu [şema terapiyi anlattığım yazıda]({{ '/sema-terapi-nedir/' | relative_url }}) daha ayrıntılı bulabilirsiniz.
 
 Yani kaygı çoğu zaman tek bir olayla ilgili değildir. Tanıdık bir hassasiyete dokunulduğunda tekrar tekrar devreye giren bir örüntünün parçasıdır.
 

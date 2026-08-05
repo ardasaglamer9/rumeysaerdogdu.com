@@ -33,7 +33,7 @@ nav:
   - title: "Yaklaşım"
     url: "/#yaklasim"
   - title: "Blog"
-    url: "/blog.html"
+    url: "/blog/"
   - title: "İletişim"
     url: "/#iletisim"
 

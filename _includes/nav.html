@@ -3,7 +3,7 @@
     <a href="{{ '/' | relative_url }}" class="brand">{{ site.author.name }}</a>
     <div class="navlinks">
       {% for item in site.nav %}
-      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog.html') %} class="active"{% endif %}>{{ item.title }}</a>
+      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
       {% endfor %}
     </div>
   </div>

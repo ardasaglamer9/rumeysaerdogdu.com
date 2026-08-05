@@ -11,7 +11,7 @@ layout: default
 {% include banner.html eyebrow=page.category_name title=page.title meta=metaline %}
 
 <div class="article-wrap">
-  <div class="breadcrumb reveal"><a href="{{ '/' | relative_url }}">Ana sayfa</a> &nbsp;›&nbsp; <a href="{{ '/blog.html' | relative_url }}">Blog</a></div>
+  <div class="breadcrumb reveal"><a href="{{ '/' | relative_url }}">Ana sayfa</a> &nbsp;›&nbsp; <a href="{{ '/blog/' | relative_url }}">Blog</a></div>
 
   {% if page.summary %}
   <div class="summary reveal">
@@ -72,6 +72,6 @@ layout: default
       </div>
     </div>
 
-    <a href="{{ '/blog.html' | relative_url }}" class="backblog">← Tüm yazılara dön</a>
+    <a href="{{ '/blog/' | relative_url }}" class="backblog">← Tüm yazılara dön</a>
   </article>
 </div>

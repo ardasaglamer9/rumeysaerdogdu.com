@@ -4,7 +4,7 @@ seo_title: "İlişkilerde Aynı Örüntüleri Neden Tekrarlıyoruz?"
 description: "Neden hep benzer ilişkiler, benzer kırılmalar? İlişkilerde tekrar eden örüntülerin nereden geldiği ve bu döngüyü fark etmek üzerine."
 keywords: "ilişkilerde tekrarlayan örüntüler, ilişki örüntüleri, aynı hataları tekrarlamak, bağlanma, şema terapi, Ankara psikolog"
 category_name: "İlişkiler"
-permalink: /blog-iliskilerde-tekrarlayan-oruntuler.html
+permalink: /iliskilerde-tekrarlayan-oruntuler/
 excerpt_text: "Kişiler değişir, hikâye benzer kalır. Tanıdık olanın çekiciliği ve döngüyü sürdüren baş etme biçimleri üzerine."
 summary: "Farklı insanlarla benzer kırılmaları yaşamak yaygın bir deneyimdir. Bu yazıda ilişkilerde tekrar eden örüntülerin nereden geldiğine, tanıdık olanın neden çekici hissettirdiğine, kendimizi geri çekme ya da fazla verme gibi baş etme biçimlerine ve bu döngüyü fark etmenin neye alan açtığına bakıyoruz."
 faq:
@@ -28,7 +28,7 @@ Bu bir tercih ya da yanlış karar meselesi değildir. Çoğu zaman farkında ol
 
 İlişki örüntülerimiz, ilk ilişkilerimizde öğrendiklerimizle şekillenir. Yakınlık nasıl bir şeydi, ihtiyaçlarımızı dile getirdiğimizde ne oluyordu, öfke ya da üzüntü ifade etmek güvenli miydi?
 
-Bu deneyimlerden kendimize ve başkalarına dair sessiz sonuçlar çıkarırız: "İhtiyaçlarımı söylersem yük olurum", "Yakınlaşırsam terk edilirim", "Güçlü görünmezsem değer görmem." Şema terapi bu sessiz sonuçları şema olarak adlandırır ve yetişkin ilişkilerinde nasıl devrede kaldıklarına bakar. Bu çerçeveyi [şema terapi yazısında]({{ '/blog-sema-terapi-nedir.html' | relative_url }}) daha ayrıntılı anlatıyorum.
+Bu deneyimlerden kendimize ve başkalarına dair sessiz sonuçlar çıkarırız: "İhtiyaçlarımı söylersem yük olurum", "Yakınlaşırsam terk edilirim", "Güçlü görünmezsem değer görmem." Şema terapi bu sessiz sonuçları şema olarak adlandırır ve yetişkin ilişkilerinde nasıl devrede kaldıklarına bakar. Bu çerçeveyi [şema terapi yazısında]({{ '/sema-terapi-nedir/' | relative_url }}) daha ayrıntılı anlatıyorum.
 
 ## Döngüyü sürdüren baş etme biçimleri
 
