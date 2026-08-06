@@ -2,6 +2,24 @@
   var nav=document.getElementById('nav');
   window.addEventListener('scroll',function(){ if(window.scrollY>12){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');} },{passive:true});
 
+  // --- Mobil menü: hamburger çekmeceyi açar/kapatır ---
+  (function(){
+    var toggle=document.getElementById('navToggle'), drawer=document.getElementById('navDrawer');
+    if(!toggle||!drawer)return;
+    function open(){
+      drawer.classList.add('open'); drawer.setAttribute('aria-hidden','false');
+      toggle.setAttribute('aria-expanded','true'); document.body.classList.add('nav-open');
+    }
+    function close(){
+      drawer.classList.remove('open'); drawer.setAttribute('aria-hidden','true');
+      toggle.setAttribute('aria-expanded','false'); document.body.classList.remove('nav-open');
+    }
+    toggle.addEventListener('click',open);
+    drawer.querySelectorAll('[data-navclose]').forEach(function(el){ el.addEventListener('click',close); });
+    drawer.querySelectorAll('.navdrawer-links a').forEach(function(a){ a.addEventListener('click',close); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+  })();
+
   (function(){
     var els=document.querySelectorAll('.reveal');
     document.querySelectorAll('.stagger').forEach(function(g){ g.querySelectorAll('.reveal').forEach(function(el,i){ el.style.transitionDelay=(i*0.08)+'s'; }); });

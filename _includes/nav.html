@@ -6,5 +6,22 @@
       <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
       {% endfor %}
     </div>
+    <button class="navtoggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navDrawer">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<div class="navdrawer" id="navDrawer" aria-hidden="true">
+  <div class="navdrawer-overlay" data-navclose></div>
+  <div class="navdrawer-panel" role="dialog" aria-modal="true" aria-label="Menü">
+    <button class="navdrawer-close" data-navclose aria-label="Menüyü kapat">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="navdrawer-links" aria-label="Site menüsü">
+      {% for item in site.nav %}
+      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</div>

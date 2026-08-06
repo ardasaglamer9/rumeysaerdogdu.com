@@ -72,13 +72,24 @@ Otomatik olan (elle yapma): İçindekiler tablosu `##` başlıklarından üretil
 - **Taşıma:** yazının `permalink`'ini değiştir, eski adres için `layout: redirect` kullanan bir `r-*.html` dosyası ekle (`redirect_to` yeni adrese).
 - **Kaldırma:** `_posts/` içindeki dosyayı sil. Ziyaretçi eski adrese girerse 404 görür.
 
-## Yerelde çalıştırma (opsiyonel)
+## Yerelde önizleme
 
-Zorunlu değil — GitHub Pages derler. Yine de önizleme için:
+Zorunlu değil (GitHub Pages derler), ama değişikliği yayına vermeden görmek için kurulu:
 
 ```bash
 bundle exec jekyll serve
 ```
+
+Sonra `http://127.0.0.1:4000` adresini aç.
+
+Kurulum notları:
+- `Gemfile`, `Gemfile.lock`, `vendor/`, `_site/`, `.bundle/` **`.gitignore`'dadır ve repoya girmez.**
+  Bunun sebebi: GitHub Pages klasik derleme kendi `github-pages` gem setini kullanır; repoda
+  farklı sürüm isteyen bir `Gemfile` görürse canlı derleme bozulabilir. Jekyll burada yalnızca
+  yerel bir önizleme aracıdır.
+- Gem'ler proje içine kuruludur (`bundle config` → `vendor/bundle`), sistem geneline değil.
+- Bu makinede yalnızca eski sistem Ruby'si (2.6) var; bu yüzden `Gemfile` içinde `ffi`,
+  `jekyll-sass-converter` ve `sassc` sürümleri sabitlenmiştir. Ruby güncellenirse bu sabitler kalkabilir.
 
 ## İçerik yazımı — dil ve ton kuralları
 

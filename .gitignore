@@ -1,0 +1,16 @@
+# Jekyll — yerelde önizleme içindir; GitHub Pages siteyi kendi derler.
+# Bu dosyalar repoya girmez; canlı derleme etkilenmez.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+.bundle/
+Gemfile
+Gemfile.lock
+
+# Claude Code yerel yapılandırması (önizleme sunucusu vb.)
+.claude/
+
+# macOS
+.DS_Store
