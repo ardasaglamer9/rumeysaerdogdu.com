@@ -44,25 +44,7 @@ permalink: /
     </div>
   </div>
 
-  {%- comment -%}
-    Kayan şerit. İçerik bir kez tanımlanır, iki kez basılır; kesintisiz döngü
-    için gereken bu. İkinci kopya aria-hidden, yoksa ekran okuyucu listeyi
-    iki kez okur.
-  {%- endcomment -%}
-  {%- capture serit_icerik -%}
-    <span class="konu">Kaygı</span><span class="nokta"></span>
-    <span class="konu">Depresyon</span><span class="nokta"></span>
-    <span class="konu">İlişkilerde tekrar eden örüntüler</span><span class="nokta"></span>
-    <span class="konu">Özdeğer ve öz-şefkat</span><span class="nokta"></span>
-    <span class="konu">Duygusal zorlanmalar</span><span class="nokta"></span>
-    <span class="konu">Yaşam dönemi güçlükleri</span><span class="nokta"></span>
-  {%- endcapture -%}
-  <div class="serit-wrap" aria-label="Çalışma alanları">
-    <div class="serit-track">
-      <div class="serit-item">{{ serit_icerik }}</div>
-      <div class="serit-item" aria-hidden="true">{{ serit_icerik }}</div>
-    </div>
-  </div>
+  <div class="scrollcue"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 </header>
 
 <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:-1px;">

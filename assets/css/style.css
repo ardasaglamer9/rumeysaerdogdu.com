@@ -580,34 +580,6 @@ body.nav-open{overflow:hidden;}
 .hero-note{font-size:13px;color:rgba(255,255,255,.55);margin:0;
   opacity:0;animation:fadeUp .8s ease .88s forwards;}
 
-/* =========================================================
-   KAYAN ŞERİT — hero'nun alt kenarı, tam genişlik
-   ========================================================= */
-.serit-wrap{position:absolute;left:0;right:0;bottom:0;z-index:2;
-  overflow:hidden;border-top:1px solid rgba(255,255,255,.14);
-  background:rgba(255,255,255,.045);padding:14px 0;}
-.serit-track{display:flex;width:max-content;
-  animation:seritKay 70s linear infinite;}
-.serit-wrap:hover .serit-track{animation-play-state:paused;}
-.serit-item{display:flex;align-items:center;}
-.serit-item .konu{flex:0 0 auto;padding:0 26px;font-size:14px;
-  color:rgba(255,255,255,.72);white-space:nowrap;}
-.serit-item .nokta{flex:0 0 auto;width:4px;height:4px;border-radius:50%;
-  background:rgba(255,255,255,.3);}
-
-@keyframes seritKay{
-  from{transform:translateX(0);}
-  to{transform:translateX(-50%);}
-}
-
-/* Hareket hassasiyeti olan ziyaretçi için animasyon tamamen kapanır.
-   Kaygı üzerine çalışan bir sitede bu atlanmamalı. */
-@media(prefers-reduced-motion:reduce){
-  .serit-track{animation:none;}
-}
-
-/* Şerit alt kenarda durduğu için kaydırma oku ile çakışıyordu; ok gizlendi. */
-.scrollcue{display:none;}
 
 /* --- Dekoratif yapraklar: içerikle yarışmasın --- */
 .hero .leaf{opacity:.14;}
@@ -617,11 +589,10 @@ body.nav-open{overflow:hidden;}
 .hero-portrait .ring{opacity:.32;}
 .hero-portrait .leaf-a{opacity:.55;}
 
-/* --- Hero yüksekliği: sonraki bölümden bir parça görünsün ---
-   Alt boşluk, alta sabitlenen şeridin (~50px) üstünde nefes bırakacak kadar. */
+/* --- Hero yüksekliği: sonraki bölümden bir parça görünsün --- */
 @media(min-width:900px){
   .hero{min-height:calc(88vh - 76px);min-height:calc(88svh - 76px);
-    padding:48px 0 112px;}
+    padding:48px 0 88px;}
 }
 
 /* içerik yoğunlaştığı için küçük ekranlarda kaydırma oku gizlenir */
@@ -629,9 +600,9 @@ body.nav-open{overflow:hidden;}
 
 /* --- Mobil: CTA'nın ilk ekranda kalması için yoğunluk azaltıldı --- */
 @media(max-width:600px){
-  /* aynı ritim, bir kademe sıkı. Alt boşluk şeridi hesaba katar. */
+  /* aynı ritim, bir kademe sıkı */
   .hero{--sp-eyebrow:8px; --sp-title:16px; --sp-desc:24px; --sp-cta:16px;
-    padding:16px 0 80px;min-height:auto;}
+    padding:16px 0 48px;min-height:auto;}
   .hero-grid{gap:16px;}
   .hero-portrait{width:clamp(150px,20vh,176px);margin-bottom:8px;}
   .hero .eyebrow{font-size:11.5px;letter-spacing:1.5px;}
@@ -640,7 +611,4 @@ body.nav-open{overflow:hidden;}
   .hero-cta{gap:16px;}
   .hero .hero-cta .btn{padding:13px 24px;font-size:14.5px;}
   .hero-note{font-size:12.5px;}
-  /* şerit mobilde biraz daha kompakt; yatay taşma overflow:hidden ile engelli */
-  .serit-wrap{padding:12px 0;}
-  .serit-item .konu{padding:0 18px;font-size:13px;}
 }
