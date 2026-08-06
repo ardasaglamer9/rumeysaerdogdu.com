@@ -507,10 +507,9 @@ body.nav-open{overflow:hidden;}
    böylece blok tek parça okunur. Mobilde daha sıkı bir ölçek devreye girer. */
 .hero{
   --sp-eyebrow: 16px;   /* üst etiket → başlık */
-  --sp-title:   24px;   /* başlık → açıklama  */
-  --sp-desc:    32px;   /* açıklama → etiketler */
-  --sp-tags:    32px;   /* etiketler → butonlar */
-  --sp-cta:     24px;   /* butonlar → güven satırı */
+  --sp-title:   24px;   /* başlık → açıklama */
+  --sp-desc:    32px;   /* açıklama → butonlar */
+  --sp-cta:     16px;   /* butonlar → alt satır */
 }
 
 /* Mobil: tek sütun, ortalanmış (mevcut estetik korunur)
@@ -555,41 +554,60 @@ body.nav-open{overflow:hidden;}
   margin:0 auto var(--sp-desc);}
 @media(min-width:900px){.hero .hero-desc{margin-left:0;}}
 
-/* --- Problem etiketleri: destekleyici, baskın değil --- */
-.hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;
-  margin:0 0 var(--sp-tags);}
-.hero-tags a{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;
-  font-size:13px;font-weight:600;line-height:1.5;color:rgba(255,255,255,.82);
-  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);
-  transition:background .22s,border-color .22s,color .22s;}
-.hero-tags a:hover{background:rgba(255,255,255,.13);border-color:rgba(175,198,188,.5);
-  color:#fff;}
-@media(min-width:900px){.hero-tags{justify-content:flex-start;}}
-
-/* --- CTA: birincil açıkça baskın, ikincil sessiz --- */
-.hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;
+/* --- CTA: tek baskın çağrı --- */
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px;
   margin-bottom:var(--sp-cta);}
 @media(min-width:900px){.hero-cta{justify-content:flex-start;}}
-.hero .hero-cta .btn{padding:14px 28px;font-size:15px;
-  box-shadow:0 8px 24px rgba(94,122,106,.32);
-  opacity:0;animation:fadeUp .8s ease .7s forwards;}
-.hero .hero-cta .btn:hover{box-shadow:0 12px 30px rgba(94,122,106,.4);}
-.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;
-  border-radius:999px;font-weight:600;font-size:14px;color:rgba(255,255,255,.88);
-  border:1px solid rgba(255,255,255,.26);
-  transition:background .22s,border-color .22s,color .22s;
-  opacity:0;animation:fadeUp .8s ease .78s forwards;}
-.btn-ghost:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.5);
-  color:#fff;}
 
-/* --- Güven satırı: butonlara yakın, sessiz --- */
-.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;
-  list-style:none;margin:0;padding:0;
+/* Birincil: dolu adaçayı zemin, koyu yeşil metin */
+.hero .hero-cta .btn{background:var(--sage);color:#173425;
+  font-weight:500;font-size:15px;padding:13px 26px;border-radius:999px;
+  box-shadow:0 8px 24px rgba(94,122,106,.28);
+  opacity:0;animation:fadeUp .8s ease .7s forwards;}
+.hero .hero-cta .btn:hover{background:#9BB3A8;color:#132a1e;
+  box-shadow:0 12px 30px rgba(94,122,106,.36);}
+
+/* İkincil: buton değil, sade metin bağlantısı */
+.hero-link{display:inline-block;font-size:14.5px;font-weight:500;
+  color:rgba(255,255,255,.8);
+  text-decoration:underline;text-underline-offset:4px;
+  text-decoration-color:rgba(255,255,255,.35);
+  transition:color .22s,text-decoration-color .22s;
+  opacity:0;animation:fadeUp .8s ease .78s forwards;}
+.hero-link:hover{color:#fff;text-decoration-color:rgba(255,255,255,.7);}
+
+/* --- Alt satır: tek satır, sade metin --- */
+.hero-note{font-size:13px;color:rgba(255,255,255,.55);margin:0;
   opacity:0;animation:fadeUp .8s ease .88s forwards;}
-@media(min-width:900px){.hero-trust{justify-content:flex-start;}}
-.hero-trust li{display:inline-flex;align-items:center;gap:8px;
-  font-size:13px;font-weight:600;color:rgba(255,255,255,.68);}
-.hero-trust svg{color:rgba(175,198,188,.85);flex:0 0 auto;}
+
+/* =========================================================
+   KAYAN ŞERİT — hero'nun alt kenarı, tam genişlik
+   ========================================================= */
+.serit-wrap{position:absolute;left:0;right:0;bottom:0;z-index:2;
+  overflow:hidden;border-top:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.045);padding:14px 0;}
+.serit-track{display:flex;width:max-content;
+  animation:seritKay 70s linear infinite;}
+.serit-wrap:hover .serit-track{animation-play-state:paused;}
+.serit-item{display:flex;align-items:center;}
+.serit-item .konu{flex:0 0 auto;padding:0 26px;font-size:14px;
+  color:rgba(255,255,255,.72);white-space:nowrap;}
+.serit-item .nokta{flex:0 0 auto;width:4px;height:4px;border-radius:50%;
+  background:rgba(255,255,255,.3);}
+
+@keyframes seritKay{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+/* Hareket hassasiyeti olan ziyaretçi için animasyon tamamen kapanır.
+   Kaygı üzerine çalışan bir sitede bu atlanmamalı. */
+@media(prefers-reduced-motion:reduce){
+  .serit-track{animation:none;}
+}
+
+/* Şerit alt kenarda durduğu için kaydırma oku ile çakışıyordu; ok gizlendi. */
+.scrollcue{display:none;}
 
 /* --- Dekoratif yapraklar: içerikle yarışmasın --- */
 .hero .leaf{opacity:.14;}
@@ -599,10 +617,11 @@ body.nav-open{overflow:hidden;}
 .hero-portrait .ring{opacity:.32;}
 .hero-portrait .leaf-a{opacity:.55;}
 
-/* --- Hero yüksekliği: sonraki bölümden bir parça görünsün --- */
+/* --- Hero yüksekliği: sonraki bölümden bir parça görünsün ---
+   Alt boşluk, alta sabitlenen şeridin (~50px) üstünde nefes bırakacak kadar. */
 @media(min-width:900px){
   .hero{min-height:calc(88vh - 76px);min-height:calc(88svh - 76px);
-    padding:48px 0 88px;}
+    padding:48px 0 112px;}
 }
 
 /* içerik yoğunlaştığı için küçük ekranlarda kaydırma oku gizlenir */
@@ -610,19 +629,18 @@ body.nav-open{overflow:hidden;}
 
 /* --- Mobil: CTA'nın ilk ekranda kalması için yoğunluk azaltıldı --- */
 @media(max-width:600px){
-  /* aynı ritim, bir kademe sıkı */
-  .hero{--sp-eyebrow:8px; --sp-title:16px; --sp-desc:16px; --sp-tags:16px; --sp-cta:16px;
-    padding:16px 0 40px;min-height:auto;}
+  /* aynı ritim, bir kademe sıkı. Alt boşluk şeridi hesaba katar. */
+  .hero{--sp-eyebrow:8px; --sp-title:16px; --sp-desc:24px; --sp-cta:16px;
+    padding:16px 0 80px;min-height:auto;}
   .hero-grid{gap:16px;}
   .hero-portrait{width:clamp(150px,20vh,176px);margin-bottom:8px;}
   .hero .eyebrow{font-size:11.5px;letter-spacing:1.5px;}
   .hero h1{font-size:clamp(25px,6.9vw,30px);}
   .hero .hero-desc{font-size:15px;line-height:1.6;}
-  .hero-tags{gap:6px;}
-  .hero-tags a{padding:6px 12px;font-size:12.5px;}
-  .hero-cta{gap:8px;}
+  .hero-cta{gap:16px;}
   .hero .hero-cta .btn{padding:13px 24px;font-size:14.5px;}
-  .btn-ghost{padding:12px 22px;font-size:14px;}
-  .hero-trust{gap:8px 16px;}
-  .hero-trust li{font-size:12.5px;}
+  .hero-note{font-size:12.5px;}
+  /* şerit mobilde biraz daha kompakt; yatay taşma overflow:hidden ile engelli */
+  .serit-wrap{padding:12px 0;}
+  .serit-item .konu{padding:0 18px;font-size:13px;}
 }
