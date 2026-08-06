@@ -1,0 +1,53 @@
+name: Jekyll sitesini yayınla
+
+# GitHub'ın otomatik ürettiği "pages build and deployment" iş akışının kuyruğu
+# kilitlendiği için yayınlama kendi iş akışımızla yapılıyor. Bu dosya ayrı bir
+# kuyrukta çalışır ve takılı kayıtların arkasında beklemez.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:      # Actions sekmesinden elle de tetiklenebilir
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Kendi grup adımız — otomatik iş akışının kuyruğuyla çakışmasın.
+# Yeni bir çalışma başlarsa eskisi iptal edilir; böylece kuyruk birikmez.
+concurrency:
+  group: jekyll-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+
+      - name: Pages yapılandırması
+        uses: actions/configure-pages@v5
+
+      # GitHub Pages'in kendi github-pages gem setiyle derler.
+      # Repoda Gemfile bulunmasını gerektirmez (bkz. CLAUDE.md).
+      - name: Jekyll ile derle
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Çıktıyı yükle
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Pages'e dağıt
+        id: deployment
+        uses: actions/deploy-pages@v4
