@@ -459,21 +459,3 @@
   .hero-portrait{width:120px;}
   .scrollcue{display:none;}
 }
-
-/* ---- harita: tıkla-yükle görünümü ---- */
-.map-frame{cursor:pointer;}
-.map-frame[data-loaded] {cursor:default;}
-.map-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
-  color:#fff;background:
-    radial-gradient(circle at 30% 25%, rgba(138,163,153,.35), transparent 60%),
-    radial-gradient(circle at 75% 80%, rgba(155,143,166,.28), transparent 60%),
-    rgba(255,255,255,.06);
-  transition:background .25s;}
-.map-frame:hover .map-ph{background:
-    radial-gradient(circle at 30% 25%, rgba(138,163,153,.45), transparent 60%),
-    radial-gradient(circle at 75% 80%, rgba(155,143,166,.35), transparent 60%),
-    rgba(255,255,255,.10);}
-.map-ph svg{color:#CFE0D7;}
-.map-ph span{font-family:'Fraunces',serif;font-size:19px;font-weight:600;}
-.map-ph small{font-size:13px;color:rgba(255,255,255,.75);}
-.map-frame:focus-visible{outline:3px solid #AFC6BC;outline-offset:3px;}
