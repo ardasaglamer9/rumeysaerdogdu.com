@@ -29,10 +29,10 @@ office:
 nav:
   - title: "Hakkımda"
     url: "/#hakkimda"
+  - title: "Terapi Süreci"
+    url: "/#yaklasim"
   - title: "Çalışma Alanları"
     url: "/#alanlar"
-  - title: "Yaklaşım"
-    url: "/#yaklasim"
   - title: "Blog"
     url: "/blog/"
   - title: "İletişim"
