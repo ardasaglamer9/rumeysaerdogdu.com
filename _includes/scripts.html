@@ -44,4 +44,19 @@
     },{rootMargin:'-100px 0px -65% 0px'});
     hs.forEach(function(h){ obs.observe(h); });
   })();
+
+  // Harita: yalnızca tıklanınca yüklenir (açılış hızını korur)
+  (function(){
+    var box=document.getElementById('mapFrame'); if(!box) return;
+    function load(){
+      if(box.dataset.loaded) return; box.dataset.loaded='1';
+      var f=document.createElement('iframe');
+      f.src=box.dataset.src; f.loading='lazy'; f.allowFullscreen=true;
+      f.referrerPolicy='no-referrer-when-downgrade';
+      f.title='Rola Psikoloji — Büyükesat Mah. Uğur Mumcu Cad. No: 61/6, Çankaya / Ankara';
+      box.innerHTML=''; box.appendChild(f); box.removeAttribute('role'); box.removeAttribute('tabindex');
+    }
+    box.addEventListener('click',load);
+    box.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();load();} });
+  })();
 </script>

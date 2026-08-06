@@ -37,7 +37,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+{% assign fonturl = "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Mulish:wght@400;600;700&display=swap" %}
+<link rel="preload" as="style" href="{{ fonturl }}">
+<link rel="stylesheet" href="{{ fonturl }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ fonturl }}"></noscript>
+{% if page.url == "/" %}<link rel="preload" as="image" href="{{ '/rumeysaerdogdu.jpeg' | relative_url }}" fetchpriority="high">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
 {% if page.url == "/" %}

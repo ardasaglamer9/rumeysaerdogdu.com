@@ -64,9 +64,9 @@ layout: default
     {% endif %}
 
     <div class="author">
-      <div class="av"><img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.title }} {{ site.author.name }}" onerror="this.style.display='none';"></div>
+      <div class="av"><img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.title }} {{ site.author.name }}" width="132" height="132" loading="lazy" onerror="this.style.display='none';"></div>
       <div>
-        <h4>{{ site.author.title }} {{ site.author.name }}</h4>
+        <h3>{{ site.author.title }} {{ site.author.name }}</h3>
         <p>{{ site.author.bio }}</p>
         <a href="{{ '/#hakkimda' | relative_url }}">Hakkımda →</a>
       </div>

@@ -17,7 +17,7 @@ permalink: /
     <div class="hero-portrait">
       <div class="ring"></div>
       <div class="photo-frame round">
-        <img class="photo-img" src="{{ '/rumeysaerdogdu.jpeg' | relative_url }}" alt="Klinik Psikolog Rümeysa Erdoğdu" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <img class="photo-img" src="{{ '/rumeysaerdogdu.jpeg' | relative_url }}" alt="Klinik Psikolog Rümeysa Erdoğdu" width="460" height="460" fetchpriority="high" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="photo-ph">
           <svg width="38" height="38" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           <span><b>rumeysaerdogdu.jpeg</b></span>
@@ -97,7 +97,7 @@ permalink: /
 <section class="sec-soft">
   <div class="wrap reveal">
     <div class="photo-frame wide">
-      <img class="photo-img" src="{{ '/rumeysaerdogduofis.jpeg' | relative_url }}" alt="Rola Psikoloji çalışma alanı, Ankara" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <img class="photo-img" src="{{ '/rumeysaerdogduofis.jpeg' | relative_url }}" alt="Rola Psikoloji çalışma alanı, Ankara" width="1024" height="448" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
       <div class="photo-ph">
         <svg width="46" height="46" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.4"/><path d="M4 18l5-4 4 3 3-2 4 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span>Fotoğraf<br><b>rumeysaerdogduofis.jpeg</b></span>
@@ -206,12 +206,13 @@ permalink: /
     </a>
 
     <div class="map-block reveal">
-      <div class="map-frame">
-        <iframe
-          src="https://maps.google.com/maps?q=Rola%20Psikoloji%2C%20B%C3%BCy%C3%BCkesat%20Mah.%20U%C4%9Fur%20Mumcu%20Cad.%20No%3A61/6%2C%20%C3%87ankaya%2C%20Ankara&hl=tr&z=16&output=embed"
-          title="Rola Psikoloji — Büyükesat Mah. Uğur Mumcu Cad. No: 61/6, Çankaya / Ankara"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen></iframe>
+      <div class="map-frame" id="mapFrame" data-src="https://maps.google.com/maps?q=Rola%20Psikoloji%2C%20B%C3%BCy%C3%BCkesat%20Mah.%20U%C4%9Fur%20Mumcu%20Cad.%20No%3A61/6%2C%20%C3%87ankaya%2C%20Ankara&hl=tr&z=16&output=embed" role="button" tabindex="0"
+           aria-label="Haritayı yükle — Rola Psikoloji, Çankaya / Ankara">
+        <div class="map-ph">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span>Haritayı görüntüle</span>
+          <small>Tıklayınca Google Haritalar yüklenir</small>
+        </div>
       </div>
       <div class="map-info">
         <div class="map-addr">
