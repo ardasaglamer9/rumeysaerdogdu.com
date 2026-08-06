@@ -55,4 +55,5 @@ defaults:
 
 exclude:
   - KURULUM.md
+  - CLAUDE.md
   - vendor
