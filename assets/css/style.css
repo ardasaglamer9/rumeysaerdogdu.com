@@ -413,7 +413,14 @@
 .brand{display:flex;align-items:center;gap:11px;}
 .brand-logo{height:38px;width:auto;display:block;flex:0 0 auto;}
 .footer-logo{height:54px;width:auto;display:block;margin-bottom:14px;}
-@media(max-width:520px){.brand span{display:none;} .brand-logo{height:34px;}}
+@media(max-width:600px){
+  .brand{gap:9px;font-size:18px;}
+  .brand-logo{height:32px;}
+}
+@media(max-width:380px){
+  .brand{font-size:16px;gap:8px;}
+  .brand-logo{height:28px;}
+}
 
 
 /* ---- YAPRAK MOTİFLERİ ---- */
