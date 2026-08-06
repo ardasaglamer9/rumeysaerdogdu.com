@@ -590,6 +590,31 @@ body.nav-open{overflow:hidden;}
 .hero-portrait .ring{opacity:.32;}
 .hero-portrait .leaf-a{opacity:.55;}
 
+/* =========================================================
+   METİN İÇİ VURGU
+   Kalın yazı + kelimenin arkasına fosforlu kalem izi.
+   Altın, bu tasarımda zaten vurgu rengi (hero'daki kalem çizgisi).
+   Çizgi harflerin alt kısmından başlar; üstü açık kalınca metin
+   boğulmuyor, arkadan geçen bir iz gibi duruyor.
+   box-decoration-break: satır sonunda bölünse de iz her parçada sürer.
+   ========================================================= */
+.vurgu{
+  font-weight:600;
+  color:var(--forest-deep);
+  /* İzin alt sınırı da belirtiliyor; yoksa satır kutusunun dibine kadar
+     uzayıp metinden kopuyor ve altçizgi gibi görünüyor. */
+  background-image:linear-gradient(to bottom,
+    transparent 50%, rgba(216,166,76,.38) 50%,
+    rgba(216,166,76,.38) 86%, transparent 86%);
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+/* koyu zeminli bölümlerde (sec-forest) aynı iz daha açık tonda */
+.sec-forest .vurgu{color:#fff;
+  background-image:linear-gradient(to bottom,
+    transparent 50%, rgba(216,166,76,.45) 50%,
+    rgba(216,166,76,.45) 86%, transparent 86%);}
+
 /* --- Hero yüksekliği: sonraki bölümden bir parça görünsün --- */
 @media(min-width:900px){
   .hero{min-height:calc(88vh - 76px);min-height:calc(88svh - 76px);
