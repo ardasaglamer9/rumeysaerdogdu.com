@@ -539,18 +539,18 @@ body.nav-open{overflow:hidden;}
 /* --- Üst etiket ---
    Metin HTML'de zaten büyük harfle yazılı; otomatik büyütme kapalı.
    Sebep: text-transform Türkçe kuralıyla "Online" → "ONLİNE" yapıyordu. */
-.hero .eyebrow{font-size:12.5px;letter-spacing:2px;color:#B9CDC2;font-weight:700;
+.hero .eyebrow{font-size:13.5px;letter-spacing:2.2px;color:#BED2C7;font-weight:700;
   text-transform:none;margin-bottom:var(--sp-eyebrow);}
 
 /* --- Başlık: hero'nun en baskın öğesi ---
    max-width, başlığın 2-3 dengeli satıra sarmasını sağlar. */
-.hero h1{font-size:clamp(30px,4.4vw,46px);line-height:1.14;
+.hero h1{font-size:clamp(32px,4.9vw,54px);line-height:1.12;
   letter-spacing:-0.022em;margin-bottom:var(--sp-title);}
-@media(min-width:900px){.hero h1{max-width:11.5em;}}
+@media(min-width:900px){.hero h1{max-width:11em;}}
 
 /* --- Açıklama: ~60-65 karakterlik satır --- */
-.hero .hero-desc{font-size:16.5px;line-height:1.65;
-  color:rgba(255,255,255,.86);max-width:52ch;
+.hero .hero-desc{font-size:18px;line-height:1.65;
+  color:rgba(255,255,255,.88);max-width:52ch;
   margin:0 auto var(--sp-desc);}
 @media(min-width:900px){.hero .hero-desc{margin-left:0;}}
 
@@ -561,15 +561,15 @@ body.nav-open{overflow:hidden;}
 
 /* Birincil: dolu adaçayı zemin, koyu yeşil metin */
 .hero .hero-cta .btn{background:var(--sage);color:#173425;
-  font-weight:500;font-size:15px;padding:13px 26px;border-radius:999px;
+  font-weight:500;font-size:16px;padding:15px 30px;border-radius:999px;
   box-shadow:0 8px 24px rgba(94,122,106,.28);
   opacity:0;animation:fadeUp .8s ease .7s forwards;}
 .hero .hero-cta .btn:hover{background:#9BB3A8;color:#132a1e;
   box-shadow:0 12px 30px rgba(94,122,106,.36);}
 
 /* İkincil: buton değil, sade metin bağlantısı */
-.hero-link{display:inline-block;font-size:14.5px;font-weight:500;
-  color:rgba(255,255,255,.8);
+.hero-link{display:inline-block;font-size:15.5px;font-weight:500;
+  color:rgba(255,255,255,.82);
   text-decoration:underline;text-underline-offset:4px;
   text-decoration-color:rgba(255,255,255,.35);
   transition:color .22s,text-decoration-color .22s;
@@ -577,7 +577,8 @@ body.nav-open{overflow:hidden;}
 .hero-link:hover{color:#fff;text-decoration-color:rgba(255,255,255,.7);}
 
 /* --- Alt satır: tek satır, sade metin --- */
-.hero-note{font-size:13px;color:rgba(255,255,255,.55);margin:0;
+/* .hero p kuralı özgüllük olarak daha güçlü olduğu için .hero ile niteleniyor */
+.hero .hero-note{font-size:14px;color:rgba(255,255,255,.58);margin:0;
   opacity:0;animation:fadeUp .8s ease .88s forwards;}
 
 
@@ -605,10 +606,11 @@ body.nav-open{overflow:hidden;}
     padding:16px 0 48px;min-height:auto;}
   .hero-grid{gap:16px;}
   .hero-portrait{width:clamp(150px,20vh,176px);margin-bottom:8px;}
-  .hero .eyebrow{font-size:11.5px;letter-spacing:1.5px;}
-  .hero h1{font-size:clamp(25px,6.9vw,30px);}
-  .hero .hero-desc{font-size:15px;line-height:1.6;}
+  .hero .eyebrow{font-size:12px;letter-spacing:1.6px;}
+  .hero h1{font-size:clamp(27px,7.4vw,33px);}
+  .hero .hero-desc{font-size:16px;line-height:1.6;}
   .hero-cta{gap:16px;}
-  .hero .hero-cta .btn{padding:13px 24px;font-size:14.5px;}
-  .hero-note{font-size:12.5px;}
+  .hero .hero-cta .btn{padding:14px 26px;font-size:15px;}
+  .hero-link{font-size:15px;}
+  .hero .hero-note{font-size:13.5px;}
 }
