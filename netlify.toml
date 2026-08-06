@@ -1,0 +1,9 @@
+# Netlify derleme ayarları.
+# Site Jekyll ile üretilir; çıktı _site klasörüne yazılır.
+
+[build]
+  publish = "_site"
+  command = "bundle exec jekyll build"
+
+[build.environment]
+  JEKYLL_ENV = "production"
