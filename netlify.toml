@@ -8,10 +8,18 @@
 [build.environment]
   JEKYLL_ENV = "production"
 
-# Netlify'ın "Pretty URLs" özelliği kapalı.
-# Açıkken sondaki eğik çizgiyi kırpıyor ve /blog/ adresini /blog'a çeviriyor;
-# orada da r-blog.html'den gelen /blog.html yönlendirmesiyle çakışıp
-# sonsuz döngü oluşuyordu. Kapalıyken adresler GitHub Pages'teki gibi davranır:
-# /blog/ gerçek sayfayı, /blog.html eski adres yönlendirmesini verir.
-[build.processing.html]
-  pretty_urls = false
+# /blog adresi doğrudan blog sayfasını göstersin.
+#
+# Neden gerekli: derleme çıktısında hem blog/index.html (gerçek sayfa) hem de
+# blog.html (r-blog.html'den gelen eski adres yönlendirmesi) var. Netlify
+# sondaki eğik çizgiyi kırptığı için /blog/ adresi /blog'a düşüyor ve orada
+# blog.html seçiliyordu; o da /blog/ adresine yönlendirdiği için sonsuz
+# döngü oluşuyordu.
+#
+# status = 200 -> yönlendirme değil, doğrudan o dosyayı sunar (adres değişmez)
+# force = true -> aynı yolda dosya bulunsa bile bu kural öncelikli olur
+[[redirects]]
+  from = "/blog"
+  to = "/blog/index.html"
+  status = 200
+  force = true
