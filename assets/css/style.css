@@ -589,9 +589,9 @@ body.nav-open{overflow:hidden;}
   .hero .eyebrow{font-size:11.5px;letter-spacing:1.5px;margin-bottom:8px;}
   .hero h1{font-size:clamp(25px,6.9vw,30px);margin-bottom:10px;}
   .hero .hero-desc{font-size:14.5px;line-height:1.55;margin-bottom:12px;}
-  .hero-tags{gap:7px;margin-bottom:14px;}
-  .hero-tags a{padding:7px 13px;font-size:13px;}
-  .hero-cta{gap:10px;margin-bottom:18px;}
+  .hero-tags{gap:6px;margin-bottom:12px;}
+  .hero-tags a{padding:6px 12px;font-size:12.5px;}
+  .hero-cta{gap:9px;margin-bottom:16px;}
   .hero-cta .btn,.btn-ghost{padding:14px 26px;font-size:14.5px;}
   .hero-trust{gap:7px 16px;}
   .hero-trust li{font-size:13.5px;}
