@@ -60,8 +60,10 @@ title: "Yazı Başlığı"
 description: "Google'da görünecek 150 karakterlik açıklama."
 keywords: "anahtar, kelimeler"
 category_name: "Kaygı"
-thumb: sarmal          # kart deseni: halkalar, sarmal veya dugum (yazmazsanız yaprak çıkar)
+thumb: sarmal          # kart deseni: halkalar, sarmal, dugum veya dalga (yazmazsanız yaprak çıkar)
 thumb_color: t2        # kart rengi: t1 yeşil, t2 altın, t3 lila, t4 kiremit (yazmazsanız sırayla)
+image: "/gorsel.jpg"   # yazı başında görünecek fotoğraf; dosyayı kök klasöre koyun (1280x720 önerilir)
+image_alt: "Tarif"     # görselin kısa sözlü tarifi
 permalink: /yazi-adi/
 excerpt_text: "Blog listesindeki kartta görünecek kısa özet."
 summary: "Yazının başındaki Özet kutusunda görünecek metin."

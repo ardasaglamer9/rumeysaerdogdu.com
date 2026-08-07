@@ -65,8 +65,10 @@ seo_title: "Arama sonucunda görünecek başlık (opsiyonel)"
 description: "Google'da görünecek ~150 karakterlik açıklama."
 keywords: "anahtar, kelimeler"
 category_name: "Şema Terapi"        # kart etiketi / breadcrumb
-thumb: sarmal                       # blog kartı deseni: halkalar | sarmal | dugum (boşsa yaprak)
+thumb: sarmal                       # blog kartı deseni: halkalar | sarmal | dugum | dalga (boşsa yaprak)
 thumb_color: t2                     # kart zemini: t1 yeşil | t2 altın | t3 lila | t4 kiremit (boşsa sırayla)
+image: "/gorsel-adi.jpg"            # yazı başı görseli, 1280x720, kökte (opsiyonel; paylaşım kartında da kullanılır)
+image_alt: "Görselin kısa tarifi"   # görsel varsa erişilebilirlik için
 permalink: /yazi-adi/               # adres — .html'siz
 excerpt_text: "Blog listesindeki kartta görünecek kısa özet."
 summary: "Yazının başındaki Özet kutusunda görünecek metin."

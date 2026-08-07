@@ -11,6 +11,12 @@ layout: default
 {% include banner.html eyebrow=page.category_name title=page.title meta=metaline %}
 
 <div class="article-wrap">
+  {% if page.image %}
+  <figure class="post-hero reveal">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" width="1280" height="720" fetchpriority="high">
+  </figure>
+  {% endif %}
+
   <div class="breadcrumb reveal"><a href="{{ '/' | relative_url }}">Ana sayfa</a> &nbsp;›&nbsp; <a href="{{ '/blog/' | relative_url }}">Blog</a></div>
 
   {% if page.summary %}
