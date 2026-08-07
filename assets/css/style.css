@@ -598,6 +598,20 @@ body.nav-open{overflow:hidden;}
 .hero-portrait .ring{opacity:.32;}
 .hero-portrait .leaf-a{opacity:.55;}
 
+/* --- Makale içi bağlantılar ---
+   Genel kural (a{color:inherit;text-decoration:none}) bağlantıları düz
+   metinle aynı gösteriyordu; yazı gövdesinde ayırt edilemiyorlardı.
+   Yalnızca paragraf/liste içindekiler hedefleniyor — makaledeki buton,
+   ilgili yazılar ve yazar kutusu bağlantıları kendi stilini korur. */
+.article p a, .article ul li a, .postfaq .a a{
+  color:var(--sage-dark);font-weight:600;
+  text-decoration:underline;text-underline-offset:3px;
+  text-decoration-thickness:1.5px;
+  text-decoration-color:rgba(94,122,106,.45);
+  transition:color .2s,text-decoration-color .2s;}
+.article p a:hover, .article ul li a:hover, .postfaq .a a:hover{
+  color:var(--forest);text-decoration-color:var(--forest);}
+
 /* --- Yazı başı görseli (front matter: image) --- */
 .post-hero{max-width:720px;margin:0 auto 44px;}
 .post-hero img{width:100%;height:auto;display:block;border-radius:22px;
