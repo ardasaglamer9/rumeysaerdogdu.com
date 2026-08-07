@@ -3,7 +3,13 @@
 
 {% if page.seo_title %}{% assign ttl = page.seo_title %}{% else %}{% assign ttl = page.title %}{% endif %}
 {% if page.url == "/" %}<title>{{ site.home_title }}</title>
-{% else %}<title>{{ ttl }}{% unless page.no_suffix %} | {{ site.author.title }} {{ site.author.name }}{% endunless %}</title>{% endif %}
+{%- comment -%}
+  Yazılarda kısa son ek: uzun ek ("Klinik Psikolog ...") başlığı 78-83
+  karaktere taşıyor ve Google ~60'tan sonrasını kesiyordu. Marka anahtar
+  kelimesi ana sayfa başlığında zaten var; kısa sayfalar (Blog, İletişim)
+  uzun ekle de sınırın altında kaldığı için onlara dokunulmadı.
+{%- endcomment -%}
+{% else %}<title>{{ ttl }}{% unless page.no_suffix %}{% if page.layout == 'post' %} | {{ site.author.name }}{% else %} | {{ site.author.title }} {{ site.author.name }}{% endif %}{% endunless %}</title>{% endif %}
 
 {% if page.description %}{% assign desc = page.description %}{% else %}{% assign desc = site.description %}{% endif %}
 <meta name="description" content="{{ desc }}">
@@ -84,6 +90,8 @@
  "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
  "dateModified":"{{ page.date | date: '%Y-%m-%d' }}",
  "articleSection":{{ page.category_name | jsonify }},
+ "url":"{{ page.url | absolute_url }}",
+ "image":{"@type":"ImageObject","url":"{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/og-image.png' | absolute_url }}{% endif %}","width":{% if page.image %}1280{% else %}1200{% endif %},"height":{% if page.image %}720{% else %}630{% endif %}},
  "mainEntityOfPage":{"@type":"WebPage","@id":"{{ page.url | absolute_url }}"},
  "author":{"@type":"Person","name":"{{ site.author.name }}","jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/"},
  "publisher":{"@type":"Person","name":"{{ site.author.title }} {{ site.author.name }}","url":"{{ site.url }}/"}},

@@ -1,6 +1,6 @@
 ---
 title: "Çocukluk Anıları ve Baş Etme: Zor Anıları Neden Farklı Hatırlarız?"
-seo_title: "Zor Çocukluk Anılarını Neden Farklı Hatırlarız?"
+seo_title: "Çocukluk Anıları ve Baş Etme"
 description: "Boyun eğerek baş etme eğilimi güçlendikçe zor çocukluk anıları daha dağınık hatırlanabiliyor. Yüksek lisans tezimin bulgularını sade bir dille anlatıyorum."
 keywords: "çocukluk anıları, otobiyografik bellek, baş etme biçimleri, teslim olma, şema terapi, anı bütünlüğü, klinik psikoloji tezi"
 category_name: "Araştırma"
@@ -11,6 +11,15 @@ image_alt: "Rümeysa Erdoğdu'nun Başkent Üniversitesi Klinik Psikoloji Yükse
 permalink: /cocukluk-anilari-ve-bas-etme/
 excerpt_text: "Zor anıları kimimiz toparlı bir hikâye gibi, kimimiz dağınık parçalar hâlinde hatırlar. Tezimde baş etme biçimleriyle bu fark arasındaki bağa baktım."
 summary: "Yüksek lisans tezimde, şema terapinin tanımladığı baş etme biçimleriyle çocukluk anılarının nasıl hatırlandığı arasındaki ilişkiye baktım. 120 genç yetişkinle yürüttüğüm çalışmada, boyun eğerek baş etme eğilimi güçlü olan kişilerin olumsuz çocukluk anılarını daha dağınık ve bütünlüğü zayıf biçimde anlattığını gördüm. Bu yazıda çalışmanın sorusunu, yöntemini ve bulgularını sade bir dille aktarıyorum."
+faq:
+  - q: "Baş etme biçimimiz anılarımızı gerçekten etkiliyor mu?"
+    a: "Çalışmamda, boyun eğerek baş etme eğilimi güçlü olan kişilerin olumsuz çocukluk anılarını daha dağınık ve bütünlüğü zayıf biçimde anlattığını gördüm. Yine de bulduğum bağ küçük ve tek bir çalışmaya dayanıyor; bir kural değil, üzerine düşünmeye değer bir ipucu."
+  - q: "Çalışma nasıl yürütüldü?"
+    a: "18–26 yaş arası 120 genç yetişkinden, çocukluklarına ait olumsuz bir anıyı yazıyla anlatmalarını istedim. Ayrıca zorluklarla nasıl baş ettiklerini ölçen bir anket doldurdular; sonra bu ikisi arasında bir bağ olup olmadığına baktım."
+  - q: "Kaçınma ve aşırı telafi için de aynı bağ geçerli mi?"
+    a: "Bu çalışmada kaçınma ve aşırı telafi ile anı bütünlüğü arasında net bir bağ çıkmadı. Anlamlı ilişki yalnızca boyun eğerek baş etme eğiliminde görüldü."
+  - q: "Bir anıyı dağınık hatırlamak kötü bir şey mi?"
+    a: "Hayır; bu bir yetersizlik işareti değil. Bazen bir anıyı toparlayamıyor oluşumuz, onu unutmuş olmamızdan değil, onunla nasıl baş ettiğimizden kaynaklanıyor olabilir. Hatırlama biçimi, terapide birlikte ve güvenli bir şekilde üzerinde çalışılabilecek bir şeydir."
 ---
 
 Hepimizin geçmişinde hatırlaması zor anlar var. Ama ilginç olan şu: bu anıları hepimiz aynı şekilde hatırlamıyoruz. Kimimiz aynı olayı başı sonu belli, toparlı bir hikâye gibi anlatır. Kimimiz içinse o olay dağınık, kopuk, "bir türlü toparlayamadığım" bir şey olarak kalır.
@@ -19,7 +28,7 @@ Peki bu fark nereden geliyor? Yüksek lisans tezimde tam olarak bu soruya baktı
 
 ## Zorlukla herkesin baş etme yolu farklı
 
-Kötü bir şey yaşadığımızda ya da canımız acıdığında hepimiz bir şekilde başa çıkarız. Ama yollarımız birbirinden farklıdır. Şema terapi bu yolları üç ana başlıkta toplar:
+Kötü bir şey yaşadığımızda ya da canımız acıdığında hepimiz bir şekilde başa çıkarız. Ama yollarımız birbirinden farklıdır. [Şema terapi]({{ '/sema-terapi-nedir/' | relative_url }}) bu yolları üç ana başlıkta toplar:
 
 - **Teslim olmak:** "Zaten hep böyle olur, benim elimden bir şey gelmez" deyip boyun eğmek, kabullenmek.
 - **Kaçınmak:** Konuyu değiştirmek, düşünmemeye çalışmak, hatta hatırlamaktan bile uzak durmak.
@@ -45,7 +54,7 @@ Yani bir kişide "zaten hep böyle olur, kabulleneyim gitsin" tavrı ne kadar ba
 
 Aslında bu, üzerine düşününce mantıklı: Bir olayı baştan sona anlamlı, bir ana fikri olan ve "bu olay bende ne bıraktı" sorusuna cevap veren bir bütün hâlinde anlatabilmek, ona kendi gözünden bakıp "Bu neydi? Bana ne yaşattı? Benim için ne anlama geliyor?" diye biraz uğraşmayı gerektirir. Baştan boyun eğip kenara çekildiğinizde ise o uğraş belki de hiç başlamıyor.
 
-Diğer baş etme yolları olan kaçınma ve aşırı telafi için net bir bağ çıkmadı. Ve dürüst olmak gerekirse şunu da eklemeliyim: Bulduğum bağ küçük ve tek bir çalışmaya dayanıyor. Bu bir kural değil; üzerine düşünmeye değer bir ipucu.
+Diğer baş etme yolları olan [kaçınma]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) ve aşırı telafi için net bir bağ çıkmadı. Ve dürüst olmak gerekirse şunu da eklemeliyim: Bulduğum bağ küçük ve tek bir çalışmaya dayanıyor. Bu bir kural değil; üzerine düşünmeye değer bir ipucu.
 
 ## Peki bu neden önemli?
 

@@ -1,6 +1,6 @@
 ---
 title: "Şema Terapi Nedir? Tekrar Eden Örüntülerimizi Anlamak"
-seo_title: "Şema Terapi Nedir? Tekrar Eden Örüntüleri Anlamak"
+seo_title: "Şema Terapi Nedir? Tekrar Eden Örüntüler"
 description: "Şema terapi nedir, şemalar nasıl oluşur, baş etme biçimleri ve modlar ne anlama gelir? Klinik psikolog gözünden sade ve kapsamlı bir anlatım."
 keywords: "şema terapi, şema terapi nedir, erken dönem uyum bozucu şema, baş etme biçimleri, şema modları, sağlıklı yetişkin, Ankara klinik psikolog"
 category_name: "Şema Terapi"
@@ -114,7 +114,7 @@ Bütün bu yolların ortak hedefi tektir: kişinin temel duygusal ihtiyaçların
 
 Nasıl ilerleneceği ve hangi konularla çalışılacağı kişiye göre değişir; en doğru cevap ilk görüşmelerde birlikte oluşur. Yaklaşımımı [Yaklaşım bölümünde]({{ '/#yaklasim' | relative_url }}), çalıştığım konuları ise [Çalışma Alanları'nda]({{ '/#alanlar' | relative_url }}) bulabilirsiniz.
 
-Kaygının bu çerçevede nasıl ele alındığını [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}), ilişkilerdeki tekrarları ise [ilişki örüntüleri yazısında]({{ '/iliskilerde-tekrarlayan-oruntuler/' | relative_url }}) anlatıyorum.
+Kaygının bu çerçevede nasıl ele alındığını [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}), ilişkilerdeki tekrarları ise [ilişki örüntüleri yazısında]({{ '/iliskilerde-tekrarlayan-oruntuler/' | relative_url }}) anlatıyorum. Baş etme biçimlerinin çocukluk anılarını nasıl hatırladığımızla ilişkisine ise [tez çalışmamı anlattığım yazıda]({{ '/cocukluk-anilari-ve-bas-etme/' | relative_url }}) bakıyorum.
 
 ## Kaynaklar
 
