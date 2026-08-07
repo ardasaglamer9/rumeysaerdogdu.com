@@ -14,7 +14,12 @@ author:
   photo: "rumeysaerdogdu2.jpeg"
 
 contact:
-  email: "info@rumeysaerdogdu.com"
+  email: "info@rumeysaerdogdu.com"              # genel iletişim
+  appointment_email: "info@rolapsikoloji.com"   # randevu (Rola Psikoloji)
+  phone: "0312 447 17 02"                       # görünen hâli
+  phone_link: "03124471702"                     # tel: bağlantısı için
+  whatsapp: "0 533 394 71 35"                   # görünen hâli
+  whatsapp_link: "905333947135"                 # wa.me bağlantısı için
   instagram_url: "https://www.instagram.com/pskrumeysaerdogdu/"
   instagram_handle: "@pskrumeysaerdogdu"
 
@@ -24,6 +29,7 @@ office:
   locality: "Çankaya"
   region: "Ankara"
   country: "TR"
+  maps_url: "https://maps.app.goo.gl/UAJ4cdpdgrw81XXs9"
 
 # ---- Menü (bir kez düzenle, her sayfada değişir) ----
 nav:
@@ -36,7 +42,7 @@ nav:
   - title: "Blog"
     url: "/blog/"
   - title: "İletişim"
-    url: "/#iletisim"
+    url: "/iletisim/"
 
 # ---- Jekyll ayarları ----
 markdown: kramdown

@@ -591,6 +591,50 @@ body.nav-open{overflow:hidden;}
 .hero-portrait .leaf-a{opacity:.55;}
 
 /* =========================================================
+   ROLA PSİKOLOJİ — bağlılık işareti (yalnızca footer)
+   Üst menüye girmez; ana kimlik Rümeysa Erdoğdu'da kalır.
+   ========================================================= */
+.footer-bottom{display:flex;flex-wrap:wrap;align-items:center;
+  justify-content:space-between;gap:20px 32px;}
+.footer-copy{flex:0 0 auto;}
+
+.rola-affil{display:flex;align-items:center;gap:12px;flex:0 1 auto;}
+.rola-affil span{font-size:13px;color:rgba(255,255,255,.62);line-height:1.4;}
+
+/* Logo iki renkli (#0e5192 mavi, #b8173a kırmızı). Gri tonlamada ikisi de
+   koyu griye düşüyor ve koyu yeşil zeminde kayboluyor; parlaklık artırılarak
+   okunur hale getiriliyor. Sonuç tek renk kalır, palete çarpmaz. */
+.rola-logo{height:26px;width:auto;display:block;flex:0 0 auto;
+  filter:grayscale(100%) brightness(3);
+  opacity:.85;}
+
+/* Footer'daki İletişim / Randevu etiketleri */
+.footer-etiket{display:block;color:rgba(255,255,255,.55);font-size:12px;
+  font-weight:600;letter-spacing:.4px;margin-bottom:2px;}
+
+@media(max-width:760px){
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:18px;}
+}
+
+/* --- İletişim sayfası: kanal listesi (açık zemin) --- */
+.iletisim-liste{list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:1fr 1fr;gap:0 40px;}
+@media(max-width:680px){.iletisim-liste{grid-template-columns:1fr;}}
+.iletisim-liste li{display:flex;gap:16px;align-items:flex-start;
+  padding:22px 0;border-bottom:1px solid var(--line);}
+.iletisim-liste li svg{flex:0 0 auto;margin-top:3px;color:var(--sage-dark);}
+.iletisim-liste li div{display:flex;flex-direction:column;gap:3px;min-width:0;}
+.il-etiket{font-size:12.5px;font-weight:700;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--sage-dark);}
+.iletisim-liste a{font-size:17px;color:var(--forest);font-weight:600;
+  text-decoration:underline;text-underline-offset:4px;
+  text-decoration-color:rgba(94,122,106,.35);
+  transition:color .2s,text-decoration-color .2s;word-break:break-word;}
+.iletisim-liste a:hover{color:var(--forest-deep);
+  text-decoration-color:var(--sage-dark);}
+.il-not{font-size:14.5px;color:var(--ink-soft);line-height:1.5;}
+
+/* =========================================================
    METİN İÇİ VURGU
    Kalın yazı + kelimenin arkasına fosforlu kalem izi.
    Altın, bu tasarımda zaten vurgu rengi (hero'daki kalem çizgisi).
