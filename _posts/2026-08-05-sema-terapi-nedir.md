@@ -4,6 +4,8 @@ seo_title: "Şema Terapi Nedir? Tekrar Eden Örüntüleri Anlamak"
 description: "Şema terapi nedir, şemalar nasıl oluşur, baş etme biçimleri ve modlar ne anlama gelir? Klinik psikolog gözünden sade ve kapsamlı bir anlatım."
 keywords: "şema terapi, şema terapi nedir, erken dönem uyum bozucu şema, baş etme biçimleri, şema modları, sağlıklı yetişkin, Ankara klinik psikolog"
 category_name: "Şema Terapi"
+thumb: halkalar
+thumb_color: t1
 permalink: /sema-terapi-nedir/
 excerpt_text: "Şemalar nasıl oluşur, zorlandığımızda hangi baş etme biçimleri devreye girer ve bu örüntüleri yargılamadan tanımak neye alan açar? Yaklaşımın temellerine sade bir bakış."
 summary: "Şema terapi; çocuklukta karşılanmayan temel duygusal ihtiyaçlardan doğan ve yaşam boyu tekrar eden duygu, düşünce ve davranış örüntülerini anlamaya odaklanan bütüncül bir yaklaşımdır. Bu yazıda şemaların nasıl oluştuğunu, beş temel duygusal ihtiyacı, şema alanlarını, zorlandığımızda devreye giren üç baş etme biçimini (teslim olma, kaçınma, aşırı telafi), mod kavramını ve terapi sürecinin nasıl ilerlediğini sade bir dille ele alıyorum."

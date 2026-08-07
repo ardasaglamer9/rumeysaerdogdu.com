@@ -4,6 +4,8 @@ seo_title: "Kaygı Neden Tekrar Eder? Altındaki Örüntüler"
 description: "Kaygı neden geçmiyor ve neden aynı konularda tekrar ediyor? Anksiyetenin altındaki şemalar, kaçınmanın rolü ve daha esnek bir ilişki kurmak üzerine."
 keywords: "kaygı, anksiyete, kaygı neden tekrar eder, kaygıyla baş etme, kaçınma, şema terapi, kaygı ve şema, Ankara psikolog"
 category_name: "Kaygı"
+thumb: sarmal
+thumb_color: t2
 permalink: /kaygi-neden-tekrar-eder/
 excerpt_text: "Kaygı neden geçmiyor ve neden aynı temalarda tekrar ediyor? Altındaki örüntüler, kaçınmanın rolü ve kaygıyla daha esnek bir ilişki kurmak üzerine."
 summary: "Kaygı çoğu zaman tek bir olayla ilgili değildir; belirli temalarda tekrar tekrar devreye giren bir örüntünün parçasıdır. Bu yazıda kaygının ne işe yaradığını, hangi şemaların kaygıyı beslediğini, kaçınmanın ve aşırı hazırlanmanın kaygıyı nasıl sürdürdüğünü ve kaygıyla daha esnek bir ilişki kurmanın ne anlama geldiğini ele alıyorum."
