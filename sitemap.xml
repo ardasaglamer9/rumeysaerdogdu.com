@@ -4,24 +4,36 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- comment -%}
+    Sayfalar otomatik listelenir; yeni sayfa açınca buraya elle eklemek
+    gerekmez. Dışarıda kalanlar: sitemap: false işaretli olanlar
+    (r-*.html yönlendirmeleri) ve uzantılı adresler (404.html,
+    robots.txt, sitemap.xml'in kendisi).
+  {%- endcomment -%}
+  {%- for page in site.pages %}
+    {%- if page.sitemap == false %}{% continue %}{% endif %}
+    {%- if page.url contains '.' %}{% continue %}{% endif %}
   <url>
-    <loc>{{ site.url }}/</loc>
+    <loc>{{ page.url | absolute_url }}</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    {%- if page.url == "/" %}
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/blog/</loc>
-    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    {%- elsif page.url == "/blog/" %}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    {%- else %}
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    {%- endif %}
   </url>
-  {% for post in site.posts %}
+  {%- endfor %}
+  {%- for post in site.posts %}
   <url>
     <loc>{{ post.url | absolute_url }}</loc>
     <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  {% endfor %}
+  {%- endfor %}
 </urlset>
