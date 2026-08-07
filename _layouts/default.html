@@ -8,7 +8,7 @@
 <main id="icerik">
 {{ content }}
 </main>
-{% include footer.html %}
+{% unless page.hide_footer %}{% include footer.html %}{% endunless %}
 {% include scripts.html %}
 </body>
 </html>
