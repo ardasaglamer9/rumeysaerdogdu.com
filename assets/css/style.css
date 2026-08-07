@@ -577,6 +577,14 @@ body.nav-open{overflow:hidden;}
 .hero-link:hover{color:#fff;text-decoration-color:rgba(255,255,255,.7);}
 
 /* --- Alt satır: tek satır, sade metin --- */
+/* --- Konum işareti: Rola Psikoloji (iletişim sayfasına gider) --- */
+.hero-loc{display:inline-flex;align-items:center;gap:7px;margin-top:12px;
+  font-size:13.5px;font-weight:600;color:rgba(255,255,255,.66);
+  transition:color .2s;
+  opacity:0;animation:fadeUp .8s ease .96s forwards;}
+.hero-loc svg{color:var(--sage);flex:0 0 auto;}
+.hero-loc:hover{color:#fff;}
+
 /* .hero p kuralı özgüllük olarak daha güçlü olduğu için .hero ile niteleniyor */
 .hero .hero-note{font-size:14px;color:rgba(255,255,255,.58);margin:0;
   opacity:0;animation:fadeUp .8s ease .88s forwards;}
