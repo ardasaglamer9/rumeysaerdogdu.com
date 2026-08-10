@@ -79,6 +79,15 @@
   .c1{background:var(--sage-dark);} .c2{background:var(--clay);} .c3{background:var(--gold);color:var(--forest-deep);}
   .c4{background:var(--lav);} .c5{background:var(--forest);} .c6{background:var(--sage);color:var(--forest-deep);}
 
+  /* sessions */
+  .session-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;}
+  @media(max-width:700px){.session-cards{grid-template-columns:1fr;}}
+  .scard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px 34px;transition:transform .3s,box-shadow .3s;}
+  .scard:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(34,49,42,.12);}
+  .scard .ic{width:54px;height:54px;border-radius:15px;background:var(--cream);display:flex;align-items:center;justify-content:center;color:var(--sage-dark);margin-bottom:22px;}
+  .scard h3{font-size:22px;color:var(--forest);margin-bottom:10px;}
+  .scard p{color:var(--ink-soft);font-size:16px;}
+
   /* approach steps */
   .steps{position:relative;z-index:1;max-width:660px;margin:56px auto 0;}
   .step{position:relative;overflow:hidden;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:34px 36px;text-align:left;transition:transform .3s,background .3s;}
