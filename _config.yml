@@ -2,7 +2,7 @@
 title: "Klinik Psikolog Rümeysa Erdoğdu"
 home_title: "Klinik Psikolog Rümeysa Erdoğdu | Ankara &amp; Online Terapi"
 tagline: "Ankara"
-description: "Ankara'da yetişkinlerle şema terapi odağında çalışan Klinik Psikolog Rümeysa Erdoğdu. Kaygı, depresyon ve ilişki örüntülerinde online ve yüz yüze terapi."
+description: "Ankara'da yetişkinlerle şema terapi odağında çalışan Klinik Psikolog Rümeysa Erdoğdu. Kaygı, depresyon ve ilişki örüntülerinde online terapi."
 url: "https://rumeysaerdogdu.com"
 baseurl: ""
 lang: "tr"
@@ -14,22 +14,12 @@ author:
   photo: "rumeysaerdogdu2.jpeg"
 
 contact:
-  email: "info@rumeysaerdogdu.com"              # genel iletişim
-  appointment_email: "info@rolapsikoloji.com"   # randevu (Rola Psikoloji)
-  phone: "0312 447 17 02"                       # görünen hâli
-  phone_link: "03124471702"                     # tel: bağlantısı için
-  whatsapp: "0 533 394 71 35"                   # görünen hâli
-  whatsapp_link: "905333947135"                 # wa.me bağlantısı için
+  email: "info@rumeysaerdogdu.com"              # genel iletişim — sitedeki tek kanal
   instagram_url: "https://www.instagram.com/pskrumeysaerdogdu/"
   instagram_handle: "@pskrumeysaerdogdu"
 
 office:
-  name: "Rola Psikoloji"
-  street: "Büyükesat Mah. Uğur Mumcu Cad. No: 61/6"
-  locality: "Çankaya"
-  region: "Ankara"
-  country: "TR"
-  maps_url: "https://maps.app.goo.gl/UAJ4cdpdgrw81XXs9"
+  region: "Ankara"   # genel konum bilgisi (footer, yapısal veri); belirli bir ofis adresi yok
 
 # ---- Menü (bir kez düzenle, her sayfada değişir) ----
 nav:

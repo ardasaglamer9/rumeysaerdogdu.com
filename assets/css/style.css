@@ -63,7 +63,6 @@
   /* photo frames */
   .photo-frame{position:relative;overflow:hidden;background:linear-gradient(135deg,#9db4aa,#8AA399);}
   .photo-frame.round{border-radius:50%;aspect-ratio:1/1;}
-  .photo-frame.wide{border-radius:24px;aspect-ratio:16/7;box-shadow:0 20px 50px rgba(34,49,42,.14);}
   .photo-img{width:100%;height:100%;object-fit:cover;display:block;}
   .photo-ph{display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:#fff;padding:24px;}
   .photo-ph span{font-size:14px;line-height:1.5;opacity:.95;} .photo-ph b{font-family:'Fraunces',serif;font-weight:600;}
@@ -79,15 +78,6 @@
   .card .t{position:relative;font-family:'Fraunces',serif;font-size:21px;font-weight:600;line-height:1.22;}
   .c1{background:var(--sage-dark);} .c2{background:var(--clay);} .c3{background:var(--gold);color:var(--forest-deep);}
   .c4{background:var(--lav);} .c5{background:var(--forest);} .c6{background:var(--sage);color:var(--forest-deep);}
-
-  /* sessions */
-  .session-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;}
-  @media(max-width:700px){.session-cards{grid-template-columns:1fr;}}
-  .scard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px 34px;transition:transform .3s,box-shadow .3s;}
-  .scard:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(34,49,42,.12);}
-  .scard .ic{width:54px;height:54px;border-radius:15px;background:var(--cream);display:flex;align-items:center;justify-content:center;color:var(--sage-dark);margin-bottom:22px;}
-  .scard h3{font-size:22px;color:var(--forest);margin-bottom:10px;}
-  .scard p{color:var(--ink-soft);font-size:16px;}
 
   /* approach steps */
   .steps{position:relative;z-index:1;max-width:660px;margin:56px auto 0;}
@@ -435,24 +425,6 @@
 @media(max-width:760px){.hero .leaf-3{display:none;}}
 @media(prefers-reduced-motion:reduce){.leaf,.leaf-a,.lw{animation:none !important;}}
 
-/* ---- GOOGLE HARİTA ---- */
-.map-block{margin-top:46px;text-align:left;}
-.map-frame{position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;
-  border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 44px rgba(0,0,0,.22);background:rgba(255,255,255,.06);}
-.map-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;}
-.map-info{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:20px;}
-.map-addr{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.85);}
-.map-addr svg{flex:0 0 auto;margin-top:2px;color:var(--sage);}
-.map-addr b{color:#fff;font-weight:600;}
-.map-dir{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;
-  border:1.5px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:14.5px;
-  padding:12px 24px;border-radius:999px;transition:background .2s,gap .2s,border-color .2s;}
-.map-dir:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6);gap:12px;}
-@media(max-width:600px){
-  .map-frame{aspect-ratio:4/3;border-radius:18px;}
-  .map-info{flex-direction:column;align-items:flex-start;}
-}
-
 /* hero: çok kısa ekranlarda esnesin */
 @media(max-height:560px){
   .hero{min-height:auto;padding:56px 0 84px;}
@@ -577,14 +549,6 @@ body.nav-open{overflow:hidden;}
 .hero-link:hover{color:#fff;text-decoration-color:rgba(255,255,255,.7);}
 
 /* --- Alt satır: tek satır, sade metin --- */
-/* --- Konum işareti: Rola Psikoloji (iletişim sayfasına gider) --- */
-.hero-loc{display:inline-flex;align-items:center;gap:7px;margin-top:12px;
-  font-size:13.5px;font-weight:600;color:rgba(255,255,255,.66);
-  transition:color .2s;
-  opacity:0;animation:fadeUp .8s ease .96s forwards;}
-.hero-loc svg{color:var(--sage);flex:0 0 auto;}
-.hero-loc:hover{color:#fff;}
-
 /* .hero p kuralı özgüllük olarak daha güçlü olduğu için .hero ile niteleniyor */
 .hero .hero-note{font-size:14px;color:rgba(255,255,255,.58);margin:0;
   opacity:0;animation:fadeUp .8s ease .88s forwards;}
@@ -620,50 +584,6 @@ body.nav-open{overflow:hidden;}
   .post-hero{margin-bottom:32px;}
   .post-hero img{border-radius:16px;}
 }
-
-/* =========================================================
-   ROLA PSİKOLOJİ — bağlılık işareti (yalnızca footer)
-   Üst menüye girmez; ana kimlik Rümeysa Erdoğdu'da kalır.
-   ========================================================= */
-.footer-bottom{display:flex;flex-wrap:wrap;align-items:center;
-  justify-content:space-between;gap:20px 32px;}
-.footer-copy{flex:0 0 auto;}
-
-.rola-affil{display:flex;align-items:center;gap:12px;flex:0 1 auto;}
-.rola-affil span{font-size:13px;color:rgba(255,255,255,.62);line-height:1.4;}
-
-/* Logo iki renkli (#0e5192 mavi, #b8173a kırmızı). Gri tonlamada ikisi de
-   koyu griye düşüyor ve koyu yeşil zeminde kayboluyor; parlaklık artırılarak
-   okunur hale getiriliyor. Sonuç tek renk kalır, palete çarpmaz. */
-.rola-logo{height:26px;width:auto;display:block;flex:0 0 auto;
-  filter:grayscale(100%) brightness(3);
-  opacity:.85;}
-
-/* Footer'daki İletişim / Randevu etiketleri */
-.footer-etiket{display:block;color:rgba(255,255,255,.55);font-size:12px;
-  font-weight:600;letter-spacing:.4px;margin-bottom:2px;}
-
-@media(max-width:760px){
-  .footer-bottom{flex-direction:column;align-items:flex-start;gap:18px;}
-}
-
-/* --- İletişim sayfası: kanal listesi (açık zemin) --- */
-.iletisim-liste{list-style:none;margin:0;padding:0;
-  display:grid;grid-template-columns:1fr 1fr;gap:0 40px;}
-@media(max-width:680px){.iletisim-liste{grid-template-columns:1fr;}}
-.iletisim-liste li{display:flex;gap:16px;align-items:flex-start;
-  padding:22px 0;border-bottom:1px solid var(--line);}
-.iletisim-liste li svg{flex:0 0 auto;margin-top:3px;color:var(--sage-dark);}
-.iletisim-liste li div{display:flex;flex-direction:column;gap:3px;min-width:0;}
-.il-etiket{font-size:12.5px;font-weight:700;letter-spacing:1.2px;
-  text-transform:uppercase;color:var(--sage-dark);}
-.iletisim-liste a{font-size:17px;color:var(--forest);font-weight:600;
-  text-decoration:underline;text-underline-offset:4px;
-  text-decoration-color:rgba(94,122,106,.35);
-  transition:color .2s,text-decoration-color .2s;word-break:break-word;}
-.iletisim-liste a:hover{color:var(--forest-deep);
-  text-decoration-color:var(--sage-dark);}
-.il-not{font-size:14.5px;color:var(--ink-soft);line-height:1.5;}
 
 /* =========================================================
    METİN İÇİ VURGU

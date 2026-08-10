@@ -92,7 +92,7 @@ Sonra dosyayı commit + push edin. Otomatik olarak:
 
 - `netlify.toml` ve `Gemfile` dosyalarını silmeyin — bunlar olmadan site derlenmez.
 - `r-*.html` dosyaları eski adreslerden gelen ziyaretçiyi yeni adrese taşır; silmeyin.
-- Fotoğraflar kök dizine: `rumeysaerdogdu.jpeg`, `rumeysaerdogduofis.jpeg`, `rumeysaerdogdu2.jpeg`
+- Fotoğraflar kök dizine: `rumeysaerdogdu.jpeg`, `rumeysaerdogdu2.jpeg`
 - Bir şey ters giderse Netlify → **Deploys** → ilgili satır → **Deploy log**'a bakın;
   hatanın sebebi orada yazar. Ayrıca her yayının bir öncesine tek tıkla dönebilirsiniz
   (eski bir deploy'u açıp **Publish deploy**).
