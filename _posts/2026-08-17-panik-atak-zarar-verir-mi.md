@@ -42,8 +42,7 @@ Hayır, kalıcı fiziksel zarar bırakmaz. Zorlayan kısım, ataktan sonra "yine
 **7. Sürekli olur da hayatımı ele geçirir mi?**
 Ele geçirmesi şart değil. Panik atak, öğrenilmiş bir alarm tepkisidir ve **öğrenilen şey değiştirilebilir.** Uygun tekniklerle ve gerekiyorsa terapiyle çoğu kişi belirgin biçimde rahatlar.
 
-## Bu korkuların altında ne var? (Şema modu bakışı)
-
+## Bu korkuların altında ne var?
 Tüm bu "ya olursa" soruları, içinizdeki çok korkmuş, güvende hissetmeyen bir tarafın sesidir — "kırılgan çocuk" tarafı. Karşılanmamış temel ihtiyacı yine **güvende ve korunmuş hissetmektir** (Lockwood & Perris, 2012). Bu yüzden bu korkulara verilecek en iyi yanıt, onları küçümsemek değil; sakin, güven veren bir **"iç yetişkin"** sesiyle karşılamaktır:
 > "Çok korktun. Ama bu his tehlikeli değil ve geçecek. Buradayım, güvendeyiz." (Yakın & Arntz, 2023)
 

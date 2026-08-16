@@ -27,14 +27,12 @@ Birkaç sebep bir araya gelir:
 - **Yorgun zihin daha az filtreler.** Gün sonunda öz-denetim tükenmiştir; endişeler daha kolay büyür ve dönüp durur (ruminasyon).
 - **Beden ipuçlarını daha çok fark edersiniz.** Sessizlikte kalp atışınızı, nefesinizi duyarsınız; bu duyumlar kaygıyı tetikleyebilir.
 
-## Geceleri yüzeye çıkan aslında ne? (Şema modu bakışı)
-
+## Geceleri yüzeye çıkan aslında ne?
 Gündüz meşgulken sesini duyuramayan bir taraf, gece sahne alır: içinizdeki **kırılgan, güvende hissetmeyen çocuk tarafı.** Karanlık ve yalnızlık, onun karşılanmamış temel ihtiyaçlarını uyandırır — **güvende hissetmek, yatıştırılmak, yalnız olmadığını bilmek** (Lockwood & Perris, 2012). "Yatınca düşünceler susmuyor" dediğiniz şey, çoğu zaman bu tarafın "beni fark et, beni sakinleştir" çağrısıdır.
 
 Endişelenmek ise bir tür **baş etme çabasıdır**: zihin, olası tehlikeleri önceden çözerek güvenliği garantilemeye çalışır. Ama bu, gerçekte güvende hissettirmez; sadece uykuyu kaçırır.
 
-## Sakinleştiren bir gece rutini (Sağlıklı Yetişkin'den)
-
+## Sakinleştiren bir gece rutini
 Amaç düşünceleri zorla susturmak değil — bedene ve o korkan tarafa "artık güvendeyiz, dinlenebiliriz" mesajını vermek.
 
 ### 1. "Endişe saati"ni gündüze taşıyın

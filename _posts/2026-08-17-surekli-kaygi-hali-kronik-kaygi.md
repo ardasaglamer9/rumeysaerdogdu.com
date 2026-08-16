@@ -28,13 +28,13 @@ Ortada somut bir tehlike yok ama bir türlü rahatlayamıyorsunuz. Omuzlarınız
 
 Kısa süreli kaygı bizi korur ve harekete geçirir. Ama alarm sistemi **kapanmayı unuttuğunda**, sürekli düşük yoğunluklu bir stres hâli ortaya çıkar. Bu kronik uyarılmışlık, zamanla bedene de yük bindirir (McEwen, 1998).
 
-## Bu "tetikte" hâlin altında ne var? (Şema modu bakışı)
+## Bu "tetikte" hâlin altında ne var?
 
 Sürekli tehlike tarayan zihin, çoğu zaman erken dönemde **dünyanın güvenli olmadığını** öğrenmiş bir tarafın devam eden savunmasıdır — şema terapisinde buna sıklıkla **"tehlikelere/hastalıklara karşı savunmasızlık" şeması** eşlik eder. Altta yatan karşılanmamış ihtiyaç yine tanıdıktır: **güvende, korunmuş ve yatışmış hissetmek** (Lockwood & Perris, 2012).
 
 Endişe etmek burada bir baş etme çabasıdır: "her şeyi önceden düşünürsem kötü sürprizi engellerim." Ama bu strateji güvenlik hissi getirmez; sadece bedeni yormaya devam eder. Ayrıca kaygıyla iç içe geçen bir başka güçlük de **duyguları fark edip düzenlemekte zorlanmaktır** — araştırmalar erken dönem şemalarının duygu düzenleme güçlükleriyle yakından ilişkili olduğunu gösteriyor (Pilkington ve ark., 2024; Tariq ve ark., 2021).
 
-## Nasıl yavaşlatılır? (Sağlıklı Yetişkin'den)
+## Nasıl yavaşlatılır?
 
 Amaç kaygıyı "yok etmek" değil — alarmı gerçek tehlike düzeyine geri getirmek.
 

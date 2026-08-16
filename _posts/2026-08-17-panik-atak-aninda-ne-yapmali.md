@@ -28,8 +28,7 @@ Panik atak, ortada gerçek bir tehlike yokken bedenin aniden "alarm" moduna geç
 
 Nedeni çoğu zaman şudur: beden küçük bir sinyali (örneğin hızlanan kalp atışı) yakalar, zihin bunu **"bir şeyler çok kötü"** diye yorumlar, bu yorum korkuyu artırır, korku bedeni daha da hızlandırır — ve bir kısır döngü kurulur (Clark, 1986). İyi haber: bu döngü kendiliğinden söner. Panik atak genellikle **birkaç dakikada zirveye ulaşır, çoğunlukla 15–30 dakikada geçer.**
 
-## Panik atağın altında ne var? (Şema modu bakışı)
-
+## Panik atağın altında ne var?
 Panik anında içinizde çok korkmuş, küçük ve çaresiz hisseden bir taraf devreye girer — şema terapisinde buna **"kırılgan çocuk" tarafı** denir. O tarafın karşılanmamış temel ihtiyacı çoğu zaman aynıdır: **güvende hissetmek ve yatıştırılmak** (Lockwood & Perris, 2012).
 
 Yani panik atak, "bende bir bozukluk var" demek değil. Çoğu zaman, uzun süredir güvende hissedememiş bir tarafın alarm zilini fazla erken ve fazla yüksek çalmasıdır. Bu yüzden aşağıdaki adımların amacı da o korkmuş tarafı **bastırmak değil, sakinleştirmek.**
