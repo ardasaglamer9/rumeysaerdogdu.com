@@ -18,7 +18,7 @@ faq:
     a: "Bir günde değil, düzenli küçük adımlarla: gün içinde bedeni indiren molalar, endişeye sınır, felaket düşüncelerini sınama ve gerektiğinde profesyonel destek."
 ---
 
-Ortada somut bir tehlike yok ama bir türlü rahatlayamıyorsun. Omuzların gergin, zihnin hep bir sonraki "ya olursa"da, dinlenirken bile huzursuzsun. Bu **sürekli tetikte olma hali**, yaygın (kronik) kaygının en yorucu yüzüdür. Bu yazıda bunu nasıl tanıyacağını ve bedenini/zihnini nasıl yavaşlatabileceğini anlatacağım.
+Ortada somut bir tehlike yok ama bir türlü rahatlayamıyorsunuz. Omuzlarınız gergin, zihniniz hep bir sonraki "ya olursa"da, dinlenirken bile huzursuzsunuz. Bu **sürekli tetikte olma hali**, yaygın (kronik) kaygının en yorucu yüzüdür. Bu yazıda bunu nasıl tanıyacağınızı ve bedeninizi, zihninizi nasıl yavaşlatabileceğinizi anlatacağım.
 
 ## Kronik kaygı nasıl hissettirir?
 
@@ -38,23 +38,23 @@ Endişe etmek burada bir baş etme çabasıdır: "her şeyi önceden düşünür
 
 Amaç kaygıyı "yok etmek" değil — alarmı gerçek tehlike düzeyine geri getirmek.
 
-### 1. Bedeni gün içinde düzenli olarak indir
-Günde birkaç kez, 2 dakikalık **4-7-8 nefes** ve kısa kas gevşetme yap. Kaygı zirveye çıkmadan, düzenli "indirme" molaları alarm eşiğini düşürür.
+### 1. Bedeni gün içinde düzenli olarak indirin
+Günde birkaç kez, 2 dakikalık **4-7-8 nefes** ve kısa kas gevşetme yapın. Kaygı zirveye çıkmadan, düzenli "indirme" molaları alarm eşiğini düşürür.
 
-### 2. Endişeye sınır koy
-Endişeyi bütün güne yaymak yerine 10–15 dakikalık bir "endişe saati" belirle. Gün içinde endişe geldiğinde "bunu endişe saatinde ele alacağım" de. Endişe, kabına konduğunda küçülür.
+### 2. Endişeye sınır koyun
+Endişeyi bütün güne yaymak yerine 10–15 dakikalık bir "endişe saati" belirleyin. Gün içinde endişe geldiğinde "bunu endişe saatinde ele alacağım" deyin. Endişe, kabına konduğunda küçülür.
 
-### 3. "Ya olursa"yı yumuşat
-Kendine sor: "Bu düşünce bir tahmin mi, bir gerçek mi? En olası sonuç ne? Olursa baş edebilir miyim?" Bu, felaket senaryosunu gerçeğe yaklaştırır (bilişsel yaklaşımın çekirdeği).
+### 3. "Ya olursa"yı yumuşatın
+Kendinize sorun: "Bu düşünce bir tahmin mi, bir gerçek mi? En olası sonuç ne? Olursa baş edebilir miyim?" Bu, felaket senaryosunu gerçeğe yaklaştırır (bilişsel yaklaşımın çekirdeği).
 
-### 4. Korkan tarafa şefkatle dön
+### 4. Korkan tarafa şefkatle dönün
 > "Sen hep tetikte kaldın, çünkü güvende hissetmen gerekiyordu. Ama şu an ben buradayım ve bu anı birlikte taşıyabiliriz." (Yakın & Arntz, 2023)
 
 Bu, güvenlik ihtiyacını sürekli tarama yaparak değil, sahiplenerek karşılamanın yoludur.
 
 ## Ne zaman bir uzmana danışmalı?
 
-Kaygı çoğu günü kaplıyor, en az birkaç aydır sürüyor ve işini/ilişkilerini/uykunu etkiliyorsa bu, yaygın anksiyete yönünde bir işaret olabilir. Bilişsel davranışçı terapinin etkinliği güçlü kanıtlarla desteklenir (Hofmann & Smits, 2008); kökleri eskiye dayanan, "hep böyleydim" denen kaygılarda **şema terapisi** de anlamlı bir seçenek olabilir (Peeters ve ark., 2022).
+Kaygı çoğu gününüzü kaplıyor, en az birkaç aydır sürüyor ve işinizi, ilişkilerinizi ya da uykunuzu etkiliyorsa bu, yaygın anksiyete yönünde bir işaret olabilir. Bilişsel davranışçı terapinin etkinliği güçlü kanıtlarla desteklenir (Hofmann & Smits, 2008); kökleri eskiye dayanan, "hep böyleydim" denen kaygılarda **şema terapisi** de anlamlı bir seçenek olabilir (Peeters ve ark., 2022).
 
 ---
 

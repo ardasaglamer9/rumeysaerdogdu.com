@@ -574,7 +574,10 @@ body.nav-open{overflow:hidden;}
 /* --- İletişim sayfası: banner'a binen tek parça kart ---
    Kart yukarı çekilip dalganın üstüne biniyor; böylece banner ile içerik
    iki ayrı blok gibi durmuyor, tek bir öğe olarak okunuyor. */
-.iletisim-bolum{padding-top:0;}
+/* Kartın yeşile bindiği miktar (96px) ile altındaki krem boşluk eşit;
+   yoksa kart yukarı yapışıp aşağıda büyük bir boşluk kalıyor. */
+.iletisim-bolum{padding-top:0;padding-bottom:96px;}
+@media(max-width:680px){.iletisim-bolum{padding-bottom:72px;}}
 .iletisim-kart{
   position:relative;z-index:2;margin:-96px auto 0;max-width:660px;
   background:#fff;border:1px solid var(--line);border-radius:28px;

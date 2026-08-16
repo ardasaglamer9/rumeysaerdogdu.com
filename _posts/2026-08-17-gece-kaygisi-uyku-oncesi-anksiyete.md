@@ -15,21 +15,21 @@ faq:
   - q: "Yatınca düşünceler susmuyor, ne yapmalıyım?"
     a: "Düşünceleri zorla kovmaya çalışmak çoğu zaman ters teper. \"Endişe saati\", 4-7-8 nefes ve şefkatli iç ses; zihni bastırmadan yatıştırmaya yardımcı olur."
   - q: "Uyku öncesi anksiyete normal mi?"
-    a: "Ara sıra yaşanması çok yaygındır. Ama sık tekrarlıyor ve uykunu/gününü bozuyorsa profesyonel destek almak değerlidir."
+    a: "Ara sıra yaşanması çok yaygındır. Ama sık tekrarlıyor ve uykunuzu ya da gününüzü bozuyorsa profesyonel destek almak değerlidir."
 ---
 
-Gün boyu idare ediyorsun; ama ışığı kapatıp yatağa uzandığın an zihnin devreye giriyor: yapılacaklar, geçmiş konuşmalar, "ya şöyle olursa" senaryoları… **Gece kaygısı** çok yaygındır. Bu yazıda, kaygının neden geceleri şiddetlendiğini ve zihnini yatıştıran, uygulanabilir bir gece rutinini anlatacağım.
+Gün boyu idare ediyorsunuz; ama ışığı kapatıp yatağa uzandığınız an zihniniz devreye giriyor: yapılacaklar, geçmiş konuşmalar, "ya şöyle olursa" senaryoları… **Gece kaygısı** çok yaygındır. Bu yazıda, kaygının neden geceleri şiddetlendiğini ve zihninizi yatıştıran, uygulanabilir bir gece rutinini anlatacağım.
 
 ## Gece kaygısı neden artar?
 
 Birkaç sebep bir araya gelir:
 - **Dikkat dağıtıcılar biter.** Gün içinde işler, sesler, ekranlar zihni meşgul eder. Gece sessizlik olunca, bastırılan düşünceler yüzeye çıkar.
 - **Yorgun zihin daha az filtreler.** Gün sonunda öz-denetim tükenmiştir; endişeler daha kolay büyür ve dönüp durur (ruminasyon).
-- **Beden ipuçlarını daha çok fark edersin.** Sessizlikte kalp atışını, nefesini duyarsın; bu duyumlar kaygıyı tetikleyebilir.
+- **Beden ipuçlarını daha çok fark edersiniz.** Sessizlikte kalp atışınızı, nefesinizi duyarsınız; bu duyumlar kaygıyı tetikleyebilir.
 
 ## Geceleri yüzeye çıkan aslında ne? (Şema modu bakışı)
 
-Gündüz meşgulken sesini duyuramayan bir taraf, gece sahne alır: içindeki **kırılgan, güvende hissetmeyen çocuk tarafı.** Karanlık ve yalnızlık, onun karşılanmamış temel ihtiyaçlarını uyandırır — **güvende hissetmek, yatıştırılmak, yalnız olmadığını bilmek** (Lockwood & Perris, 2012). "Yatınca düşünceler susmuyor" dediğin şey, çoğu zaman bu tarafın "beni fark et, beni sakinleştir" çağrısıdır.
+Gündüz meşgulken sesini duyuramayan bir taraf, gece sahne alır: içinizdeki **kırılgan, güvende hissetmeyen çocuk tarafı.** Karanlık ve yalnızlık, onun karşılanmamış temel ihtiyaçlarını uyandırır — **güvende hissetmek, yatıştırılmak, yalnız olmadığını bilmek** (Lockwood & Perris, 2012). "Yatınca düşünceler susmuyor" dediğiniz şey, çoğu zaman bu tarafın "beni fark et, beni sakinleştir" çağrısıdır.
 
 Endişelenmek ise bir tür **baş etme çabasıdır**: zihin, olası tehlikeleri önceden çözerek güvenliği garantilemeye çalışır. Ama bu, gerçekte güvende hissettirmez; sadece uykuyu kaçırır.
 
@@ -37,25 +37,25 @@ Endişelenmek ise bir tür **baş etme çabasıdır**: zihin, olası tehlikeleri
 
 Amaç düşünceleri zorla susturmak değil — bedene ve o korkan tarafa "artık güvendeyiz, dinlenebiliriz" mesajını vermek.
 
-### 1. "Endişe saati"ni gündüze taşı
-Yatmadan 2–3 saat önce 10 dakikalık bir "endişe defteri" tut: aklını kurcalayanları yaz. Gece zihnin bir şey hatırlattığında kendine "bunu yarın endişe saatinde ele alacağım" de. Bu, endişeye sınır koyar.
+### 1. "Endişe saati"ni gündüze taşıyın
+Yatmadan 2–3 saat önce 10 dakikalık bir "endişe defteri" tutun: aklınızı kurcalayanları yazın. Gece zihniniz bir şey hatırlattığında kendinize "bunu yarın endişe saatinde ele alacağım" deyin. Bu, endişeye sınır koyar.
 
-### 2. Ekranı ve zihinsel uyaranı azalt
-Yatmadan önceki 30–60 dakikada telefonu bırak, ışıkları kıs. Zihne "gün bitiyor" sinyali ver.
+### 2. Ekranı ve zihinsel uyaranı azaltın
+Yatmadan önceki 30–60 dakikada telefonu bırakın, ışıkları kısın. Zihne "gün bitiyor" sinyali verin.
 
-### 3. Nefesle sinir sistemini yatıştır: 4-7-8
-Yatağa uzandıktan sonra: **4 sn al, 7 sn tut, 8 sn ver.** 3–4 tekrar. Uzun nefes verişi bedeni gevşemeye geçirir.
+### 3. Nefesle sinir sistemini yatıştırın: 4-7-8
+Yatağa uzandıktan sonra: **4 sn alın, 7 sn tutun, 8 sn verin.** 3–4 tekrar. Uzun nefes verişi bedeni gevşemeye geçirir.
 
-### 4. Bedeni bırak: kısa kas gevşetme
-Ayaklardan başlayıp yukarı doğru her kas grubunu birkaç saniye sık ve bırak. Gerginliği fiziksel olarak boşalt.
+### 4. Bedeni bırakın: kısa kas gevşetme
+Ayaklardan başlayıp yukarı doğru her kas grubunu birkaç saniye sıkın ve bırakın. Gerginliği fiziksel olarak boşaltın.
 
 ### 5. Şefkatli bir iç ses
-O korkan tarafa sakin bir "iç yetişkin" sesiyle dön:
+O korkan tarafa sakin bir "iç yetişkin" sesiyle dönün:
 > "Bugünü tamamladık. Şu an güvendeyiz. Yarını yarın düşünürüz; şimdi dinlenmene izin veriyorum." (Yakın & Arntz, 2023)
 
 ## Ne zaman bir uzmana danışmalı?
 
-Gece kaygısı uykunu düzenli olarak bozuyorsa, gündüz işlevini etkiliyorsa ya da haftalardır sürüyorsa bir uzmandan destek al. Uyku ve kaygı çoğu zaman birbirini besler; bilişsel davranışçı terapi ve şema terapisi bu döngüyü çözmede etkili olabilir (Peeters ve ark., 2022).
+Gece kaygısı uykunuzu düzenli olarak bozuyorsa, gündüz işlevinizi etkiliyorsa ya da haftalardır sürüyorsa bir uzmandan destek alın. Uyku ve kaygı çoğu zaman birbirini besler; bilişsel davranışçı terapi ve şema terapisi bu döngüyü çözmede etkili olabilir (Peeters ve ark., 2022).
 
 ---
 
