@@ -571,6 +571,60 @@ body.nav-open{overflow:hidden;}
 .hero-portrait .ring{opacity:.32;}
 .hero-portrait .leaf-a{opacity:.55;}
 
+/* --- İletişim sayfası: banner'a binen tek parça kart ---
+   Kart yukarı çekilip dalganın üstüne biniyor; böylece banner ile içerik
+   iki ayrı blok gibi durmuyor, tek bir öğe olarak okunuyor. */
+.iletisim-bolum{padding-top:0;}
+.iletisim-kart{
+  position:relative;z-index:2;margin:-96px auto 0;max-width:660px;
+  background:#fff;border:1px solid var(--line);border-radius:28px;
+  padding:clamp(24px,3.4vw,36px);
+  box-shadow:0 26px 60px rgba(34,49,42,.16);
+  display:grid;grid-template-columns:auto minmax(0,1fr);
+  gap:clamp(22px,3vw,34px);align-items:center;}
+@media(max-width:680px){
+  .iletisim-kart{margin-top:-72px;grid-template-columns:1fr;
+    justify-items:center;text-align:center;}
+}
+
+.iletisim-portre{margin:0;width:clamp(150px,20vw,196px);}
+.iletisim-portre img{width:100%;height:auto;display:block;border-radius:18px;}
+@media(max-width:680px){.iletisim-portre{width:170px;}}
+
+.iletisim-ad{font-family:'Fraunces',serif;font-size:clamp(20px,2.4vw,24px);
+  line-height:1.25;color:var(--forest);margin:0 0 18px;}
+.iletisim-kanallar-acik{list-style:none;margin:0;padding:0;
+  display:flex;flex-direction:column;gap:13px;}
+.iletisim-kanallar-acik li{display:flex;align-items:center;gap:11px;}
+@media(max-width:680px){.iletisim-kanallar-acik li{justify-content:center;}}
+.iletisim-kanallar-acik svg{flex:0 0 auto;color:var(--sage-dark);}
+.iletisim-kanallar-acik a{font-size:16.5px;font-weight:600;color:var(--forest);
+  text-decoration:underline;text-underline-offset:4px;
+  text-decoration-color:rgba(94,122,106,.35);
+  transition:color .2s,text-decoration-color .2s;word-break:break-word;}
+.iletisim-kanallar-acik a:hover{color:var(--forest-deep);text-decoration-color:var(--sage-dark);}
+
+/* --- Görüşmeler bölümündeki oda fotoğrafı --- */
+.gorusme-foto{margin:44px 0 0;}
+.gorusme-foto img{width:100%;height:auto;display:block;border-radius:22px;
+  box-shadow:0 18px 44px rgba(34,49,42,.14);}
+@media(max-width:600px){
+  .gorusme-foto{margin-top:28px;}
+  .gorusme-foto img{border-radius:16px;}
+}
+
+/* --- Ana sayfa iletişim bloğu: e-posta + Instagram (koyu zemin) --- */
+.iletisim-kanallar{list-style:none;margin:0;padding:0;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:16px 40px;}
+.iletisim-kanallar li{display:inline-flex;align-items:center;gap:10px;}
+.iletisim-kanallar svg{flex:0 0 auto;color:var(--sage);}
+.iletisim-kanallar a{font-size:17px;font-weight:600;color:rgba(255,255,255,.9);
+  text-decoration:underline;text-underline-offset:4px;
+  text-decoration-color:rgba(255,255,255,.35);
+  transition:color .2s,text-decoration-color .2s;word-break:break-word;}
+.iletisim-kanallar a:hover{color:#fff;text-decoration-color:rgba(255,255,255,.75);}
+@media(max-width:560px){.iletisim-kanallar{flex-direction:column;gap:18px;}}
+
 /* --- Makale içi bağlantılar ---
    Genel kural (a{color:inherit;text-decoration:none}) bağlantıları düz
    metinle aynı gösteriyordu; yazı gövdesinde ayırt edilemiyorlardı.

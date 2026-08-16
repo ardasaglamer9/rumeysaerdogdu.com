@@ -1,8 +1,8 @@
 # ---- Site bilgileri (tek yerden yönetilir) ----
 title: "Klinik Psikolog Rümeysa Erdoğdu"
-home_title: "Klinik Psikolog Rümeysa Erdoğdu | Ankara &amp; Online Terapi"
+home_title: "Klinik Psikolog Rümeysa Erdoğdu | Şema Terapi ve Yetişkin Psikolojisi"
 tagline: "Ankara"
-description: "Ankara'da yetişkinlerle şema terapi odağında çalışan Klinik Psikolog Rümeysa Erdoğdu. Kaygı, depresyon ve ilişki örüntülerinde online ve yüz yüze terapi."
+description: "Yetişkinlerde şema terapi odağında çalışan Klinik Psikolog Rümeysa Erdoğdu. Tekrar eden örüntüler, kendini anlama ve şema terapi üzerine yazılar."
 url: "https://rumeysaerdogdu.com"
 baseurl: ""
 lang: "tr"
@@ -25,9 +25,9 @@ office:
 nav:
   - title: "Hakkımda"
     url: "/#hakkimda"
-  - title: "Terapi Süreci"
+  - title: "Görüşme Süreci"
     url: "/#yaklasim"
-  - title: "Çalışma Alanları"
+  - title: "İlgilendiğim Konular"
     url: "/#alanlar"
   - title: "Blog"
     url: "/blog/"

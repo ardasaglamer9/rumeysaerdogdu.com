@@ -18,6 +18,20 @@
 <svg class="lw" viewBox="0 0 200 200" fill="none" aria-hidden="true">
   <path d="M104,100 a8,8 0 0 1 -16,0 a16,16 0 0 1 32,0 a24,24 0 0 1 -48,0 a32,32 0 0 1 64,0 a40,40 0 0 1 -80,0 a48,48 0 0 1 96,0" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
 </svg>
+{%- when "nabiz" -%}
+{%- comment -%} keskin bir tepe, sonra düzleşen çizgi — panik atağın yükselip geçişi {%- endcomment -%}
+<svg class="lw" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+  <path d="M8,120 L52,120 L66,120 L78,58 L92,168 L106,96 L118,120 L192,120" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+{%- when "gece" -%}
+{%- comment -%} hilal ve dağınık noktalar — gece kaygısı {%- endcomment -%}
+<svg class="lw" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+  <path d="M126,44 a58,58 0 1 0 44,104 a68,68 0 1 1 -44,-104 Z" fill="#fff"/>
+  <circle cx="54" cy="52" r="4.5" fill="#fff"/>
+  <circle cx="34" cy="96" r="3.5" fill="#fff"/>
+  <circle cx="66" cy="132" r="4" fill="#fff"/>
+  <circle cx="40" cy="160" r="3" fill="#fff"/>
+</svg>
 {%- when "dalga" -%}
 {%- comment -%} dağınık başlayıp düzleşen çizgi — dağınık anıdan toparlı anlatıya {%- endcomment -%}
 <svg class="lw" viewBox="0 0 200 200" fill="none" aria-hidden="true">
