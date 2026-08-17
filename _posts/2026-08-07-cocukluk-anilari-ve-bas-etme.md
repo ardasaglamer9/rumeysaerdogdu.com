@@ -1,7 +1,7 @@
 ---
 title: "Çocukluk Anıları ve Baş Etme: Zor Anıları Neden Farklı Hatırlarız?"
 seo_title: "Çocukluk Anıları ve Baş Etme"
-description: "Boyun eğerek baş etme eğilimi güçlendikçe zor çocukluk anıları daha dağınık hatırlanabiliyor. Yüksek lisans tezimin bulgularını sade bir dille anlatıyorum."
+description: "Boyun eğerek baş etme güçlendikçe zor çocukluk anıları daha dağınık hatırlanabiliyor. Yüksek lisans tezimin bulgularını anlatıyorum."
 keywords: "çocukluk anıları, otobiyografik bellek, baş etme biçimleri, teslim olma, şema terapi, anı bütünlüğü, klinik psikoloji tezi"
 category_name: "Araştırma"
 thumb: dalga
