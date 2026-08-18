@@ -1,7 +1,7 @@
 ---
-title: "Sürekli Tetikteyim: Kronik Kaygı Halini Tanımak ve Yavaşlatmak"
-seo_title: "Sürekli Kaygı Hali: Tanımak ve Yavaşlatmak"
-description: "Sürekli tetikte hissetmek neden olur, kronik kaygı nasıl tanınır ve nasıl yavaşlatılır? Şema terapi bakışıyla anlatıyorum."
+title: "Sürekli Tetikteyim: Kronik Kaygı Hâlini Tanımak ve Yavaşlatmak"
+seo_title: "Neden Sürekli Tetikteyim? Kronik Kaygı"
+description: "Neden sürekli tetikte hissederiz? Bu hâli nasıl tanıyacağınızı ve nasıl yavaşlatabileceğinizi sade bir dille anlatıyorum."
 keywords: "sürekli kaygı hali, kronik kaygı, sürekli tetikte olmak, yaygın anksiyete, sürekli endişe, kaygının bedene etkisi"
 category_name: "Kaygı"
 thumb: sarmal

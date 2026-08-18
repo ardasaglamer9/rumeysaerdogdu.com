@@ -1,7 +1,7 @@
 ---
-title: "Panik Atak Anında Ne Yapmalı? 5 Dakikada İşe Yarayan 4 Adım"
+title: "Panik Atak Anında Ne Yapmalı? Uygulayabileceğiniz 4 Adım"
 seo_title: "Panik Atak Anında Ne Yapmalı? 4 Adım"
-description: "Panik atak anında ne yapmalı? 4-7-8 nefes, topraklama ve 5-4-3-2-1 tekniğiyle panik atağı sakinleştirmenin adımlarını anlatıyorum."
+description: "Panik atak anında ne yapmalı? Nefesinizi yavaşlatmak, bedeninizi gevşetmek ve şimdiye dönmek için dört adım anlatıyorum."
 keywords: "panik atak anında ne yapmalı, panik atak belirtileri, panik atak nefes egzersizi, panik atak mı kalp krizi mi, panik atak kaç dakika sürer"
 category_name: "Panik Atak"
 thumb: nabiz

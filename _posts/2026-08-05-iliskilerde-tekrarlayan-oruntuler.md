@@ -1,7 +1,7 @@
 ---
-title: "İlişkilerde Aynı Örüntüleri Neden Tekrarlıyoruz?"
-seo_title: "İlişkilerde Tekrarlayan Örüntüler"
-description: "Neden hep benzer ilişkiler, benzer kırılmalar? Şema kimyası, ilişki örüntülerinin kökeni ve bu döngüyü fark etmek üzerine."
+title: "İlişkilerde Aynı Şeyleri Neden Tekrarlıyoruz?"
+seo_title: "İlişkilerde Neden Aynı Şeyleri Yaşarız?"
+description: "Neden hep benzer insanlara çekiliyor, neden aynı kırılmaları yaşıyoruz? Bu döngü nereden geliyor, nasıl fark edilir?"
 keywords: "ilişkilerde tekrarlayan örüntüler, şema kimyası, ilişki örüntüleri, aynı hataları tekrarlamak, terk edilme şeması, duygusal yoksunluk, şema terapi, Ankara psikolog"
 category_name: "İlişkiler"
 thumb: dugum

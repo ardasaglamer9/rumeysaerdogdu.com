@@ -1,7 +1,7 @@
 ---
 title: "Panik Atak Zarar Verir mi? En Çok Korkulan 7 Soruya Sakin Cevaplar"
 seo_title: "Panik Atak Zarar Verir mi? 7 Soru"
-description: "Panik atak zarar verir mi, ölür müyüm, delirir miyim? En çok korkulan 7 soruya sakin, kanıta dayalı cevaplar."
+description: "Panik atak zarar verir mi, ölür müyüm, delirir miyim? En çok korkulan 7 soruya sakin ve açık cevaplar."
 keywords: "panik atak zarar verir mi, panik atak zararlı mı, panik atak bayılma, panik atakta kontrolü kaybetmek, panik atak delirme korkusu"
 category_name: "Panik Atak"
 thumb: nabiz

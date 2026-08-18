@@ -1,7 +1,7 @@
 ---
 title: "Gece Neden Daha Çok Kaygılanıyoruz? Uyku Öncesi Anksiyete"
-seo_title: "Gece Kaygısı ve Sakinleştiren Bir Rutin"
-description: "Gece kaygısı neden artar, uyku öncesi anksiyeteyle nasıl baş edilir? Zihni yatıştıran adım adım bir gece rutini."
+seo_title: "Gece Kaygısı: Neden Artar, Nasıl Yatışır?"
+description: "Gece kaygısı neden artar, yatmadan önce ne yapabilirsiniz? Zihni yatıştıran adım adım bir gece rutini."
 keywords: "gece kaygısı, uyku öncesi anksiyete, gece anksiyetesi, geceleri kaygı, uyuyamama kaygı, yatınca düşünceler"
 category_name: "Kaygı"
 thumb: gece

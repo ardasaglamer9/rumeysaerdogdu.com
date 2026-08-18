@@ -1,7 +1,7 @@
 ---
-title: "Şema Terapi Nedir? Tekrar Eden Örüntülerimizi Anlamak"
-seo_title: "Şema Terapi Nedir? Tekrar Eden Örüntüler"
-description: "Şema terapi nedir, şemalar nasıl oluşur, baş etme biçimleri ve modlar ne anlama gelir? Klinik psikolog gözünden sade bir anlatım."
+title: "Şema Terapi Nedir? Tekrar Eden Kalıpları Anlamak"
+seo_title: "Şema Terapi Nedir? Tekrar Eden Kalıplar"
+description: "Şema terapi nedir, bu kalıplar nasıl oluşur ve neden tekrar eder? Baştan sona, gündelik bir dille ve örneklerle anlatıyorum."
 keywords: "şema terapi, şema terapi nedir, erken dönem uyum bozucu şema, baş etme biçimleri, şema modları, sağlıklı yetişkin, Ankara klinik psikolog"
 category_name: "Şema Terapi"
 thumb: halkalar
