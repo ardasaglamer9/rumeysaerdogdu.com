@@ -36,21 +36,21 @@ Kaygının rastgele dağılmadığını fark etmişsinizdir. Çoğu kişide beli
 
 Bu temalar tesadüf değildir. Genellikle bizim için erkenden hassas hâle gelmiş alanlarla ilgilidir.
 
-Şema terapi çerçevesi burada işe yarar bir bakış sunar: çocuklukta karşılanmayan temel duygusal ihtiyaçlardan doğan örüntüler — şemalar — yalnızca "kişilik özellikleri" olarak kalmaz; süreklilik kazanmış kaygı, çökkünlük ve benzeri zorlanmaların **altında** da yer alabilir. Yani kaygı bazen kendi başına bir konu değil, daha eski bir hassasiyetin bugünkü sesidir.
+Şema terapi çerçevesi burada işe yarar bir bakış sunar: çocuklukta karşılanmayan temel duygusal ihtiyaçlardan doğan örüntüler (şemalar) yalnızca "kişilik özellikleri" olarak kalmaz; süreklilik kazanmış kaygı, çökkünlük ve benzeri zorlanmaların **altında** da yer alabilir. Yani kaygı bazen kendi başına bir konu değil, daha eski bir hassasiyetin bugünkü sesidir.
 
 Kaygıyla en sık birlikte gördüğüm temalardan bazıları:
 
-- **Zarar görme ya da hastalanma karşısında dayanıksızlık** — kötü bir şeyin olacağına ve buna karşı korunmasız olunduğuna dair beklenti
-- **Terk edilme ve istikrarsızlık** — yakın bağların her an kopabileceği duygusu
-- **Kusurluluk** — "asıl hâlim görülürse kabul edilmem" endişesi; değerlendirilme kaygısının sık zeminidir
-- **Yüksek standartlar ve aşırı eleştirellik** — hata yapmanın kabul edilemez olduğu iç kuralı
-- **Başarısızlık** — yetersiz kalınacağına dair yerleşik beklenti
+- **Zarar görme ya da hastalanma karşısında dayanıksızlık:** kötü bir şeyin olacağına ve buna karşı korunmasız olunduğuna dair beklenti
+- **Terk edilme ve istikrarsızlık:** yakın bağların her an kopabileceği duygusu
+- **Kusurluluk:** "asıl hâlim görülürse kabul edilmem" endişesi; değerlendirilme kaygısının sık zeminidir
+- **Yüksek standartlar ve aşırı eleştirellik:** hata yapmanın kabul edilemez olduğu iç kuralı
+- **Başarısızlık:** yetersiz kalınacağına dair yerleşik beklenti
 
 Bir şema ne kadar güçlüyse, onu tetikleyen durum sayısı da o kadar artar. Bu yüzden bazı dönemlerde kaygı "her yere yayılmış" gibi hissedilir: aslında yayılan kaygı değil, tetiklenen alanların genişlemesidir.
 
 ## Kaçınma neden işe yaramıyor?
 
-Kaygıyla baş etmenin en doğal yolu ondan uzaklaşmaktır. Konuşmayı ertelemek, kalabalığa girmemek, o e-postayı sonra açmak, teklifi reddetmek. Kaçınma anlık olarak gerçekten rahatlatır — bu yüzden de öğrenilir ve tekrarlanır.
+Kaygıyla baş etmenin en doğal yolu ondan uzaklaşmaktır. Konuşmayı ertelemek, kalabalığa girmemek, o e-postayı sonra açmak, teklifi reddetmek. Kaçınma anlık olarak gerçekten rahatlatır; bu yüzden de öğrenilir ve tekrarlanır.
 
 Ama uzun vadede tersi olur. Kaçındığımız her durum zihnimize şu bilgiyi verir: "Burası gerçekten tehlikeliydi, iyi ki uzaklaştım." Böylece kaygı azalmak yerine kendini doğrulamış olur. Üstelik o durumun aslında yönetilebilir olduğuna dair yeni bir deneyim edinme fırsatı da ortadan kalkar.
 
@@ -62,13 +62,13 @@ Kaçınmanın görünmez biçimleri de var ve bunlar genelde "sorumluluk" ya da 
 - Sürekli plan yapmak, olası her senaryoya hazırlanmak
 - Yakınlarından güvence ve onay aramak
 - İşi kusursuz yapmaya çalışmak ya da tam tersine erteleyip durmak
-- Zihinsel olarak "orada olmamak" — dalıp gitmek, konuyu değiştirmek, meşgul kalmak
+- Zihinsel olarak "orada olmamak": dalıp gitmek, konuyu değiştirmek, meşgul kalmak
 
 Bu son maddeye şema terapide **Kopuk Korungan** modu denir. Koruyucu bir işlevi vardır; ama bir yan etkisi de şudur: bu moddayken kişi acı verici duygulara olduğu kadar **olumlu** duygulara da erişemez. Kaygıdan uzaklaşırken hayatın rengi de soluklaşır.
 
 ## Aşırı hazırlanmak ve tam tersi
 
-Kaçınma tek yol değil. Bazı kişilerde kaygı, şemanın tam tersini kanıtlamaya çalışmakla — **aşırı telafi** ile — yönetilir: her ayrıntıyı kontrol etmek, sürekli daha çok çalışmak, asla hazırlıksız yakalanmamak.
+Kaçınma tek yol değil. Bazı kişilerde kaygı, şemanın tam tersini kanıtlamaya çalışmakla (**aşırı telafi** ile) yönetilir: her ayrıntıyı kontrol etmek, sürekli daha çok çalışmak, asla hazırlıksız yakalanmamak.
 
 Bu, kısa vadede sonuç verdiği için pekişir. Ancak iki bedeli olur. Birincisi, yorucudur ve sürdürülebilir değildir. İkincisi, yeterince güçlü bir aksilik yaşandığında bu telafi çöker ve altındaki duygu bütün şiddetiyle geri döner. Uzun süre "her şeyi tutan" kişilerin ani tükenmişlik yaşamasının bir sebebi budur.
 

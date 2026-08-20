@@ -17,12 +17,14 @@ Panik atağı korkutan şey çoğu zaman atağın kendisi değil, atak sırasın
 
 ## Bu korkular neden bu kadar gerçek hissettiriyor?
 
-Panik atak, bedendeki normal duyumların (çarpıntı, nefes değişimi) **"felaket geliyor"** diye yorumlanmasıyla büyür (Clark, 1986). Yani korkularınız mantıksız değil — bedeniniz gerçekten alarm veriyor. Ama o alarmın işaret ettiği "tehlike" gerçek bir tehlike değil, yanlış okunmuş bir duyumdur. Aşağıdaki cevaplar tam da bu yanlış okumayı düzeltmek için.
+Panik atak, bedendeki normal duyumların (çarpıntı, nefes değişimi) **"felaket geliyor"** diye yorumlanmasıyla büyür (Clark, 1986). Yani korkularınız mantıksız değil; bedeniniz gerçekten alarm veriyor. Ama o alarmın işaret ettiği "tehlike" gerçek bir tehlike değil, yanlış okunmuş bir duyumdur. Aşağıdaki cevaplar tam da bu yanlış okumayı düzeltmek için.
+
+Atak tam şu anda oluyorsa, o an uygulayabileceğiniz dört adımı [panik atak anında ne yapmalı yazısında]({{ '/panik-atak-aninda-ne-yapmali/' | relative_url }}) anlattım.
 
 ## 7 Soru, 7 Sakin Cevap
 
 **1. Panik atak sırasında ölür müyüm?**
-Hayır. Panik atak, bedenin doğal "savaş-kaç" tepkisidir; kalbinizi durdurmaz, sizi öldürmez. (Yine de göğüs belirtileri ilk kez oluyorsa ya da kola/çeneye yayılıyorsa tıbbi kontrol şart — güvenlik önce.)
+Hayır. Panik atak, bedenin doğal "savaş-kaç" tepkisidir; kalbinizi durdurmaz, sizi öldürmez. (Yine de göğüs belirtileri ilk kez oluyorsa ya da kola/çeneye yayılıyorsa tıbbi kontrol şart; önce güvenlik.)
 
 **2. Kalp krizi geçiriyor olabilir miyim?**
 Belirtiler benzeyebilir; bu yüzden tekrarlayan çarpıntılarda kalbinizi bir kez hekime kontrol ettirmek doğrudur. Kalbinizin sağlam olduğu doğrulandığında, aynı belirti geldiğinde "bu tanıdık panik, tehlikeli değil" diyebilmek atağı küçültür.
@@ -37,13 +39,13 @@ Hayır. Nefes darlığı hissi korkutucudur ama beden oksijeni almaya devam eder
 Hayır. Panik atak "delirme" ya da kontrolü kaybetme değildir; yoğun ama geçici bir korku dalgasıdır. İnsanlar panik anında bağırıp saçmalamaz; genellikle dışarıdan belli bile olmaz.
 
 **6. Panik atak beyne/kalbe kalıcı zarar verir mi?**
-Hayır, kalıcı fiziksel zarar bırakmaz. Zorlayan kısım, ataktan sonra "yine olur mu" korkusuyla yaşanan **beklenti kaygısıdır** — asıl üzerinde çalışılması gereken de budur.
+Hayır, kalıcı fiziksel zarar bırakmaz. Zorlayan kısım, ataktan sonra "yine olur mu" korkusuyla yaşanan **beklenti kaygısıdır**; asıl üzerinde çalışılması gereken de budur.
 
 **7. Sürekli olur da hayatımı ele geçirir mi?**
 Ele geçirmesi şart değil. Panik atak, öğrenilmiş bir alarm tepkisidir ve **öğrenilen şey değiştirilebilir.** Uygun tekniklerle ve gerekiyorsa terapiyle çoğu kişi belirgin biçimde rahatlar.
 
 ## Bu korkuların altında ne var?
-Tüm bu "ya olursa" soruları, içinizdeki çok korkmuş, güvende hissetmeyen bir tarafın sesidir — "kırılgan çocuk" tarafı. Karşılanmamış temel ihtiyacı yine **güvende ve korunmuş hissetmektir** (Lockwood & Perris, 2012). Bu yüzden bu korkulara verilecek en iyi yanıt, onları küçümsemek değil; sakin, güven veren bir **"iç yetişkin"** sesiyle karşılamaktır:
+Tüm bu "ya olursa" soruları, içinizdeki çok korkmuş, güvende hissetmeyen bir tarafın sesidir: "kırılgan çocuk" tarafı. Karşılanmamış temel ihtiyacı yine **güvende ve korunmuş hissetmektir** (Lockwood & Perris, 2012). Bu yüzden bu korkulara verilecek en iyi yanıt, onları küçümsemek değil; sakin, güven veren bir **"iç yetişkin"** sesiyle karşılamaktır:
 > "Çok korktun. Ama bu his tehlikeli değil ve geçecek. Buradayım, güvendeyiz." (Yakın & Arntz, 2023)
 
 ## Ne zaman bir uzmana danışmalı?

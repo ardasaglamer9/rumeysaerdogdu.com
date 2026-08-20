@@ -8,7 +8,7 @@ thumb: nabiz
 thumb_color: t2
 permalink: /panik-atak-aninda-ne-yapmali/
 excerpt_text: "Kalbiniz küt küt atıyor, nefesiniz yetmiyor. Panik atak korkutucudur ama tehlikeli değildir ve geçer. Anında uygulayabileceğiniz dört adım."
-summary: "Panik atak, ortada gerçek bir tehlike yokken bedenin alarm moduna geçmesidir; korkutucu hissettirir ama tehlikeli değildir. Bu yazıda panik atağın nasıl bir kısır döngüyle büyüdüğünü, altındaki karşılanmamış güvende hissetme ihtiyacını ve atak anında uygulayabileceğiniz dört adımı — topraklanma, 4-7-8 nefesi, kas gevşetme ve 5-4-3-2-1 tekniğini — anlatıyorum."
+summary: "Panik atak, ortada gerçek bir tehlike yokken bedenin alarm moduna geçmesidir; korkutucu hissettirir ama tehlikeli değildir. Bu yazıda panik atağın nasıl bir kısır döngüyle büyüdüğünü, altındaki karşılanmamış güvende hissetme ihtiyacını ve atak anında uygulayabileceğiniz dört adımı (topraklanma, 4-7-8 nefesi, kas gevşetme ve 5-4-3-2-1 tekniği) anlatıyorum."
 faq:
   - q: "Panik atak kaç dakika sürer?"
     a: "Genellikle birkaç dakikada zirveye ulaşır ve çoğunlukla 15–30 dakika içinde kendiliğinden geçer."
@@ -26,10 +26,10 @@ Kalbiniz küt küt atıyor, nefesiniz yetmiyor, "galiba ölüyorum" ya da "kontr
 
 Panik atak, ortada gerçek bir tehlike yokken bedenin aniden "alarm" moduna geçmesidir. Kalp çarpıntısı, nefes darlığı, göğüs sıkışması, baş dönmesi, terleme ve yoğun bir korku birkaç dakika içinde tepe yapar.
 
-Nedeni çoğu zaman şudur: beden küçük bir sinyali (örneğin hızlanan kalp atışı) yakalar, zihin bunu **"bir şeyler çok kötü"** diye yorumlar, bu yorum korkuyu artırır, korku bedeni daha da hızlandırır — ve bir kısır döngü kurulur (Clark, 1986). İyi haber: bu döngü kendiliğinden söner. Panik atak genellikle **birkaç dakikada zirveye ulaşır, çoğunlukla 15–30 dakikada geçer.**
+Nedeni çoğu zaman şudur: beden küçük bir sinyali (örneğin hızlanan kalp atışı) yakalar, zihin bunu **"bir şeyler çok kötü"** diye yorumlar, bu yorum korkuyu artırır, korku bedeni daha da hızlandırır ve bir kısır döngü kurulur (Clark, 1986). İyi haber: bu döngü kendiliğinden söner. Panik atak genellikle **birkaç dakikada zirveye ulaşır, çoğunlukla 15–30 dakikada geçer.**
 
 ## Panik atağın altında ne var?
-Panik anında içinizde çok korkmuş, küçük ve çaresiz hisseden bir taraf devreye girer — şema terapisinde buna **"kırılgan çocuk" tarafı** denir. O tarafın karşılanmamış temel ihtiyacı çoğu zaman aynıdır: **güvende hissetmek ve yatıştırılmak** (Lockwood & Perris, 2012).
+Panik anında içinizde çok korkmuş, küçük ve çaresiz hisseden bir taraf devreye girer; şema terapisinde buna **"kırılgan çocuk" tarafı** denir. O tarafın karşılanmamış temel ihtiyacı çoğu zaman aynıdır: **güvende hissetmek ve yatıştırılmak** (Lockwood & Perris, 2012).
 
 Yani panik atak, "bende bir bozukluk var" demek değil. Çoğu zaman, uzun süredir güvende hissedememiş bir tarafın alarm zilini fazla erken ve fazla yüksek çalmasıdır. Bu yüzden aşağıdaki adımların amacı da o korkmuş tarafı **bastırmak değil, sakinleştirmek.**
 
@@ -37,13 +37,13 @@ Yani panik atak, "bende bir bozukluk var" demek değil. Çoğu zaman, uzun süre
 
 Bu dört adımı sırayla deneyin. Hepsini yapmak zorunda değilsiniz; bazen ilk ikisi bile yeter.
 
-### 1. Adım — "Şu an güvendesiniz": Topraklanın
+### 1. Adım: Topraklanın ("Şu an güvendesiniz")
 Bulunduğunuz yerde ayaklarınızı yere sağlam basın, ellerinizi gevşetin. Kendinize yavaşça şunu söyleyin:
 > "Şu an buradayım. Bu bir panik atak. Rahatsız edici ama bana zarar vermeyecek ve geçecek."
 
 Ayaklarınızın yere değişini, oturduğunuz yüzeyi fark edin. Bu, dikkatinizi "felaket" düşüncesinden **şu ana** çeker.
 
-### 2. Adım — Nefesinizi yavaşlatın: 4-7-8 tekniği
+### 2. Adım: Nefesinizi yavaşlatın (4-7-8 tekniği)
 Panikte nefes hızlanır; onu yavaşlatmak bedene "tehlike yok" mesajı verir.
 - Burnunuzdan **4 saniye** nefes alın.
 - Nefesinizi **7 saniye** tutun.
@@ -52,10 +52,10 @@ Panikte nefes hızlanır; onu yavaşlatmak bedene "tehlike yok" mesajı verir.
 
 Sayamıyorsanız, sadece "veriş"i alıştan uzun tutmaya çalışın. Uzun nefes verişi sinir sistemini yatıştırır.
 
-### 3. Adım — Bedeni gevşetin: Kısa kas gevşetme
+### 3. Adım: Bedeni gevşetin (kısa kas gevşetme)
 Her kas grubunu birkaç saniye **sıkın ve bırakın**: eller → kollar → omuzlar → yüz → karın → bacaklar. Kası kasmanız ve sonra bırakmanız, bedendeki gerginliği fiziksel olarak boşaltır.
 
-### 4. Adım — Şimdiye dönün: 5-4-3-2-1 tekniği
+### 4. Adım: Şimdiye dönün (5-4-3-2-1 tekniği)
 Duyularınızı kullanarak zihni o andan uzaklaştırın:
 - **5** şey görün, **4** şey duyun, **3** şeye dokunun, **2** şey koklayın, **1** şey tadın.
 
@@ -64,6 +64,8 @@ Bu teknik, "içerideki felaket"ten "dışarıdaki gerçek an"a bir köprü kurar
 ## Panik atak mı, kalp krizi mi?
 
 Bu, en çok korkulan soru. Panik atağın belirtileri (çarpıntı, göğüs sıkışması) kalp sorunlarını taklit edebilir. **Ama emin olmanın tek yolu tıbbi değerlendirmedir.** İlk kez yaşıyorsanız, göğüs ağrınız kola/çeneye yayılıyorsa ya da en ufak bir şüpheniz varsa **mutlaka acile başvurun ya da 112'yi arayın.** Panik atak tehlikesizdir; ama kalbinizi kontrol ettirmek her zaman doğru karardır.
+
+"Kalbime bir şey olur mu, bayılır mıyım, delirir miyim" gibi soruların hepsini [panik atağın zarar verip vermediğini ele aldığım yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) tek tek yanıtlıyorum.
 
 ## Sağlıklı Yetişkin'den kendinize ne söyleyebilirsiniz?
 

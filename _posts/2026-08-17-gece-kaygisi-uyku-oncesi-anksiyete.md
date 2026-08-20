@@ -27,13 +27,15 @@ Birkaç sebep bir araya gelir:
 - **Yorgun zihin daha az filtreler.** Gün sonunda öz-denetim tükenmiştir; endişeler daha kolay büyür ve dönüp durur (ruminasyon).
 - **Beden ipuçlarını daha çok fark edersiniz.** Sessizlikte kalp atışınızı, nefesinizi duyarsınız; bu duyumlar kaygıyı tetikleyebilir.
 
+Bu duyumların bazı gecelerde panik atağa dönüştüğünü fark ediyorsanız, panik atağın gerçekten zarar verip vermediğini [şu yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) ele alıyorum.
+
 ## Geceleri yüzeye çıkan aslında ne?
-Gündüz meşgulken sesini duyuramayan bir taraf, gece sahne alır: içinizdeki **kırılgan, güvende hissetmeyen çocuk tarafı.** Karanlık ve yalnızlık, onun karşılanmamış temel ihtiyaçlarını uyandırır — **güvende hissetmek, yatıştırılmak, yalnız olmadığını bilmek** (Lockwood & Perris, 2012). "Yatınca düşünceler susmuyor" dediğiniz şey, çoğu zaman bu tarafın "beni fark et, beni sakinleştir" çağrısıdır.
+Gündüz meşgulken sesini duyuramayan bir taraf, gece sahne alır: içinizdeki **kırılgan, güvende hissetmeyen çocuk tarafı.** Karanlık ve yalnızlık, onun karşılanmamış temel ihtiyaçlarını uyandırır: **güvende hissetmek, yatıştırılmak, yalnız olmadığını bilmek** (Lockwood & Perris, 2012). "Yatınca düşünceler susmuyor" dediğiniz şey, çoğu zaman bu tarafın "beni fark et, beni sakinleştir" çağrısıdır.
 
 Endişelenmek ise bir tür **baş etme çabasıdır**: zihin, olası tehlikeleri önceden çözerek güvenliği garantilemeye çalışır. Ama bu, gerçekte güvende hissettirmez; sadece uykuyu kaçırır.
 
 ## Sakinleştiren bir gece rutini
-Amaç düşünceleri zorla susturmak değil — bedene ve o korkan tarafa "artık güvendeyiz, dinlenebiliriz" mesajını vermek.
+Amaç düşünceleri zorla susturmak değil; bedene ve o korkan tarafa "artık güvendeyiz, dinlenebiliriz" mesajını vermek.
 
 ### 1. "Endişe saati"ni gündüze taşıyın
 Yatmadan 2–3 saat önce 10 dakikalık bir "endişe defteri" tutun: aklınızı kurcalayanları yazın. Gece zihniniz bir şey hatırlattığında kendinize "bunu yarın endişe saatinde ele alacağım" deyin. Bu, endişeye sınır koyar.

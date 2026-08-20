@@ -30,7 +30,7 @@ faq:
 
 Bunun bir sebebi, tanıdık olanın tahmin edilebilir olmasıdır; tahmin edilebilir olan da bir tür güvenlik sunar. Bu yüzden bize iyi gelmeyen bir örüntü bile, bilinmeyen bir alternatiften daha "yerinde" hissedebilir.
 
-Bunun bir de sık yaşanan ters yüzü var: bize iyi davranan biriyle beklenen çekimi hissetmemek. Şema tetiklenmediğinde o yoğunluk da ortaya çıkmaz; ilişki düz, hatta bazen boğucu hissedilebilir. Kişi bu durumu genellikle mantıklı bir gerekçeyle açıklar — "aramızda bir şey yoktu", "fazla nazikti" — ama altta yatan şey çoğu zaman kimyanın eksikliğidir.
+Bunun bir de sık yaşanan ters yüzü var: bize iyi davranan biriyle beklenen çekimi hissetmemek. Şema tetiklenmediğinde o yoğunluk da ortaya çıkmaz; ilişki düz, hatta bazen boğucu hissedilebilir. Kişi bu durumu genellikle mantıklı bir gerekçeyle açıklar ("aramızda bir şey yoktu", "fazla nazikti") ama altta yatan şey çoğu zaman kimyanın eksikliğidir.
 
 Bu bir tercih ya da yanlış karar meselesi değildir. Farkında olmadan işleyen bir eğilimdir.
 
@@ -42,13 +42,13 @@ Bu deneyimlerden kendimize ve başkalarına dair sessiz sonuçlar çıkarırız:
 
 ### İlişkilerde en sık karşılaştığım temalar
 
-- **Terk edilme ve istikrarsızlık** — bağın her an kopabileceği beklentisi. Bu şemayla birlikte, bağlanmaya hazır olmayan ya da ulaşılabilir olmayan kişilere karşı yoğun bir çekim sık görülür.
-- **Duygusal yoksunluk** — duygusal destek, anlaşılma ve şefkat ihtiyacının hiçbir zaman yeterince karşılanmayacağı beklentisi. İlginç olan şu: bu şema en yaygın olanlardan biri olmasına rağmen, kişiler çoğu zaman onu taşıdıklarının farkında değildir. İhtiyaçları hiç karşılanmadığı için "böyle bir ihtiyacım var" fikri bile gelişmemiş olabilir.
-- **Kusurluluk** — asıl hâli görülürse kabul edilmeyeceği duygusu. Yakınlıktan kaçınmanın ya da kendini geri çekmenin sık zeminidir.
-- **Boyun eğicilik** — kendi ihtiyaç ve duygularını, çatışmadan ya da terk edilmekten kaçınmak için bastırmak. Bu örüntüyle birlikte, kontrol eden partnerlere doğru bir eğilim sıkça görülür.
-- **Kendini feda etme** — karşıdakinin ihtiyaçlarını kendi ihtiyaçlarının önüne koymak; zamanla biriken bir kırgınlıkla birlikte.
+- **Terk edilme ve istikrarsızlık:** bağın her an kopabileceği beklentisi. Bu şemayla birlikte, bağlanmaya hazır olmayan ya da ulaşılabilir olmayan kişilere karşı yoğun bir çekim sık görülür.
+- **Duygusal yoksunluk:** duygusal destek, anlaşılma ve şefkat ihtiyacının hiçbir zaman yeterince karşılanmayacağı beklentisi. İlginç olan şu: bu şema en yaygın olanlardan biri olmasına rağmen, kişiler çoğu zaman onu taşıdıklarının farkında değildir. İhtiyaçları hiç karşılanmadığı için "böyle bir ihtiyacım var" fikri bile gelişmemiş olabilir.
+- **Kusurluluk:** asıl hâli görülürse kabul edilmeyeceği duygusu. Yakınlıktan kaçınmanın ya da kendini geri çekmenin sık zeminidir.
+- **Boyun eğicilik:** kendi ihtiyaç ve duygularını, çatışmadan ya da terk edilmekten kaçınmak için bastırmak. Bu örüntüyle birlikte, kontrol eden partnerlere doğru bir eğilim sıkça görülür.
+- **Kendini feda etme:** karşıdakinin ihtiyaçlarını kendi ihtiyaçlarının önüne koymak; zamanla biriken bir kırgınlıkla birlikte.
 
-Bu şemalar tek tek değil, çoğu zaman **birlikte** çalışır — modelde buna **bağlantılı şemalar** deniyor. Örneğin duygusal yoksunluk ile kusurluluk sık birlikte görülür: kişi sevgi görmediğinde bunu karşısındakinin sınırına değil, kendi "eksikliğine" bağlar. Ya da terk edilme ile boyun eğicilik birleşir: "İstediğini yapmazsam beni bırakır."
+Bu şemalar tek tek değil, çoğu zaman **birlikte** çalışır; modelde buna **bağlantılı şemalar** deniyor. Örneğin duygusal yoksunluk ile kusurluluk sık birlikte görülür: kişi sevgi görmediğinde bunu karşısındakinin sınırına değil, kendi "eksikliğine" bağlar. Ya da terk edilme ile boyun eğicilik birleşir: "İstediğini yapmazsam beni bırakır."
 
 ## Döngüyü sürdüren baş etme biçimleri
 
@@ -64,7 +64,7 @@ Bir şema tetiklendiğinde ortaya çıkan duyguyla baş etmek için farkında ol
 
 ### Kısır döngü nasıl görünür?
 
-Somut bir örnek yardımcı olabilir. Duygusal yoksunluk şeması olan bir kişi, kendisine şefkat göstermekte zorlanan bir partner seçer. Yakınlık ihtiyacıyla ona yaklaştığında partner geri çekilir. Bu, şemayı tetikler ve kişi öfkelenir — bu öfke kısmen haklı, kısmen de o eski hassasiyetin büyütmesidir. Öfke partneri daha da uzaklaştırır. Böylece kişi yetişkin ilişkisinde, çocukluğundaki yoksunluğu yeniden yaşamaya devam eder.
+Somut bir örnek yardımcı olabilir. Duygusal yoksunluk şeması olan bir kişi, kendisine şefkat göstermekte zorlanan bir partner seçer. Yakınlık ihtiyacıyla ona yaklaştığında partner geri çekilir. Bu, şemayı tetikler ve kişi öfkelenir; bu öfke kısmen haklı, kısmen de o eski hassasiyetin büyütmesidir. Öfke partneri daha da uzaklaştırır. Böylece kişi yetişkin ilişkisinde, çocukluğundaki yoksunluğu yeniden yaşamaya devam eder.
 
 Döngünün en can sıkıcı yanı budur: kimse kötü niyetli olmasa da örüntü kendini besler.
 
