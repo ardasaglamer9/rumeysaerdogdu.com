@@ -703,3 +703,40 @@ body.nav-open{overflow:hidden;}
   .hero-link{font-size:15px;}
   .hero .hero-note{font-size:13.5px;}
 }
+
+
+/* =========================================================
+   HERO BAŞLIĞI — GRADYAN DOLGU  (Instagram sisteminden deneme)
+   Şafak (sıcak) + Serin (soğuk) gradyanları, orman zemin üzerinde.
+   Güvenlik sırası bilinçli:
+     1) düz renk baştan verilir — CSS kısmen yüklenirse metin kaybolmaz
+     2) gradyan yalnızca @supports içinde uygulanır
+     3) yazdırmada ve zorunlu renk modunda düz renge dönülür
+        (arka plan basılmadığı için gradyan başlık boş çıkardı)
+   Gölge text-shadow ile DEĞİL, filter ile: dolgu şeffaf olduğu için
+   text-shadow harfin içinden görünür ve metin kirli çıkar.
+   ========================================================= */
+.hero-grad .g1{color:#F9D8C0;}
+.hero-grad .g2{color:#BCD8EE;}
+
+@supports (background-clip:text) or (-webkit-background-clip:text){
+  .hero-grad .g1,.hero-grad .g2{
+    -webkit-background-clip:text;background-clip:text;
+    color:transparent;-webkit-text-fill-color:transparent;
+    /* satır başına yeniden başlasın — kısa satır da gradyanın tamamını gezsin */
+    -webkit-box-decoration-break:slice;box-decoration-break:slice;
+    filter:drop-shadow(0 6px 20px rgba(11,24,16,.42));
+  }
+  .hero-grad .g1{background-image:linear-gradient(100deg,#F6EFB6 0%,#F9D8C0 38%,#F3A9CC 100%);}
+  .hero-grad .g2{background-image:linear-gradient(100deg,#C9E9D3 0%,#BCD8EE 55%,#9FC0EA 100%);}
+}
+
+@media (forced-colors:active),print{
+  .hero-grad .g1,.hero-grad .g2{
+    background-image:none;filter:none;
+    color:CanvasText;-webkit-text-fill-color:currentColor;}
+}
+
+/* Yuvarlak, tombul harf biçimi — Instagram kartlarındaki karakter.
+   SOFT ve WONK eksenleri font isteğine head.html'de eklendi. */
+.hero-grad{font-weight:700;font-variation-settings:'SOFT' 100,'WONK' 1,'opsz' 144;}
