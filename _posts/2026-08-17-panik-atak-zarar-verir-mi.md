@@ -39,25 +39,25 @@ Hayır. Nefes darlığı hissi korkutucudur ama beden oksijeni almaya devam eder
 Hayır. Panik atak "delirme" ya da kontrolü kaybetme değildir; yoğun ama geçici bir korku dalgasıdır. İnsanlar panik anında bağırıp saçmalamaz; genellikle dışarıdan belli bile olmaz.
 
 **6. Panik atak beyne/kalbe kalıcı zarar verir mi?**
-Hayır, kalıcı fiziksel zarar bırakmaz. Zorlayan kısım, ataktan sonra "yine olur mu" korkusuyla yaşanan **beklenti kaygısıdır**; asıl üzerinde çalışılması gereken de budur.
+Hayır, kalıcı fiziksel zarar bırakmaz. Zorlayan kısım, ataktan sonra "yine olur mu" korkusuyla yaşanan **beklenti kaygısıdır**; asıl üzerinde çalışılması gereken de budur. Bu kaygının süreklilik kazanmış hâlini [kronik kaygı yazısında]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}) ele alıyorum.
 
 **7. Sürekli olur da hayatımı ele geçirir mi?**
 Ele geçirmesi şart değil. Panik atak, öğrenilmiş bir alarm tepkisidir ve **öğrenilen şey değiştirilebilir.** Uygun tekniklerle ve gerekiyorsa terapiyle çoğu kişi belirgin biçimde rahatlar.
 
 ## Bu korkuların altında ne var?
-Tüm bu "ya olursa" soruları, içinizdeki çok korkmuş, güvende hissetmeyen bir tarafın sesidir: "kırılgan çocuk" tarafı. Karşılanmamış temel ihtiyacı yine **güvende ve korunmuş hissetmektir** (Lockwood & Perris, 2012). Bu yüzden bu korkulara verilecek en iyi yanıt, onları küçümsemek değil; sakin, güven veren bir **"iç yetişkin"** sesiyle karşılamaktır:
+Tüm bu "ya olursa" soruları, içinizdeki çok korkmuş, güvende hissetmeyen bir tarafın sesidir: ["kırılgan çocuk" tarafı]({{ '/sema-terapi-nedir/' | relative_url }}). Karşılanmamış temel ihtiyacı yine **güvende ve korunmuş hissetmektir** (Lockwood & Perris, 2012). Bu yüzden bu korkulara verilecek en iyi yanıt, onları küçümsemek değil; sakin, güven veren bir **"iç yetişkin"** sesiyle karşılamaktır:
 > "Çok korktun. Ama bu his tehlikeli değil ve geçecek. Buradayım, güvendeyiz." (Yakın & Arntz, 2023)
 
 ## Ne zaman bir uzmana danışmalı?
 
-Panik ataklar tekrarlıyor, "yine olur" korkusuyla yerlerden/durumlardan kaçınmaya başladıysanız ya da yaşamınızı daraltıyorsa destek alın. Bilişsel davranışçı terapi bu alanda en yerleşik yöntemdir; şema terapisi de kökleri eskiye dayanan güvenlik kaygılarında umut verici olabilir (Peeters ve ark., 2022).
+Panik ataklar tekrarlıyor, "yine olur" korkusuyla yerlerden/durumlardan [kaçınmaya]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) başladıysanız ya da yaşamınızı daraltıyorsa destek alın. Bilişsel davranışçı terapi bu alanda en yerleşik yöntemdir; şema terapisi de kökleri eskiye dayanan güvenlik kaygılarında umut verici olabilir (Peeters ve ark., 2022).
 
 ---
 
 > **Not:** Bu yazı bilgilendirme amaçlıdır, tıbbi/psikolojik tanı veya tedavi yerine geçmez. Yeni veya alışılmadık göğüs belirtilerinde önce tıbbi değerlendirme yaptırın.
 
 ### Kaynaklar
-- Clark, D. M. (1986). A cognitive approach to panic. *Behaviour Research and Therapy, 24*(4), 461–470. https://doi.org/10.1016/0005-7967(86)90011-2
+- Clark, D. M. (1986). A cognitive approach to panic. *Behaviour Research and Therapy, 24*(4), 461–470. [doi:10.1016/0005-7967(86)90011-2](<https://doi.org/10.1016/0005-7967(86)90011-2>){:target="_blank" rel="noopener"}
 - Lockwood, G., & Perris, P. (2012). A new look at core emotional needs. In *The Wiley-Blackwell handbook of schema therapy* (pp. 41–66). Wiley-Blackwell.
-- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes: An in-depth analysis of the healthy adult mode. *Frontiers in Psychiatry, 14*, 1204177. https://doi.org/10.3389/fpsyt.2023.1204177
-- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. https://doi.org/10.1111/bjc.12324
+- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes: An in-depth analysis of the healthy adult mode. *Frontiers in Psychiatry, 14*, 1204177. [doi:10.3389/fpsyt.2023.1204177](<https://doi.org/10.3389/fpsyt.2023.1204177>){:target="_blank" rel="noopener"}
+- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. [doi:10.1111/bjc.12324](<https://doi.org/10.1111/bjc.12324>){:target="_blank" rel="noopener"}

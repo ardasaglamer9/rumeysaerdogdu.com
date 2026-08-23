@@ -114,9 +114,9 @@ Bütün bu yolların ortak hedefi tektir: kişinin temel duygusal ihtiyaçların
 
 Nasıl ilerleneceği ve hangi konularla çalışılacağı kişiye göre değişir; en doğru cevap ilk görüşmelerde birlikte oluşur. Yaklaşımımı [Yaklaşım bölümünde]({{ '/#yaklasim' | relative_url }}), çalıştığım konuları ise [Çalışma Alanları'nda]({{ '/#alanlar' | relative_url }}) bulabilirsiniz.
 
-Kaygının bu çerçevede nasıl ele alındığını [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}), ilişkilerdeki tekrarları ise [ilişki örüntüleri yazısında]({{ '/iliskilerde-tekrarlayan-oruntuler/' | relative_url }}) anlatıyorum. Baş etme biçimlerinin çocukluk anılarını nasıl hatırladığımızla ilişkisine ise [tez çalışmamı anlattığım yazıda]({{ '/cocukluk-anilari-ve-bas-etme/' | relative_url }}) bakıyorum.
+Kaygının bu çerçevede nasıl ele alındığını [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}), ilişkilerdeki tekrarları ise [ilişki örüntüleri yazısında]({{ '/iliskilerde-tekrarlayan-oruntuler/' | relative_url }}) anlatıyorum. Baş etme biçimlerinin çocukluk anılarını nasıl hatırladığımızla ilişkisine ise [tez çalışmamı anlattığım yazıda]({{ '/cocukluk-anilari-ve-bas-etme/' | relative_url }}) bakıyorum. Kaygının süreklilik kazanmış hâlini [sürekli tetikte olma yazısında]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}), panik atağı ise [panik atak yazısında]({{ '/panik-atak-aninda-ne-yapmali/' | relative_url }}) ele alıyorum.
 
 ## Kaynaklar
 
-- Young, J. E., Klosko, J. S. & Weishaar, M. E. (2003). *Schema Therapy: A Practitioner's Guide*. Guilford Press.
-- Farrell, J. M., Reiss, N. & Shaw, I. A. *The Schema Therapy Clinician's Guide*. Wiley-Blackwell.
+- Young, J. E., Klosko, J. S. & Weishaar, M. E. (2003). *Schema Therapy: A Practitioner's Guide*. [Guilford Press](https://www.guilford.com/books/Schema-Therapy/Young-Klosko-Weishaar/9781593853723){:target="_blank" rel="noopener"}.
+- Farrell, J. M., Reiss, N. & Shaw, I. A. (2014). *The Schema Therapy Clinician's Guide*. Wiley-Blackwell. [doi:10.1002/9781118510018](<https://doi.org/10.1002/9781118510018>){:target="_blank" rel="noopener"}

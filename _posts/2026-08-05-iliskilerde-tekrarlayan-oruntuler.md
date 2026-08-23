@@ -88,9 +88,9 @@ Bireysel çalışmada hem güncel ilişkilerdeki döngülere hem de bunların ne
 
 Şema terapinin ayırt edici bir yanı da şu: terapi ilişkisinin kendisi bu çalışmanın bir parçasıdır. Yargılanmadan görülebildiğiniz bir ilişki içinde, ihtiyaçlarınızı fark etmek ve dile getirmek pratik edilebilir bir şey hâline gelir.
 
-Süreç kendi hızınızda ilerler. Nasıl çalıştığımı [Yaklaşım bölümünde]({{ '/#yaklasim' | relative_url }}), hangi konularda çalıştığımı ise [Çalışma Alanları'nda]({{ '/#alanlar' | relative_url }}) bulabilirsiniz. İlişkilerde tekrarlayan örüntülere sık eşlik eden kaygıyı [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) ele alıyorum.
+Süreç kendi hızınızda ilerler. Nasıl çalıştığımı [Yaklaşım bölümünde]({{ '/#yaklasim' | relative_url }}), hangi konularda çalıştığımı ise [Çalışma Alanları'nda]({{ '/#alanlar' | relative_url }}) bulabilirsiniz. İlişkilerde tekrarlayan örüntülere sık eşlik eden kaygıyı [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}), bu kaygının sürekli bir hâle gelmesini ise [sürekli tetikte olma yazısında]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}) ele alıyorum.
 
 ## Kaynaklar
 
-- Young, J. E., Klosko, J. S. & Weishaar, M. E. (2003). *Schema Therapy: A Practitioner's Guide*. Guilford Press.
-- Farrell, J. M., Reiss, N. & Shaw, I. A. *The Schema Therapy Clinician's Guide*. Wiley-Blackwell.
+- Young, J. E., Klosko, J. S. & Weishaar, M. E. (2003). *Schema Therapy: A Practitioner's Guide*. [Guilford Press](https://www.guilford.com/books/Schema-Therapy/Young-Klosko-Weishaar/9781593853723){:target="_blank" rel="noopener"}.
+- Farrell, J. M., Reiss, N. & Shaw, I. A. (2014). *The Schema Therapy Clinician's Guide*. Wiley-Blackwell. [doi:10.1002/9781118510018](<https://doi.org/10.1002/9781118510018>){:target="_blank" rel="noopener"}

@@ -29,7 +29,7 @@ Panik atak, ortada gerçek bir tehlike yokken bedenin aniden "alarm" moduna geç
 Nedeni çoğu zaman şudur: beden küçük bir sinyali (örneğin hızlanan kalp atışı) yakalar, zihin bunu **"bir şeyler çok kötü"** diye yorumlar, bu yorum korkuyu artırır, korku bedeni daha da hızlandırır ve bir kısır döngü kurulur (Clark, 1986). İyi haber: bu döngü kendiliğinden söner. Panik atak genellikle **birkaç dakikada zirveye ulaşır, çoğunlukla 15–30 dakikada geçer.**
 
 ## Panik atağın altında ne var?
-Panik anında içinizde çok korkmuş, küçük ve çaresiz hisseden bir taraf devreye girer; şema terapisinde buna **"kırılgan çocuk" tarafı** denir. O tarafın karşılanmamış temel ihtiyacı çoğu zaman aynıdır: **güvende hissetmek ve yatıştırılmak** (Lockwood & Perris, 2012).
+Panik anında içinizde çok korkmuş, küçük ve çaresiz hisseden bir taraf devreye girer; [şema terapisinde]({{ '/sema-terapi-nedir/' | relative_url }}) buna **"kırılgan çocuk" tarafı** denir. O tarafın karşılanmamış temel ihtiyacı çoğu zaman aynıdır: **güvende hissetmek ve yatıştırılmak** (Lockwood & Perris, 2012).
 
 Yani panik atak, "bende bir bozukluk var" demek değil. Çoğu zaman, uzun süredir güvende hissedememiş bir tarafın alarm zilini fazla erken ve fazla yüksek çalmasıdır. Bu yüzden aşağıdaki adımların amacı da o korkmuş tarafı **bastırmak değil, sakinleştirmek.**
 
@@ -76,15 +76,17 @@ Bu, o karşılanmamış **güvende hissetme** ihtiyacını, kaçarak değil, ken
 
 ## Ne zaman profesyonel yardım almalı?
 
-Panik ataklar sık tekrarlıyorsa, "yine olur mu" korkusuyla yerlerden veya durumlardan kaçınmaya başladıysanız ya da günlük hayatınızı daraltıyorsa, bir uzmandan destek almak çok değerli. Bilişsel davranışçı terapi bu alanda en yerleşik yöntemdir; **şema terapisi de** özellikle tekrarlayan, kökleri eskiye dayanan kaygılarda umut verici sonuçlar göstermektedir (Peeters ve ark., 2022).
+Panik ataklar sık tekrarlıyorsa, "yine olur mu" korkusuyla yerlerden veya durumlardan [kaçınmaya]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) başladıysanız ya da günlük hayatınızı daraltıyorsa, bir uzmandan destek almak çok değerli. Bilişsel davranışçı terapi bu alanda en yerleşik yöntemdir; **şema terapisi de** özellikle tekrarlayan, kökleri eskiye dayanan kaygılarda umut verici sonuçlar göstermektedir (Peeters ve ark., 2022).
+
+Kaygı yalnızca atak anlarında değil, gün boyu süren bir zemin hâline geldiyse [sürekli tetikte olma hâlini ele aldığım yazıya]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}) da bakabilirsiniz.
 
 ---
 
 > **Not:** Bu yazı bilgilendirme amaçlıdır, tıbbi/psikolojik tanı veya tedavi yerine geçmez. Belirtileriniz sık, şiddetli veya günlük yaşamınızı kısıtlıyorsa bir ruh sağlığı uzmanına başvurun.
 
 ### Kaynaklar
-- Clark, D. M. (1986). A cognitive approach to panic. *Behaviour Research and Therapy, 24*(4), 461–470. https://doi.org/10.1016/0005-7967(86)90011-2
+- Clark, D. M. (1986). A cognitive approach to panic. *Behaviour Research and Therapy, 24*(4), 461–470. [doi:10.1016/0005-7967(86)90011-2](<https://doi.org/10.1016/0005-7967(86)90011-2>){:target="_blank" rel="noopener"}
 - Lockwood, G., & Perris, P. (2012). A new look at core emotional needs. In *The Wiley-Blackwell handbook of schema therapy* (pp. 41–66). Wiley-Blackwell.
-- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes: An in-depth analysis of the healthy adult mode. *Frontiers in Psychiatry, 14*, 1204177. https://doi.org/10.3389/fpsyt.2023.1204177
-- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for patients with anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. https://doi.org/10.1111/bjc.12324
+- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes: An in-depth analysis of the healthy adult mode. *Frontiers in Psychiatry, 14*, 1204177. [doi:10.3389/fpsyt.2023.1204177](<https://doi.org/10.3389/fpsyt.2023.1204177>){:target="_blank" rel="noopener"}
+- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for patients with anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. [doi:10.1111/bjc.12324](<https://doi.org/10.1111/bjc.12324>){:target="_blank" rel="noopener"}
 - Anlık sakinleşme teknikleri: *Ani Stres Teknikleri Rehberi* (4-7-8 nefes, progresif kas gevşetme, topraklama).

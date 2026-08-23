@@ -32,7 +32,7 @@ Sürekli açık duran bu alarm, zaman zaman ani ve yoğun bir dalgaya da dönü�
 
 ## Bu "tetikte" hâlin altında ne var?
 
-Sürekli tehlike tarayan zihin, çoğu zaman erken dönemde **dünyanın güvenli olmadığını** öğrenmiş bir tarafın devam eden savunmasıdır; şema terapisinde buna sıklıkla **"tehlikelere/hastalıklara karşı savunmasızlık" şeması** eşlik eder. Altta yatan karşılanmamış ihtiyaç yine tanıdıktır: **güvende, korunmuş ve yatışmış hissetmek** (Lockwood & Perris, 2012).
+Sürekli tehlike tarayan zihin, çoğu zaman erken dönemde **dünyanın güvenli olmadığını** öğrenmiş bir tarafın devam eden savunmasıdır; [şema terapisinde]({{ '/sema-terapi-nedir/' | relative_url }}) buna sıklıkla **"tehlikelere/hastalıklara karşı savunmasızlık" şeması** eşlik eder. Altta yatan karşılanmamış ihtiyaç yine tanıdıktır: **güvende, korunmuş ve yatışmış hissetmek** (Lockwood & Perris, 2012).
 
 Endişe etmek burada bir baş etme çabasıdır: "her şeyi önceden düşünürsem kötü sürprizi engellerim." Ama bu strateji güvenlik hissi getirmez; sadece bedeni yormaya devam eder. Ayrıca kaygıyla iç içe geçen bir başka güçlük de **duyguları fark edip düzenlemekte zorlanmaktır**; araştırmalar erken dönem şemalarının duygu düzenleme güçlükleriyle yakından ilişkili olduğunu gösteriyor (Pilkington ve ark., 2024; Tariq ve ark., 2021).
 
@@ -58,6 +58,8 @@ Bu, güvenlik ihtiyacını sürekli tarama yaparak değil, sahiplenerek karşıl
 
 Kaygı çoğu gününüzü kaplıyor, en az birkaç aydır sürüyor ve işinizi, ilişkilerinizi ya da uykunuzu etkiliyorsa bu, yaygın anksiyete yönünde bir işaret olabilir. Bilişsel davranışçı terapinin etkinliği güçlü kanıtlarla desteklenir (Hofmann & Smits, 2008); kökleri eskiye dayanan, "hep böyleydim" denen kaygılarda **şema terapisi** de anlamlı bir seçenek olabilir (Peeters ve ark., 2022).
 
+Bu hâlin geceleri belirginleştiğini fark ediyorsanız [gece kaygısı yazısına]({{ '/gece-kaygisi-uyku-oncesi-anksiyete/' | relative_url }}), kaygının neden tekrar ettiğini ise [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) bulabilirsiniz.
+
 ---
 
 > **Not:** Bu yazı bilgilendirme amaçlıdır, tıbbi/psikolojik tanı veya tedavi yerine geçmez.
@@ -66,7 +68,7 @@ Kaygı çoğu gününüzü kaplıyor, en az birkaç aydır sürüyor ve işinizi
 - Lazarus, R. S., & Folkman, S. (1984). *Stress, appraisal, and coping.* Springer.
 - McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New England Journal of Medicine, 338*(3), 171–179.
 - Tariq, A., Quayle, E., Lawrie, S. M., & Reid, C. (2021). Relationship between early maladaptive schemas and anxiety in adolescence and young adulthood: A systematic review and meta-analysis. *Journal of Affective Disorders, 295*, 1462–1473.
-- Pilkington, P. D., Karantzas, G. C., Faustino, B., & Pizarro-Campagna, E. (2024). Early maladaptive schemas, emotion regulation difficulties and alexithymia: A systematic review and meta-analysis. *Clinical Psychology & Psychotherapy, 31*(1), e2914. https://doi.org/10.1002/cpp.2914
-- Hofmann, S. G., & Smits, J. A. (2008). Cognitive-behavioral therapy for adult anxiety disorders: A meta-analysis. *Journal of Clinical Psychiatry, 69*(4), 621–632. https://doi.org/10.4088/jcp.v69n0415
-- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. https://doi.org/10.1111/bjc.12324
-- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes... *Frontiers in Psychiatry, 14*, 1204177. https://doi.org/10.3389/fpsyt.2023.1204177
+- Pilkington, P. D., Karantzas, G. C., Faustino, B., & Pizarro-Campagna, E. (2024). Early maladaptive schemas, emotion regulation difficulties and alexithymia: A systematic review and meta-analysis. *Clinical Psychology & Psychotherapy, 31*(1), e2914. [doi:10.1002/cpp.2914](<https://doi.org/10.1002/cpp.2914>){:target="_blank" rel="noopener"}
+- Hofmann, S. G., & Smits, J. A. (2008). Cognitive-behavioral therapy for adult anxiety disorders: A meta-analysis. *Journal of Clinical Psychiatry, 69*(4), 621–632. [doi:10.4088/jcp.v69n0415](<https://doi.org/10.4088/jcp.v69n0415>){:target="_blank" rel="noopener"}
+- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. [doi:10.1111/bjc.12324](<https://doi.org/10.1111/bjc.12324>){:target="_blank" rel="noopener"}
+- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes... *Frontiers in Psychiatry, 14*, 1204177. [doi:10.3389/fpsyt.2023.1204177](<https://doi.org/10.3389/fpsyt.2023.1204177>){:target="_blank" rel="noopener"}

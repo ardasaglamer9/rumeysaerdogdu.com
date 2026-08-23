@@ -55,7 +55,9 @@ O korkan tarafa sakin bir "iç yetişkin" sesiyle dönün:
 
 ## Ne zaman bir uzmana danışmalı?
 
-Gece kaygısı uykunuzu düzenli olarak bozuyorsa, gündüz işlevinizi etkiliyorsa ya da haftalardır sürüyorsa bir uzmandan destek alın. Uyku ve kaygı çoğu zaman birbirini besler; bilişsel davranışçı terapi ve şema terapisi bu döngüyü çözmede etkili olabilir (Peeters ve ark., 2022).
+Gece kaygısı uykunuzu düzenli olarak bozuyorsa, gündüz işlevinizi etkiliyorsa ya da haftalardır sürüyorsa bir uzmandan destek alın. Uyku ve kaygı çoğu zaman birbirini besler; bilişsel davranışçı terapi ve [şema terapisi]({{ '/sema-terapi-nedir/' | relative_url }}) bu döngüyü çözmede etkili olabilir (Peeters ve ark., 2022).
+
+Kaygı yalnızca geceye değil güne de yayılmışsa [sürekli tetikte olma hâlini]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}), neden tekrar ettiğini ise [kaygı yazısında]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) anlatıyorum.
 
 ---
 
@@ -63,6 +65,6 @@ Gece kaygısı uykunuzu düzenli olarak bozuyorsa, gündüz işlevinizi etkiliyo
 
 ### Kaynaklar
 - Lockwood, G., & Perris, P. (2012). A new look at core emotional needs. In *The Wiley-Blackwell handbook of schema therapy* (pp. 41–66). Wiley-Blackwell.
-- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes: An in-depth analysis of the healthy adult mode. *Frontiers in Psychiatry, 14*, 1204177. https://doi.org/10.3389/fpsyt.2023.1204177
-- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. https://doi.org/10.1111/bjc.12324
+- Yakın, D., & Arntz, A. (2023). Understanding the reparative effects of schema modes: An in-depth analysis of the healthy adult mode. *Frontiers in Psychiatry, 14*, 1204177. [doi:10.3389/fpsyt.2023.1204177](<https://doi.org/10.3389/fpsyt.2023.1204177>){:target="_blank" rel="noopener"}
+- Peeters, N., van Passel, B., & Krans, J. (2022). The effectiveness of schema therapy for anxiety disorders, OCD, or PTSD: A systematic review. *British Journal of Clinical Psychology, 61*(3), 579–597. [doi:10.1111/bjc.12324](<https://doi.org/10.1111/bjc.12324>){:target="_blank" rel="noopener"}
 - Anlık sakinleşme teknikleri: *Ani Stres Teknikleri Rehberi* (4-7-8 nefes, progresif kas gevşetme).

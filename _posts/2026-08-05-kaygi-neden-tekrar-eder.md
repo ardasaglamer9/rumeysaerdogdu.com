@@ -95,7 +95,9 @@ Bunun için "yeterince kötü" olmayı beklemek gerekmiyor. Kaygı gündelik hay
 
 Psikoterapide kaygıyla çalışırken hem güncel döngülere hem de bu döngülerin nereden geldiğine birlikte bakarız. Şema terapinin genel çerçevesini [şema terapi yazısında]({{ '/sema-terapi-nedir/' | relative_url }}), ilişkilerde tekrar eden örüntüleri ise [ilişki yazısında]({{ '/iliskilerde-tekrarlayan-oruntuler/' | relative_url }}) anlatıyorum. Çalıştığım konuları [Çalışma Alanları bölümünde]({{ '/#alanlar' | relative_url }}) görebilirsiniz.
 
+Kaygının gün boyu süren bir zemin hâline geldiği durumları [sürekli tetikte olma yazısında]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}), geceleri belirginleşmesini [gece kaygısı yazısında]({{ '/gece-kaygisi-uyku-oncesi-anksiyete/' | relative_url }}), ani ve yoğun dalgaları ise [panik atak yazısında]({{ '/panik-atak-aninda-ne-yapmali/' | relative_url }}) ele alıyorum.
+
 ## Kaynaklar
 
-- Young, J. E., Klosko, J. S. & Weishaar, M. E. (2003). *Schema Therapy: A Practitioner's Guide*. Guilford Press.
-- Farrell, J. M., Reiss, N. & Shaw, I. A. *The Schema Therapy Clinician's Guide*. Wiley-Blackwell.
+- Young, J. E., Klosko, J. S. & Weishaar, M. E. (2003). *Schema Therapy: A Practitioner's Guide*. [Guilford Press](https://www.guilford.com/books/Schema-Therapy/Young-Klosko-Weishaar/9781593853723){:target="_blank" rel="noopener"}.
+- Farrell, J. M., Reiss, N. & Shaw, I. A. (2014). *The Schema Therapy Clinician's Guide*. Wiley-Blackwell. [doi:10.1002/9781118510018](<https://doi.org/10.1002/9781118510018>){:target="_blank" rel="noopener"}
