@@ -740,3 +740,33 @@ body.nav-open{overflow:hidden;}
 /* Yuvarlak, tombul harf biçimi — Instagram kartlarındaki karakter.
    SOFT ve WONK eksenleri font isteğine head.html'de eklendi. */
 .hero-grad{font-weight:700;font-variation-settings:'SOFT' 100,'WONK' 1,'opsz' 144;}
+
+/* =========================================================
+   SAYFA VE BÖLÜM BAŞLIKLARI — TEK TONLU GRADYAN
+   Hero iki tonlu (şafak + serin); burada tek ton kullanılıyor.
+   Kademe böyle kuruluyor: iki ton = ana giriş, tek ton = diğer
+   koyu zeminli başlıklar, düz beyaz = kart içi küçük başlıklar.
+
+   Metin dinamik olduğu için (include.title, post başlıkları) hero
+   gibi iki parçaya bölünemez; blok boyunca tek gradyan geçiyor.
+
+   Seçici element+sınıf olarak yazıldı: `.page-hero h1{color:#fff}`
+   kuralı (0,1,1) düz `.grad-title`'ı (0,1,0) yenerdi.
+   Güvenlik sırası hero ile aynı: düz renk → @supports → yazdırma.
+   Kontrast: en koyu durak #F3A9CC, orman zeminde 5.30:1 (AAA).
+   ========================================================= */
+h1.grad-title,h2.grad-title{color:#F9D8C0;}
+
+@supports (background-clip:text) or (-webkit-background-clip:text){
+  h1.grad-title,h2.grad-title{
+    -webkit-background-clip:text;background-clip:text;
+    color:transparent;-webkit-text-fill-color:transparent;
+    background-image:linear-gradient(100deg,#F6EFB6 0%,#F9D8C0 45%,#F3A9CC 100%);
+    filter:drop-shadow(0 5px 16px rgba(11,24,16,.34));}
+}
+
+@media (forced-colors:active),print{
+  h1.grad-title,h2.grad-title{
+    background-image:none;filter:none;
+    color:CanvasText;-webkit-text-fill-color:currentColor;}
+}
