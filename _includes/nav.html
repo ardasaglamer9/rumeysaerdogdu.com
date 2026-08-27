@@ -2,13 +2,22 @@
   <div class="wrap">
     <a href="{{ '/' | relative_url }}" class="brand"><img src="{{ '/logo.png' | relative_url }}" alt="{{ site.author.name }} logo" class="brand-logo" width="128" height="128" fetchpriority="high"><span>{{ site.author.name }}</span></a>
     <div class="navlinks">
-      {% for item in site.nav %}
+      {% for item in site.nav %}{% unless item.cta %}
       <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
-      {% endfor %}
+      {% endunless %}{% endfor %}
     </div>
-    <button class="navtoggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navDrawer">
-      <span></span><span></span><span></span>
-    </button>
+    {%- comment -%}
+      cta: true olan menü öğesi buradan çıkar. Ayrı sarmalayıcıda, çünkü
+      mobilde .navlinks gizleniyor ama buton görünür kalmalı.
+    {%- endcomment -%}
+    <div class="nav-actions">
+      {% for item in site.nav %}{% if item.cta %}
+      <a href="{{ item.url | relative_url }}" class="nav-cta{% if item.url == page.url %} active{% endif %}">{{ item.title }}</a>
+      {% endif %}{% endfor %}
+      <button class="navtoggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -19,9 +28,12 @@
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
     <nav class="navdrawer-links" aria-label="Site menüsü">
-      {% for item in site.nav %}
+      {% for item in site.nav %}{% unless item.cta %}
       <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
-      {% endfor %}
+      {% endunless %}{% endfor %}
+      {% for item in site.nav %}{% if item.cta %}
+      <a href="{{ item.url | relative_url }}" class="drawer-cta">{{ item.title }}</a>
+      {% endif %}{% endfor %}
     </nav>
   </div>
 </div>

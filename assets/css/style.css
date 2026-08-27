@@ -13,7 +13,7 @@
   .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
   .narrow{max-width:720px;margin:0 auto;}
 
-  .btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:#fff;font-weight:700;font-size:15px;padding:16px 34px;border-radius:999px;transition:background .22s,transform .22s,box-shadow .22s;border:none;cursor:pointer;box-shadow:0 6px 20px rgba(94,122,106,.28);}
+  .btn{position:relative;display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:#173425;font-weight:700;font-size:15px;padding:16px 34px;border-radius:999px;transition:background .22s,transform .22s,box-shadow .22s;border:none;cursor:pointer;box-shadow:0 6px 20px rgba(94,122,106,.28);}
   .btn:hover{background:var(--sage-dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(94,122,106,.36);}
   .btn svg{transition:transform .22s;} .btn:hover svg{transform:translateX(4px);}
 
@@ -76,8 +76,10 @@
   .card:hover{transform:translateY(-6px) scale(1.015);box-shadow:0 20px 40px rgba(34,49,42,.2);} .card:hover::before{opacity:1;}
   .card .idx{position:absolute;top:22px;right:26px;font-family:'Fraunces',serif;font-size:15px;opacity:.5;}
   .card .t{position:relative;font-family:'Fraunces',serif;font-size:21px;font-weight:600;line-height:1.22;}
-  .c1{background:var(--sage-dark);} .c2{background:var(--clay);} .c3{background:var(--gold);color:var(--forest-deep);}
-  .c4{background:var(--lav);} .c5{background:var(--forest);} .c6{background:var(--sage);color:var(--forest-deep);}
+  /* Kart zeminleri. c2 ve c4 koyultuldu: beyaz metin özgün kiremit ve
+     lila tonlarında 3.29:1 ve 3.06:1 kalıyordu (eşik 4.5:1). */
+  .c1{background:var(--sage-dark);} .c2{background:#9B6042;} .c3{background:var(--gold);color:var(--forest-deep);}
+  .c4{background:#706778;} .c5{background:var(--forest);} .c6{background:var(--sage);color:var(--forest-deep);}
 
   /* sessions */
   .session-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;}
@@ -770,3 +772,43 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
     background-image:none;filter:none;
     color:CanvasText;-webkit-text-fill-color:currentColor;}
 }
+
+/* =========================================================
+   MENÜDEKİ İLETİŞİM BUTONU (birincil çağrı)
+   Menü çubuğu krem zeminde durduğu için hero'daki adaçayı buton
+   burada işlemiyor: beyaz metin adaçayı üzerinde 2.70:1 kalıyor
+   (WCAG normal metin eşiği 4.5:1). Dolu orman yeşili + beyaz metin
+   9.80:1 veriyor ve krem çubuk üzerinde net seçiliyor.
+
+   .navlinks mobilde gizleniyor; buton .nav-actions içinde durduğu
+   için hamburger yanında görünür kalıyor.
+   ========================================================= */
+.nav-actions{display:flex;align-items:center;gap:14px;}
+
+.nav-cta{display:inline-flex;align-items:center;gap:8px;
+  background:var(--forest);color:#fff;
+  font-size:14.5px;font-weight:700;letter-spacing:.01em;
+  padding:11px 22px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 6px 18px rgba(44,74,56,.22);
+  transition:background .22s,transform .22s,box-shadow .22s;}
+.nav-cta:hover{background:var(--forest-deep);transform:translateY(-1px);
+  box-shadow:0 10px 24px rgba(44,74,56,.3);}
+.nav-cta:active{transform:translateY(0);}
+.nav-cta.active{background:var(--sage-dark);}
+.nav-cta:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+
+/* Çubuk küçülünce buton da hafifçe toparlanır */
+#nav.scrolled .nav-cta{padding:9px 20px;}
+
+@media(max-width:520px){
+  .nav-cta{font-size:13.5px;padding:9px 16px;}
+  .nav-actions{gap:10px;}
+}
+
+/* Çekmecede: liste bağlantısı değil, tam genişlikte buton */
+.drawer-cta{display:block;margin-top:18px;text-align:center;
+  background:var(--forest);color:#fff;
+  font-family:'Mulish',sans-serif;font-size:15.5px;font-weight:700;
+  padding:14px 20px;border-radius:999px;border-bottom:0;
+  transition:background .22s;}
+.drawer-cta:hover{background:var(--forest-deep);color:#fff;}

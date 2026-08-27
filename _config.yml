@@ -33,6 +33,7 @@ nav:
     url: "/blog/"
   - title: "İletişim"
     url: "/iletisim/"
+    cta: true        # menüde düz link değil, dolu buton olarak çıkar
 
 # ---- Jekyll ayarları ----
 markdown: kramdown
