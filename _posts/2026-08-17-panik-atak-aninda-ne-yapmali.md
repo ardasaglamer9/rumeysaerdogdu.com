@@ -16,11 +16,15 @@ faq:
     a: "Hayır. Son derece rahatsız edici hissettirir ama bedene kalıcı bir zarar vermez. Belirtiler bedenin doğal alarm tepkisidir."
   - q: "Panik atak anında nasıl nefes almalıyım?"
     a: "Yavaş ve kontrollü. 4-7-8 tekniği (4 sn alın, 7 sn tutun, 8 sn verin) işe yarar; en önemlisi verişi uzun tutmaktır."
+  - q: "Panik atak sırasında yapılması gerekenler nelerdir?"
+    a: "Bulunduğunuz yerde topraklanın, nefesinizi yavaşlatın, kaslarınızı sırayla sıkıp bırakın ve duyularınızı kullanarak şu ana dönün. Bu dördü, bedene tehlike olmadığı mesajını verir."
+  - q: "Panik atak gelince ne yapmalı?"
+    a: "Direnmek yerine geçmesine izin vermek daha çabuk yatıştırır. \"Bu bir panik atak, rahatsız edici ama tehlikeli değil ve geçecek\" diye kendinize hatırlatın, sonra nefesinizi yavaşlatın."
   - q: "Panik atağı anında nasıl durdururum?"
     a: "Tamamen \"durdurmak\" yerine yatıştırmayı hedefleyin: topraklanın, nefesinizi yavaşlatın, kaslarınızı gevşetin, 5-4-3-2-1 ile şimdiye dönün. Direndikçe değil, izin verip yatıştırdıkça daha çabuk geçer."
 ---
 
-Kalbiniz küt küt atıyor, nefesiniz yetmiyor, "galiba ölüyorum" ya da "kontrolü kaybediyorum" diye düşünüyorsunuz. Bu satırları belki de tam böyle bir anın hemen ardından okuyorsunuz. Önce şunu bilin: **panik atak korkutucudur ama tehlikeli değildir ve geçer.** Bu yazıda, panik atak anında ne yapabileceğinizi adım adım anlatacağım.
+Kalbiniz küt küt atıyor, nefesiniz yetmiyor, "galiba ölüyorum" ya da "kontrolü kaybediyorum" diye düşünüyorsunuz. Bu satırları belki de tam böyle bir anın hemen ardından okuyorsunuz. Önce şunu bilin: **panik atak korkutucudur ama tehlikeli değildir ve geçer.** Bu yazıda, panik atak sırasında ne yapabileceğinizi adım adım anlatacağım.
 
 ## Panik atak nedir, neden olur?
 
@@ -33,7 +37,7 @@ Panik anında içinizde çok korkmuş, küçük ve çaresiz hisseden bir taraf d
 
 Yani panik atak, "bende bir bozukluk var" demek değil. Çoğu zaman, uzun süredir güvende hissedememiş bir tarafın alarm zilini fazla erken ve fazla yüksek çalmasıdır. Bu yüzden aşağıdaki adımların amacı da o korkmuş tarafı **bastırmak değil, sakinleştirmek.**
 
-## Panik Atak Anında Ne Yapmalı? 4 Adım
+## Panik atak sırasında yapılması gerekenler: 4 adım
 
 Bu dört adımı sırayla deneyin. Hepsini yapmak zorunda değilsiniz; bazen ilk ikisi bile yeter.
 
@@ -67,12 +71,14 @@ Bu, en çok korkulan soru. Panik atağın belirtileri (çarpıntı, göğüs sı
 
 "Kalbime bir şey olur mu, bayılır mıyım, delirir miyim" gibi soruların hepsini [panik atağın zarar verip vermediğini ele aldığım yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) tek tek yanıtlıyorum.
 
-## Sağlıklı Yetişkin'den kendinize ne söyleyebilirsiniz?
+## Atak geçtikten sonra kendinize ne söyleyebilirsiniz?
 
-Panik geçtikten sonra o korkmuş tarafa, sakin ve şefkatli bir "iç yetişkin" sesiyle dönmek iyileştiricidir (Yakın & Arntz, 2023). Örneğin:
-> "Çok korktun, biliyorum. Ama buradayım ve güvendeyiz. Bu hissin beni yönetmesine gerek yok; birlikte atlatabiliriz."
+Panik geçtiğinde içinizde çok korkmuş bir taraf kalır. İyileştirici olan şey, o tarafa **sizin sakin tarafınızdan** seslenmektir (Yakın & Arntz, 2023). Yani bir bakıma kendinizin iki yanı konuşur: korkan yanınız ve onu yatıştırabilen yanınız.
 
-Bu, o karşılanmamış **güvende hissetme** ihtiyacını, kaçarak değil, kendinize sahip çıkarak karşılamanın ilk adımıdır.
+Sakin yanınızdan, korkan yanınıza şöyle diyebilirsiniz:
+> "Çok korktun, biliyorum. Ama yanındayım ve artık güvendeyiz. Bu his seni yönetmek zorunda değil; birlikte geçireceğiz."
+
+İlk başta tuhaf gelebilir; kendi kendinize konuşuyormuşsunuz gibi. Ama burada olan şey şu: korkudan kaçmak ya da onu bastırmak yerine ona sahip çıkıyorsunuz. Güvende hissetme ihtiyacınızı uzaklaşarak değil, kendinizi yatıştırarak karşılıyorsunuz.
 
 ## Ne zaman profesyonel yardım almalı?
 
