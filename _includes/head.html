@@ -55,7 +55,7 @@
 <link rel="preload" as="style" href="{{ fonturl }}">
 <link rel="stylesheet" href="{{ fonturl }}" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="{{ fonturl }}"></noscript>
-{% if page.url == "/" %}<link rel="preload" as="image" href="{{ '/rumeysaerdogdu.jpeg' | relative_url }}" fetchpriority="high">{% endif %}
+{% if page.url == "/" %}<link rel="preload" as="image" href="{{ '/rumeysa-saglamer.jpeg' | relative_url }}" fetchpriority="high">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
 {% if page.url == "/" %}
@@ -63,14 +63,14 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"Person","@id":"{{ site.url }}/#person",
  "name":"{{ site.author.name }}","jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/",
- "email":"{{ site.contact.email }}","knowsLanguage":"tr",
+ {% if site.contact.email != "" %}"email":"{{ site.contact.email }}",{% endif %}"knowsLanguage":"tr",
  "sameAs":["{{ site.contact.instagram_url }}"],
  "alumniOf":[{"@type":"CollegeOrUniversity","name":"Orta Doğu Teknik Üniversitesi"},{"@type":"CollegeOrUniversity","name":"Başkent Üniversitesi"}],
  "knowsAbout":["Şema terapi","Psikoterapi","Kaygı","Depresyon","İlişki örüntüleri"]},
 {"@type":["ProfessionalService","MedicalBusiness"],"@id":"{{ site.url }}/#practice",
  "name":"{{ site.author.title }} {{ site.author.name }}",
  "description":"{{ site.description }}",
- "url":"{{ site.url }}/","email":"{{ site.contact.email }}",
+ "url":"{{ site.url }}/",{% if site.contact.email != "" %}"email":"{{ site.contact.email }}",{% endif %}
  "areaServed":{"@type":"City","name":"{{ site.office.region }}"},
  "availableLanguage":"tr",
  "provider":{"@id":"{{ site.url }}/#person"}},

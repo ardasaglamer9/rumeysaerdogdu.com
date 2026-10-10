@@ -92,7 +92,7 @@ Sonra dosyayı commit + push edin. Otomatik olarak:
 
 - `CNAME` ve `Gemfile` dosyalarını silmeyin — `CNAME` olmadan alan adı, `Gemfile` olmadan derleme çalışmaz.
 - `r-*.html` dosyaları eski adreslerden gelen ziyaretçiyi yeni adrese taşır; silmeyin.
-- Fotoğraflar kök dizine: `rumeysaerdogdu.jpeg`, `rumeysaerdogdu2.jpeg`
+- Fotoğraflar kök dizine: `rumeysa-saglamer.jpeg`, `rumeysa-saglamer-2.jpeg`
 - Bir şey ters giderse GitHub → depo → **Actions** → ilgili çalışmanın kaydına bakın;
   hatanın sebebi orada yazar. Ayrıca her yayının bir öncesine tek tıkla dönebilirsiniz
   (eski bir deploy'u açıp **Publish deploy**).

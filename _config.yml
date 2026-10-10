@@ -11,12 +11,14 @@ author:
   name: "Rümeysa Sağlamer"
   title: "Klinik Psikolog"
   bio: "ODTÜ Psikoloji ve Gelişim Psikolojisi mezunu; klinik psikoloji uzmanlık eğitimini Başkent Üniversitesi'nde sürdürüyor. Yetişkinlerle kaygı, ilişkiler ve tekrar eden kalıplar üzerine çalışıyor. Ankara."
-  photo: "rumeysaerdogdu2.jpeg"
+  photo: "rumeysa-saglamer-2.jpeg"
 
 contact:
-  email: "info@rumeysaerdogdu.com"              # TODO: posta kutusu açılınca info@rumeysasaglamer.com yapılacak
-  instagram_url: "https://www.instagram.com/pskrumeysaerdogdu/"
-  instagram_handle: "@pskrumeysaerdogdu"
+  # E-posta geçici olarak kapalı. Buraya bir adres yazıldığı anda
+  # footer, ana sayfa, iletişim sayfası ve yapısal veride geri görünür.
+  email: ""
+  instagram_url: "https://www.instagram.com/pskrumeysasaglamer/"
+  instagram_handle: "@pskrumeysasaglamer"
 
 office:
   region: "Ankara"   # genel konum bilgisi (footer, yapısal veri); belirli bir ofis adresi yok

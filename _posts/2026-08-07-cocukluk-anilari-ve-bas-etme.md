@@ -6,7 +6,7 @@ keywords: "çocukluk anıları, otobiyografik bellek, baş etme biçimleri, tesl
 category_name: "Araştırma"
 thumb: dalga
 thumb_color: t4
-image: "/psikolog-rumeysa-erdogdu.jpg"
+image: "/psikolog-rumeysa-saglamer.jpg"
 image_alt: "Başkent Üniversitesi Klinik Psikoloji Yüksek Lisans tez kapağı"
 permalink: /cocukluk-anilari-ve-bas-etme/
 excerpt_text: "Zor anıları kimimiz toparlı bir hikâye gibi, kimimiz dağınık parçalar hâlinde hatırlar. Tezimde baş etme biçimleriyle bu fark arasındaki bağa baktım."
