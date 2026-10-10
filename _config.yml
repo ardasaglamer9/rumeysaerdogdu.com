@@ -1,20 +1,20 @@
 # ---- Site bilgileri (tek yerden yönetilir) ----
-title: "Klinik Psikolog Rümeysa Erdoğdu"
-home_title: "Klinik Psikolog Rümeysa Erdoğdu | Yetişkin Psikolojisi"
+title: "Klinik Psikolog Rümeysa Sağlamer"
+home_title: "Klinik Psikolog Rümeysa Sağlamer | Yetişkin Psikolojisi"
 tagline: "Ankara"
-description: "Klinik Psikolog Rümeysa Erdoğdu. Kaygı, ilişkiler ve kendinizi anlama üzerine sade yazılar. Ankara'da yüz yüze ve online görüşmeler."
-url: "https://rumeysaerdogdu.com"
+description: "Klinik Psikolog Rümeysa Sağlamer. Kaygı, ilişkiler ve kendinizi anlama üzerine sade yazılar. Ankara'da yüz yüze ve online görüşmeler."
+url: "https://rumeysasaglamer.com"
 baseurl: ""
 lang: "tr"
 
 author:
-  name: "Rümeysa Erdoğdu"
+  name: "Rümeysa Sağlamer"
   title: "Klinik Psikolog"
   bio: "ODTÜ Psikoloji ve Gelişim Psikolojisi mezunu; klinik psikoloji uzmanlık eğitimini Başkent Üniversitesi'nde sürdürüyor. Yetişkinlerle kaygı, ilişkiler ve tekrar eden kalıplar üzerine çalışıyor. Ankara."
   photo: "rumeysaerdogdu2.jpeg"
 
 contact:
-  email: "info@rumeysaerdogdu.com"              # genel iletişim — sitedeki tek kanal
+  email: "info@rumeysaerdogdu.com"              # TODO: posta kutusu açılınca info@rumeysasaglamer.com yapılacak
   instagram_url: "https://www.instagram.com/pskrumeysaerdogdu/"
   instagram_handle: "@pskrumeysaerdogdu"
 

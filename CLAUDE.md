@@ -4,13 +4,17 @@ Bu dosya, Claude Code'un (claude.ai/code) bu depoda çalışırken uyması gerek
 
 ## Proje
 
-Klinik Psikolog Rümeysa Erdoğdu'nun tanıtım ve blog sitesi. **Jekyll** ile üretilir, **Netlify** tarafından otomatik derlenip yayınlanır.
+Klinik Psikolog Rümeysa Sağlamer'in tanıtım ve blog sitesi. **Jekyll** ile üretilir, **GitHub Pages** tarafından otomatik derlenip yayınlanır.
 
-Yayınlama akışı: `main` dalına push → Netlify depoyu görür → `bundle exec jekyll build` çalıştırır → `_site` klasörünü yayınlar. Elle yapılacak bir adım yoktur.
+Yayınlama akışı: `main` dalına push → GitHub Pages depoyu derler → yayınlar. Elle yapılacak bir adım yoktur.
 
-Alan adı `rumeysaerdogdu.com`; DNS Guzel Hosting'de, apex A kaydı Netlify'ın yük dengeleyicisine (`75.2.60.5`) bakar. TLS sertifikasını Netlify otomatik yeniler.
+Alan adı `rumeysasaglamer.com`; DNS Guzel Hosting'de, apex A kayıtları GitHub Pages'e (`185.199.108–111.153`) bakar, `www` ise `ardasaglamer9.github.io`'ya. TLS sertifikasını GitHub otomatik üretir ve yeniler.
 
-> Not: Site daha önce GitHub Pages'te barındırılıyordu. 6 Ağustos 2026'da Netlify'a taşındı; sebebi GitHub Actions runner tahsisinin ve Pages yayınlama servisinin gün boyu başarısız olmasıydı. GitHub artık yalnızca depo görevi görüyor. Kökteki `CNAME` dosyası eski kurulumdan kalma; Netlify kullanmıyor ama zararsız olduğu için duruyor.
+Kökteki **`CNAME` dosyası yayın için zorunludur** — GitHub Pages özel alan adını oradan okur. Silme, içeriğini değiştirme.
+
+> Tarihçe: Site 6 Ağustos 2026'da Netlify'a taşınmıştı, sonra GitHub Pages'e geri döndü. `netlify.toml` kullanılmıyor.
+>
+> 10 Ekim 2026'da alan adı `rumeysaerdogdu.com` → `rumeysasaglamer.com` olarak değişti (soyadı değişikliği). Eski alan adı ayrı bir depodan yeni adrese yönlendiriliyor; DNS'i hâlâ GitHub Pages'e bakıyor ve **`MX` kaydı Guzel Hosting'de duruyor** — `info@rumeysaerdogdu.com` adresi bu sayede çalışmaya devam ediyor. Yeni posta kutusu açılınca `_config.yml` içindeki `contact.email` güncellenecek.
 
 Sitenin tamamı Türkçe ve tek dillidir (`lang: tr`).
 
@@ -36,8 +40,9 @@ blog.html            → Blog listesi (adres: /blog/)
 404.html             → Özel "sayfa bulunamadı"
 r-*.html             → Eski adreslerden yönlendirme dosyaları — SİLME
 sitemap.xml, robots.txt → SEO
-netlify.toml         → Netlify derleme ayarları (komut, çıktı klasörü, /blog kuralı)
-Gemfile              → Jekyll bağımlılıkları — Netlify derlemek için buna ihtiyaç duyar
+CNAME                → Özel alan adı — GitHub Pages bunu okur, SİLME
+netlify.toml         → Kullanılmıyor (Netlify döneminden kalma)
+Gemfile              → Jekyll bağımlılıkları
 *.png / *.jpeg / favicon* → Görseller, logolar, favicon'lar (kök dizinde)
 ```
 
@@ -90,7 +95,7 @@ Otomatik olan (elle yapma): İçindekiler tablosu `##` başlıklarından üretil
 
 ## Yerelde önizleme
 
-Zorunlu değil (Netlify derler), ama değişikliği yayına vermeden görmek için kurulu:
+Zorunlu değil (GitHub Pages derler), ama değişikliği yayına vermeden görmek için kurulu:
 
 ```bash
 bundle exec jekyll serve
@@ -101,26 +106,21 @@ dosya değişikliğinden sonra yeniden başlatmak gerekir; `_config.yml` değiş
 her hâlükârda yeniden başlatma ister.
 
 Kurulum notları:
-- **`Gemfile` repodadır** — Netlify siteyi derlemek için ona ihtiyaç duyar. Silme.
+- **`Gemfile` repodadır.** Silme.
 - `Gemfile.lock`, `vendor/`, `_site/`, `.bundle/` `.gitignore`'dadır.
   `Gemfile.lock` bilerek dışarıdadır: yereldeki eski Bundler (1.x) ile üretiliyor ve
-  Netlify'ın daha yeni Ruby'siyle çakışabiliyor.
+  yayın ortamının daha yeni Ruby'siyle çakışabiliyor.
 - Gem'ler proje içine kuruludur (`vendor/bundle`), sistem geneline değil.
 - `Gemfile` içindeki `ffi`, `jekyll-sass-converter` ve `sassc` sabitleri **koşulludur**
   (`if RUBY_VERSION < "3.0"`). Yalnızca bu makinedeki eski sistem Ruby'si (2.6) için
-  geçerlidir; Netlify daha yeni Ruby kullandığı için orada güncel sürümler kurulur.
+  geçerlidir; yayın ortamı daha yeni Ruby kullandığı için orada güncel sürümler kurulur.
 
-## Netlify
+## GitHub Pages
 
-- Proje adı: `astounding-horse-9c5c77` — yedek adres `https://astounding-horse-9c5c77.netlify.app`
-  (alan adına dokunmadan bir şeyi denemek için kullanışlı).
-- Derleme ayarları `netlify.toml` içindedir ve **arayüzdeki ayarlardan önceliklidir**.
-  Arayüzde bir şey değiştirmek yerine bu dosyayı düzenle.
-- `netlify.toml` içindeki `/blog` kuralı silinmemeli. Sebebi: çıktıda hem `blog/index.html`
-  (gerçek sayfa) hem `blog.html` (r-blog.html'den gelen eski adres yönlendirmesi) var;
-  Netlify sondaki eğik çizgiyi kırptığı için ikisi `/blog` adresinde çakışıyor ve
-  kural olmadan sonsuz yönlendirme döngüsü oluşuyor.
-- Derleme başarısız olursa Netlify → Deploys → ilgili deploy → **Deploy log**'a bakılır.
+- Yayın ayarı: depo → Settings → Pages. Kaynak `main` dalı, özel alan adı `rumeysasaglamer.com`, "Enforce HTTPS" açık.
+- Özel alan adı kökteki `CNAME` dosyasından okunur; Settings'teki alan **o dosyayla aynı kalmalıdır**.
+- GitHub Pages bir depo başına **tek** özel alan adı sunar. Bu yüzden eski alan adı ayrı bir depodan yönlendiriliyor.
+- Derleme başarısız olursa: depo → Actions → `pages-build-deployment` çalışmasına bakılır.
 
 ## İçerik yazımı — dil ve ton kuralları
 
@@ -147,5 +147,5 @@ Bir metnin tonundan emin değilsen, mevcut `_posts/` yazılarını referans al �
 
 - `_config.yml` tek doğruluk kaynağıdır; site bilgisini şablonlara elle gömmek yerine buradan oku.
 - `r-*.html` yönlendirmelerini silme — eski adreslerden gelen ziyaretçiyi taşırlar.
-- `netlify.toml` ve `Gemfile`'ı silme; ikisi olmadan Netlify siteyi derleyemez.
+- `CNAME` ve `Gemfile`'ı silme; `CNAME` olmadan alan adı, `Gemfile` olmadan derleme çalışmaz.
 - Değişiklikleri yalnızca kullanıcı isteyince commit/push et.

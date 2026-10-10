@@ -1,14 +1,14 @@
 # Jekyll kurulumu — ne nerede?
 
-Bu site **Netlify** tarafından otomatik derlenip yayınlanır. Ek bir program kurmanız gerekmez.
+Bu site **GitHub Pages** tarafından otomatik derlenip yayınlanır. Ek bir program kurmanız gerekmez.
 
 Değişiklik yapmak için tek yapmanız gereken dosyayı düzenleyip GitHub'a göndermek:
 
 ```
-Düzenle  →  commit  →  push  →  Netlify birkaç dakikada yayınlar
+Düzenle  →  commit  →  push  →  GitHub Pages birkaç dakikada yayınlar
 ```
 
-Yayına girip girmediğini Netlify panelinden (**Deploys** sekmesi) izleyebilirsiniz.
+Yayına girip girmediğini GitHub'da depo → **Actions** sekmesinden izleyebilirsiniz.
 
 ## Klasör yapısı
 
@@ -90,10 +90,10 @@ Sonra dosyayı commit + push edin. Otomatik olarak:
 
 ## Dikkat
 
-- `netlify.toml` ve `Gemfile` dosyalarını silmeyin — bunlar olmadan site derlenmez.
+- `CNAME` ve `Gemfile` dosyalarını silmeyin — `CNAME` olmadan alan adı, `Gemfile` olmadan derleme çalışmaz.
 - `r-*.html` dosyaları eski adreslerden gelen ziyaretçiyi yeni adrese taşır; silmeyin.
 - Fotoğraflar kök dizine: `rumeysaerdogdu.jpeg`, `rumeysaerdogdu2.jpeg`
-- Bir şey ters giderse Netlify → **Deploys** → ilgili satır → **Deploy log**'a bakın;
+- Bir şey ters giderse GitHub → depo → **Actions** → ilgili çalışmanın kaydına bakın;
   hatanın sebebi orada yazar. Ayrıca her yayının bir öncesine tek tıkla dönebilirsiniz
   (eski bir deploy'u açıp **Publish deploy**).
 

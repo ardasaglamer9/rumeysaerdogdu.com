@@ -7,7 +7,7 @@ category_name: "Araştırma"
 thumb: dalga
 thumb_color: t4
 image: "/psikolog-rumeysa-erdogdu.jpg"
-image_alt: "Rümeysa Erdoğdu'nun Başkent Üniversitesi Klinik Psikoloji Yüksek Lisans tez kapağı"
+image_alt: "Başkent Üniversitesi Klinik Psikoloji Yüksek Lisans tez kapağı"
 permalink: /cocukluk-anilari-ve-bas-etme/
 excerpt_text: "Zor anıları kimimiz toparlı bir hikâye gibi, kimimiz dağınık parçalar hâlinde hatırlar. Tezimde baş etme biçimleriyle bu fark arasındaki bağa baktım."
 summary: "Yüksek lisans tezimde, şema terapinin tanımladığı baş etme biçimleriyle çocukluk anılarının nasıl hatırlandığı arasındaki ilişkiye baktım. 120 genç yetişkinle yürüttüğüm çalışmada, boyun eğerek baş etme eğilimi güçlü olan kişilerin olumsuz çocukluk anılarını daha dağınık ve bütünlüğü zayıf biçimde anlattığını gördüm. Bu yazıda çalışmanın sorusunu, yöntemini ve bulgularını sade bir dille aktarıyorum."
