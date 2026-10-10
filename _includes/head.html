@@ -62,7 +62,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Person","@id":"{{ site.url }}/#person",
- "name":"{{ site.author.name }}","jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/",
+ "name":"{{ site.author.name }}",{% if site.author.former_name %}"alternateName":"{{ site.author.former_name }}",{% endif %}"jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/",
  {% if site.contact.email != "" %}"email":"{{ site.contact.email }}",{% endif %}"knowsLanguage":"tr",
  "sameAs":["{{ site.contact.instagram_url }}"],
  "alumniOf":[{"@type":"CollegeOrUniversity","name":"Orta Doğu Teknik Üniversitesi"},{"@type":"CollegeOrUniversity","name":"Başkent Üniversitesi"}],
