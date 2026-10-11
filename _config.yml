@@ -18,9 +18,7 @@ author:
   photo: "rumeysa-saglamer-2.jpeg"
 
 contact:
-  # E-posta geçici olarak kapalı. Buraya bir adres yazıldığı anda
-  # footer, ana sayfa, iletişim sayfası ve yapısal veride geri görünür.
-  email: ""
+  email: "iletisim@rumeysasaglamer.com"   # posta kutusu ms7.guzel.net.tr üzerinde
   instagram_url: "https://www.instagram.com/pskrumeysasaglamer/"
   instagram_handle: "@pskrumeysasaglamer"
 
