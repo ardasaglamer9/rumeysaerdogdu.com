@@ -879,3 +879,34 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
   .brand span{white-space:nowrap;}
   .nav-cta{font-size:13px;padding:8px 14px;}
 }
+
+/* 6) Büyük ekranda hero boş kalıyordu. min-height ekranla (88vh)
+   büyürken içerik 460px'te sabitti: 1920×1080'de hero 874px ve
+   %47'si boş, 2000×1300'de 1068px ve %57'si boş. Yükseklik 700px'te
+   kapatıldı; ≥1600px'de başlık, açıklama ve portre bir kademe
+   büyüyerek alanı dolduruyor. */
+@media(min-width:900px){
+  .hero{min-height:min(calc(88svh - 76px),700px);}
+}
+@media(min-width:1600px){
+  .hero h1{font-size:60px;}
+  .hero .hero-desc{font-size:19.5px;max-width:54ch;}
+  .hero-grid{grid-template-columns:minmax(0,1fr) clamp(288px,min(34vw,54vh),480px);}
+}
+
+/* 7) Hero'da üst/alt boşluk dengesizdi (1920'de 80px üst, 228px alt).
+   Metin sütunu fotoğraftan kısa ve ızgara üstten hizalıydı; not satırı
+   yukarıda kalıyor, boşluk altta birikiyordu. Sütunlar ortalandı, alt
+   iç boşluk 88 → 64px. */
+@media(min-width:900px){
+  .hero{padding-bottom:64px;}
+  .hero-grid{align-items:center;}
+  .hero-photo-col{padding-top:0;}
+}
+
+/* 8) Görüşmeler bölümündeki oda fotoğrafı masaüstünde 1024×576 ile
+   bölümü 1275px yapıyordu. Yükseklik 420px'te kapatıldı; kırpma
+   object-fit ile, kadraj ortadan. */
+@media(min-width:900px){
+  .gorusme-foto img{max-height:420px;object-fit:cover;object-position:center 40%;}
+}
