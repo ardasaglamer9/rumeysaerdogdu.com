@@ -31,7 +31,7 @@
 
   /* hero */
   .hero{position:relative;background:var(--forest);color:var(--cream);text-align:center;overflow:hidden;min-height:calc(100vh - 76px);min-height:calc(100svh - 76px);display:flex;align-items:center;justify-content:center;padding:clamp(28px,4vh,56px) 0 clamp(72px,11vh,120px);}
-  .hero .blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;pointer-events:none;}
+  .hero .blob{position:absolute;border-radius:50%;opacity:.5;pointer-events:none;}  /* blur kaldırıldı: filtreli katman geniş gamlı ekranda dikdörtgen renk kayması yapıyordu */
   .b1{width:340px;height:340px;background:radial-gradient(circle,rgba(138,163,153,.55),transparent 70%);top:-90px;left:-60px;animation:floatY 9s ease-in-out infinite;}
   .b2{width:420px;height:420px;background:radial-gradient(circle,rgba(155,143,166,.4),transparent 70%);bottom:-160px;right:-80px;animation:floatY2 11s ease-in-out infinite;}
   /* Masaüstünde fotoğraf sağa geçtiği için bu ışık onun alt köşesiyle
@@ -739,7 +739,6 @@ body.nav-open{overflow:hidden;}
     color:transparent;-webkit-text-fill-color:transparent;
     /* satır başına yeniden başlasın — kısa satır da gradyanın tamamını gezsin */
     -webkit-box-decoration-break:slice;box-decoration-break:slice;
-    filter:drop-shadow(0 6px 20px rgba(11,24,16,.42));
   }
   .hero-grad .g1{background-image:linear-gradient(100deg,#F6EFB6 0%,#F9D8C0 38%,#F3A9CC 100%);}
   .hero-grad .g2{background-image:linear-gradient(100deg,#C9E9D3 0%,#BCD8EE 55%,#9FC0EA 100%);}
@@ -775,8 +774,7 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
   h1.grad-title,h2.grad-title{
     -webkit-background-clip:text;background-clip:text;
     color:transparent;-webkit-text-fill-color:transparent;
-    background-image:linear-gradient(100deg,#F6EFB6 0%,#F9D8C0 45%,#F3A9CC 100%);
-    filter:drop-shadow(0 5px 16px rgba(11,24,16,.34));}
+    background-image:linear-gradient(100deg,#F6EFB6 0%,#F9D8C0 45%,#F3A9CC 100%);}
 }
 
 @media (forced-colors:active),print{
@@ -910,3 +908,38 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
 @media(min-width:900px){
   .gorusme-foto img{max-height:420px;object-fit:cover;object-position:center 40%;}
 }
+
+/* 9) Üst etiket başlıktan 4px içeride başlıyordu. */
+@media(min-width:900px){ .hero .eyebrow{margin-left:0;} }
+
+/* =========================================================
+   10) HERO PORTRESİ — kare ve büyük
+   Yuvarlak çerçeve köşeleri yumuşatılmış kareye döndü. Fotoğraf sütunu
+   genişledi (en fazla 520px); genişlik ekran yüksekliğine de bağlı ki
+   1280×720'de hero taşmasın. Kesik çizgili halka kareye uyduğu için
+   artık dönmüyor, sabit bir çerçeve.
+   ========================================================= */
+.hero-portrait .photo-frame.kare{border-radius:28px;aspect-ratio:1/1;}
+.hero-portrait .ring{border-radius:38px;inset:-14px;animation:none;}
+/* Yaprak yuvarlakta çerçevenin dışına düşüyordu; karede fotoğrafın
+   üstüne biniyordu. Köşenin dışına alındı. */
+.hero-portrait .leaf-a{bottom:-26px;right:-22px;width:46px;opacity:.7;}
+@media(min-width:900px){
+  .hero-grid,
+  .hero > .wrap .hero-grid{grid-template-columns:minmax(0,1fr) clamp(300px,min(38vw,60vh),520px);}
+  .hero-portrait{width:min(100%,calc(min(88svh - 76px,700px) - 140px));margin:0 0 0 auto;}
+}
+/* Mobilde portre metnin altına iner: büyüdüğü için üstte kalsaydı
+   "İletişime Geç" ilk ekrandan düşerdi. */
+@media(max-width:899px){
+  .hero-photo-col{order:2;}
+  .hero-content{order:1;}
+  .hero-portrait,
+  .hero .hero-portrait{width:min(100% - 32px,340px);margin:16px auto 8px;}
+}
+
+/* 11) Sağ alttaki mor ışık (.b2) hero'nun alt kenarında kesiliyordu; altındaki
+   dalga da aynı yeşil olduğu için orada keskin kenarlı bir açık leke
+   görünüyordu. Işık tamamen hero'nun içinde kalacak kadar yukarı alındı. */
+.hero .b2{bottom:70px;}
+@media(min-width:900px){ .hero .b2{bottom:40px;right:-230px;} }

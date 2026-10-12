@@ -56,7 +56,8 @@
 <link rel="stylesheet" href="{{ fonturl }}" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="{{ fonturl }}"></noscript>
 {% if page.url == "/" %}<link rel="preload" as="image" href="{{ '/rumeysa-saglamer.jpeg' | relative_url }}" fetchpriority="high">{% endif %}
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+{%- comment -%} ?v= derleme zamanı: push sonrası tarayıcı/CDN eski CSS'i göstermesin {%- endcomment -%}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 {% if page.url == "/" %}
 <script type="application/ld+json">
