@@ -5,7 +5,8 @@
 <title>Sayfa taşındı</title>
 <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
 <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
-<meta name="robots" content="noindex, follow">
+{%- comment -%} noindex yok: Google anlık meta refresh'i kalıcı yönlendirme sayar,
+     eski adresin değerini canonical'daki yeni adrese taşır. {%- endcomment -%}
 <script>location.replace("{{ page.redirect_to | relative_url }}");</script>
 </head>
 <body style="font-family:sans-serif;padding:40px;">
