@@ -4,13 +4,14 @@
       <div class="footer-brand">
         <img src="{{ '/logo-light.png' | relative_url }}" alt="" class="footer-logo" width="128" height="128" loading="lazy">
         <div class="brand-f">{{ site.author.title }}<br>{{ site.author.name }}</div>
-        <p>Yetişkinlerle online ve yüz yüze görüşmeler. {{ site.office.region }}.</p>
+        <p>Yetişkinlerle online ve yüz yüze psikoterapi. {{ site.office.district }}, {{ site.office.region }}.</p>
         <a href="{{ '/blog/' | relative_url }}" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:var(--sage);font-weight:700;font-size:15px;">Blog yazıları</a>
       </div>
       <div class="footer-col">
         <h2>İletişim</h2>
         <ul>
           {% if site.contact.email != "" %}<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 6.5L12 12l8-5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>{% endif %}
+          {% if site.office.address %}<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.8"/></svg><a href="{{ site.office.maps_url }}" target="_blank" rel="noopener">{{ site.office.address }}<span class="gorunmez"> (haritada, yeni sekmede açılır)</span></a></li>{% endif %}
         </ul>
       </div>
       <div class="footer-col">

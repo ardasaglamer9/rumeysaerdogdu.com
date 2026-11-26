@@ -14,7 +14,7 @@ author:
   # eski adı arayanlar da siteyi bulabilsin.
   former_name: "Rümeysa Erdoğdu"
   title: "Klinik Psikolog"
-  bio: "ODTÜ Psikoloji ve Gelişim Psikolojisi mezunu; klinik psikoloji uzmanlık eğitimini Başkent Üniversitesi'nde sürdürüyor. Yetişkinlerle kaygı, ilişkiler ve tekrar eden kalıplar üzerine çalışıyor. Ankara."
+  bio: "ODTÜ Psikoloji ve Gelişim Psikolojisi mezunu klinik psikolog. Klinik psikoloji yüksek lisansını Başkent Üniversitesi'nde tamamladı. Ankara'da ve online olarak yetişkinlerle psikoterapi çalışmaları yürütüyor; kaygı, ilişkiler ve tekrar eden örüntüler üzerine çalışıyor."
   photo: "rumeysa-saglamer-2.jpeg"
 
 contact:
@@ -32,7 +32,13 @@ contact:
   form_provider: "Web3Forms"   # aydınlatma metninde adı geçecek servis, örn. "Formspree"
 
 office:
-  region: "Ankara"   # genel konum bilgisi (footer, yapısal veri); belirli bir ofis adresi yok
+  region: "Ankara"   # il (footer, yapısal veri)
+  district: "Çankaya"
+  street: "Mustafa Kemal Mah. 2129. Sk. No:13"
+  postal_code: "06510"
+  address: "Mustafa Kemal Mah. 2129. Sk. No:13, 06510 Çankaya/Ankara"   # tek satır, sayfalarda gösterilen
+  # Haritada açma bağlantısı (gömülü harita yok: sayfayı yavaşlatır ve ziyaretçi verisini Google'a gönderir)
+  maps_url: "https://www.google.com/maps/search/?api=1&query=Mustafa+Kemal+Mah.+2129.+Sk.+No%3A13+06510+%C3%87ankaya%2FAnkara"
 
 # ---- Ziyaret ölçümü (kapalı) ----
 # Çerezsiz bir ölçüm servisi seçilince açılır; ayrıntı KURULUM.md → "Ziyaret ölçümü".

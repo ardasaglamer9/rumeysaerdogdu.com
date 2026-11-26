@@ -78,7 +78,8 @@
  "url":"{{ site.url }}/",{% if site.contact.email != "" %}"email":"{{ site.contact.email }}",{% endif %}
  "image":"{{ '/rumeysa-saglamer.jpeg' | absolute_url }}",
  "logo":"{{ '/logo.png' | absolute_url }}",
- "address":{"@type":"PostalAddress","addressLocality":"{{ site.office.region }}","addressRegion":"{{ site.office.region }}","addressCountry":"TR"},
+ "address":{"@type":"PostalAddress",{% if site.office.street %}"streetAddress":"{{ site.office.street }}","postalCode":"{{ site.office.postal_code }}",{% endif %}"addressLocality":"{{ site.office.district | default: site.office.region }}","addressRegion":"{{ site.office.region }}","addressCountry":"TR"},{% if site.office.maps_url %}
+ "hasMap":"{{ site.office.maps_url }}",{% endif %}
  "areaServed":[{"@type":"City","name":"{{ site.office.region }}"},{"@type":"Country","name":"Türkiye"}],
  "sameAs":["{{ site.contact.instagram_url }}"],
  "availableLanguage":"tr",

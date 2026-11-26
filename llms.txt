@@ -20,7 +20,7 @@ Sitedeki yazılar genel bilgi amaçlıdır; tanı koymaz ve bireysel bir görü�
 ## Görüşmeler
 
 - Görüşme biçimi: online (görüntülü) ya da yüz yüze
-- Yüz yüze görüşmelerin yapıldığı şehir: {{ site.office.region }}
+- Yüz yüze görüşmelerin yapıldığı yer: {% if site.office.address %}{{ site.office.address }}{% else %}{{ site.office.region }}{% endif %}
 - Görüşme dili: Türkçe
 - Randevu ve sorular: [İletişim sayfası]({{ '/iletisim/' | absolute_url }}){% if site.contact.email != "" %} ya da {{ site.contact.email }}{% endif %}
 
