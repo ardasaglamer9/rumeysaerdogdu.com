@@ -63,6 +63,9 @@ Gemfile              → Jekyll bağımlılıkları
 ### İletişim formu
 `_includes/iletisim-formu.html` (iletişim sayfasında). `contact.form_action` boşsa form ziyaretçinin e-posta uygulamasını açar; doluysa o servise gönderir. Form bilerek sağlık bilgisi istemez ve yalnızca "okudum ve anladım" onayı alır (KVKK 2026/347 ilke kararı: açık rıza gereksizse istenmez). Alan eklerken `aydinlatma-metni.html`'deki "Hangi bilgiler işlenir?" listesini de güncelle.
 
+### Ziyaret ölçümü
+`_config.yml` → `analytics.provider` (boşsa kapalı; `goatcounter` | `plausible` | `umami`) ve ilgili kimlik; kod `_includes/analytics.html`'de, olay adları ve açma adımları `KURULUM.md` → "Ziyaret ölçümü"nde.
+
 ### Yeni blog yazısı ekleme
 `_posts/` klasörüne `YYYY-AA-GG-yazi-adi.md` biçiminde bir dosya oluştur. Front matter şablonu:
 

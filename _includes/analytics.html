@@ -1,0 +1,74 @@
+{%- comment -%}
+  Ziyaret ölçümü. Ayarlar _config.yml → analytics.
+  provider boşsa (ya da seçilen servisin kimliği boşsa) hiçbir şey basmaz.
+  Yalnızca yayın derlemesinde çalışır (GitHub Pages JEKYLL_ENV=production
+  ile derler); yerelde `jekyll serve` ile bakarken kendi ziyaretiniz sayılmaz.
+  Desteklenen servisler çerez kullanmaz: goatcounter, plausible, umami.
+
+  Olaylar (hedefler) aşağıdaki küçük dinleyiciden gönderilir; diğer
+  dosyalara dokunmaya gerek kalmaz:
+    form-gonderildi   iletişim formu gönderildi (yol: servis | eposta)
+    eposta-tik        mailto: bağlantısına tıklandı
+    instagram-tik     Instagram bağlantısına tıklandı
+    hero-bana-yazin   ana sayfadaki "Bana yazın" düğmesi
+    menu-iletisim     menüdeki "İletişim" düğmesi (masaüstü ve mobil)
+  Formun gönderildiği bilgisi _includes/iletisim-formu.html içindeki
+  bitti() fonksiyonunun yaydığı 'iform:gonderildi' olayından gelir.
+  Olaylara kişisel veri (ad, e-posta, mesaj) asla eklenmez.
+{%- endcomment -%}
+{%- assign olcum = site.analytics.provider | default: "" | strip | downcase -%}
+{%- assign olcum_id = "" -%}
+{%- case olcum -%}
+  {%- when "goatcounter" -%}{%- assign olcum_id = site.analytics.goatcounter_code | default: "" | strip -%}
+  {%- when "plausible" -%}{%- assign olcum_id = site.analytics.plausible_script_id | default: "" | strip | remove_first: "pa-" | remove: ".js" -%}
+  {%- when "umami" -%}{%- assign olcum_id = site.analytics.umami_website_id | default: "" | strip -%}
+{%- endcase -%}
+{%- if jekyll.environment == "production" and olcum_id != "" -%}
+{%- case olcum -%}
+{%- when "goatcounter" %}
+<script data-goatcounter="https://{{ olcum_id | escape }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{%- when "plausible" %}
+<script async src="https://plausible.io/js/pa-{{ olcum_id | escape }}.js"></script>
+<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+{%- when "umami" %}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ olcum_id | escape }}"></script>
+{%- endcase %}
+<script>
+(function(){
+  var servis = '{{ olcum }}';
+  // Servise bir olay iletir. Betik henüz yüklenmediyse kısa aralıklarla
+  // birkaç kez yeniden dener (plausible kendi kuyruğunu tuttuğu için beklemez).
+  function ilet(ad, ozellik, kalan){
+    var gitti = false;
+    try {
+      if(servis === 'plausible'){
+        window.plausible(ad, ozellik ? { props: ozellik } : {}); gitti = true;
+      } else if(servis === 'umami' && window.umami && umami.track){
+        umami.track(ad, ozellik); gitti = true;
+      } else if(servis === 'goatcounter' && window.goatcounter && goatcounter.count){
+        // GoatCounter olaylara özellik eklemez; yol bilgisi ada eklenir.
+        var tam = ad + (ozellik && ozellik.yol ? '-' + ozellik.yol : '');
+        goatcounter.count({ path: tam, title: tam, event: true }); gitti = true;
+      }
+    } catch(e) { gitti = true; }
+    kalan = kalan === undefined ? 10 : kalan;
+    if(!gitti && kalan > 0) setTimeout(function(){ ilet(ad, ozellik, kalan - 1); }, 500);
+  }
+
+  document.addEventListener('iform:gonderildi', function(e){
+    var yol = e.detail && e.detail.yol;
+    ilet('form-gonderildi', yol ? { yol: yol } : null);
+  });
+
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    if(href.indexOf('mailto:') === 0) ilet('eposta-tik');
+    else if(/(^|\.|\/)instagram\.com\//i.test(href)) ilet('instagram-tik');
+    else if(a.matches('.hero-cta .btn')) ilet('hero-bana-yazin');
+    else if(a.matches('.nav-cta, .drawer-cta') && /\/iletisim\/?([?#].*)?$/.test(href)) ilet('menu-iletisim');
+  });
+})();
+</script>
+{%- endif %}
