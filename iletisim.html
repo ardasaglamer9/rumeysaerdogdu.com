@@ -9,13 +9,18 @@ permalink: /iletisim/
 last_modified_at: 2026-11-26   # içerik değişince güncelle (site haritasındaki tarih buradan)
 ---
 
-{% include banner.html title="Bana ulaşın" sub="Ön görüşme için aşağıdaki formu doldurabilir, sorularınız için e-posta ile de yazabilirsiniz." %}
+{%- comment -%}
+  Sayfanın başlığı formun başlığıdır: üstte ayrı bir "Bana ulaşın" alanı
+  ve formda ikinci bir başlık olunca alanlar ekranın altına itiliyordu.
+  Banner kısa (kompakt), formun kendi başlığı gizli (sade).
+{%- endcomment -%}
+{% include banner.html kompakt=true title="Ön görüşme talep edin" sub="Her görüşme süreci kısa bir ön görüşmeyle başlıyor. Bilgilerinizi bırakın, ön görüşmemizi planlamak için size en kısa sürede dönüş yapayım." %}
 
 <section class="sec-cream iletisim-bolum">
   <div class="wrap">
     {%- comment -%} Form en üstte: sayfaya gelenin ilk gördüğü şey o olsun. {%- endcomment -%}
     <div class="iform-kart iform-ust reveal">
-      {% include iletisim-formu.html %}
+      {% include iletisim-formu.html sade=true %}
     </div>
 
     <div class="iletisim-kart reveal">

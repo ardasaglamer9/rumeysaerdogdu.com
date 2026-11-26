@@ -1196,3 +1196,11 @@ footer :focus-visible,.cta-box :focus-visible{outline-color:#F6EFB6;}
 .iform-zaman-secenek label:has(input:checked){background:var(--forest);color:#fff;border-color:var(--forest);}
 .iform-zaman-secenek label:has(input:focus-visible){outline:3px solid var(--sage);outline-offset:2px;}
 @media(prefers-reduced-motion:reduce){ .iform-zaman-secenek label{transition:none;} }
+
+/* Kısa banner (iletişim sayfası): başlık formun başlığı olduğu için üst
+   alan yalnızca başlık ve bir cümle taşıyor; form hemen altından başlıyor.
+   Kalem animasyonu ve yapraklar bu sıkı alanda kalabalık durduğu için gizli. */
+.page-hero.page-hero-kompakt{padding:56px 0 104px;}
+.page-hero-kompakt .penwrite,.page-hero-kompakt .leaf{display:none;}
+.page-hero-kompakt .inner p{max-width:560px;margin-left:auto;margin-right:auto;}
+@media(max-width:680px){ .page-hero.page-hero-kompakt{padding:36px 0 88px;} }
