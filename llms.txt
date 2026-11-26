@@ -1,0 +1,48 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+{%- comment -%}
+  Yapay zekâ asistanları için site özeti (llmstxt.org biçimi).
+  Tüm bilgiler _config.yml'den ve yazıların front matter'ından okunur;
+  yeni yazı eklendiğinde bu dosya kendiliğinden güncellenir.
+  sitemap.xml uzantılı adresleri zaten listelemez; sitemap: false ek güvence.
+{%- endcomment -%}
+# {{ site.title }}
+
+> {{ site.description }}
+
+Bu site {{ site.author.title }} {{ site.author.name }} tarafından hazırlanır. {{ site.author.bio }}{% if site.author.former_name %} Akademik kayıtlarda ve eski yayınlarda önceki soyadıyla, {{ site.author.former_name }} olarak geçer.{% endif %}
+
+Sitedeki yazılar genel bilgi amaçlıdır; tanı koymaz ve bireysel bir görüşmenin yerini tutmaz.
+
+## Görüşmeler
+
+- Görüşme biçimi: online (görüntülü) ya da yüz yüze
+- Yüz yüze görüşmelerin yapıldığı şehir: {{ site.office.region }}
+- Görüşme dili: Türkçe
+- Randevu ve sorular: [İletişim sayfası]({{ '/iletisim/' | absolute_url }}){% if site.contact.email != "" %} ya da {{ site.contact.email }}{% endif %}
+
+## Sayfalar
+{%- assign ana_sayfalar ="/,/blog/,/iletisim/,/aydinlatma-metni/" | split: "," %}
+{% for adres in ana_sayfalar %}
+{%- assign sayfa = site.pages | where: "url", adres | first -%}
+{%- if sayfa %}
+- [{% if adres == "/" %}Ana sayfa{% else %}{{ sayfa.title }}{% endif %}]({{ adres | absolute_url }}): {{ sayfa.description | default: site.description }}
+{%- endif %}
+{%- endfor %}
+
+## Yazılar
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.excerpt_text | default: post.description }}
+{%- endfor %}
+
+## Yazar
+
+- Ad: {{ site.author.title }} {{ site.author.name }}
+{%- if site.author.former_name %}
+- Önceki soyadıyla: {{ site.author.former_name }}
+{%- endif %}
+- Instagram: [{{ site.contact.instagram_handle }}]({{ site.contact.instagram_url }})
+- Site: {{ site.url }}/

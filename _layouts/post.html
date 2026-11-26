@@ -4,10 +4,12 @@ layout: default
 {% assign months = "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık" | split: "," %}
 {% assign mi = page.date | date: "%-m" | plus: 0 | minus: 1 %}
 {% assign tarih = page.date | date: "%-d" | append: " " | append: months[mi] | append: " " | append: page.date | date: "%Y" %}
+{%- comment -%} Güncelleme tarihi yalnızca front matter'da last_modified_at varsa gösterilir {%- endcomment -%}
+{% if page.last_modified_at %}{% assign gmi = page.last_modified_at | date: "%-m" | plus: 0 | minus: 1 %}{% endif %}
 {% assign kelime = content | number_of_words %}
 {% assign sure = kelime | divided_by: 140 | plus: 1 %}
 
-{% capture metaline %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ months[mi] }} {{ page.date | date: "%Y" }}</time><span>{{ sure }} dakikalık okuma</span><span>{{ site.author.title }} {{ site.author.name }}</span>{% endcapture %}
+{% capture metaline %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ months[mi] }} {{ page.date | date: "%Y" }}</time><span>{{ sure }} dakikalık okuma</span>{% if page.last_modified_at %}<span>Güncellendi: <time datetime="{{ page.last_modified_at | date: '%Y-%m-%d' }}">{{ page.last_modified_at | date: "%-d" }} {{ months[gmi] }} {{ page.last_modified_at | date: "%Y" }}</time></span>{% endif %}<span>{{ site.author.title }} {{ site.author.name }}</span>{% endcapture %}
 {% include banner.html eyebrow=page.category_name title=page.title meta=metaline %}
 
 <div class="article-wrap">
