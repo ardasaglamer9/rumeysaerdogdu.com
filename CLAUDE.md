@@ -154,13 +154,15 @@ Bir metnin tonundan emin değilsen, mevcut `_posts/` yazılarını referans al �
 
 Site, frontend-design rehberine göre şablon hissinden arındırıldı (Kasım 2026). Yeni sayfa ve bölüm eklerken:
 - Başlık üstüne aralıklı BÜYÜK HARF etiket (eyebrow/kicker) koyma; yalnızca bilgi taşıyorsa (ör. yazı kategorisi) cümle düzeninde kullan.
-- Buton ve bağlantı metninin sonuna ok ekleme; buton ne olacağını söylesin ("Bana yazın", "Notu gönder").
+- Buton ve bağlantı metninin sonuna ok ekleme; buton ne olacağını söylesin ("Ön görüşme talep edin", "Ön görüşme talebimi gönder").
 - Bilgi satırlarında ara nokta (·) yerine boşluk ya da ayrı öğe kullan.
 - Sıra olmayan içeriğe 01/02/03 numarası verme (Görüşme süreci adımları sıra olduğu için numaralı).
 - Bölümlere kaydırınca belirme efekti ekleme; tek hareketli an hero'nun açılışı.
 - Gradyanlı başlıklar, hero ve renk paleti bilinçli tercih; koru.
 
 ## Genel çalışma ilkeleri
+
+- Bir sayfanın (ana sayfa, blog, iletişim, aydınlatma metni) içeriğini değiştirdiğinde front matter'ındaki `last_modified_at` tarihini güncelle. Site haritası tarihi buradan alır; her derlemede değişmez. Yazılarda da aynı alan "Güncellendi" tarihini gösterir.
 
 - `_config.yml` tek doğruluk kaynağıdır; site bilgisini şablonlara elle gömmek yerine buradan oku.
 - `r-*.html` yönlendirmelerini silme — eski adreslerden gelen ziyaretçiyi taşırlar.

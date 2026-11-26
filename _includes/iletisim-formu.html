@@ -13,15 +13,15 @@
 
   {%- unless include.sade %}
   <div class="iform-bas">
-    <h2>Bana kısa bir not bırakın</h2>
-    <p>Sorunuz ya da randevu talebiniz için birkaç kelime yeterli; size en kısa sürede dönüş yaparım.</p>
+    <h2>Ön görüşme talep edin</h2>
+    <p>Her görüşme süreci kısa bir ön görüşmeyle başlıyor. Bilgilerinizi bırakın, ön görüşmemizi planlamak için size en kısa sürede dönüş yapayım.</p>
   </div>
   {%- endunless %}
 
   {%- if site.contact.form_access_key != "" %}
   <input type="hidden" name="access_key" value="{{ site.contact.form_access_key }}">
   {%- endif %}
-  <input type="hidden" name="subject" value="Siteden yeni not">
+  <input type="hidden" name="subject" value="Siteden ön görüşme talebi">
   <input type="hidden" name="from_name" value="{{ site.author.name }} – site formu">
   {%- comment -%} Bot tuzağı: insanlar görmez, işaretlenirse gönderim yapılmaz. {%- endcomment -%}
   <div class="iform-tuzak" aria-hidden="true">
@@ -38,6 +38,7 @@
   <p class="iform-cumle">
     Merhaba, ben
     <span class="iform-bosluk"><label class="gorunmez" for="if-ad">Adınız</label><input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="adım ve soyadım" data-hata="if-ad-h"></span>.
+    <span class="iform-satir-blok">Sizinle bir ön görüşme yapmak istiyorum.</span>
     <span class="iform-satir-blok">E-posta adresim:
     <span class="iform-bosluk iform-genis"><label class="gorunmez" for="if-eposta">E-posta adresiniz</label><input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="ornek@eposta.com" data-hata="if-eposta-h"></span></span>
   </p>
@@ -56,6 +57,23 @@
     </select></span></span>
   </p>
 
+  {%- comment -%}
+    Uygun zamanlar: birden çok seçilebilir. Kutuların kendi adı yok;
+    gönderimde seçilenler tek bir "uygun_zamanlar" alanında virgülle
+    birleştirilir (servise tek satır gider). Aralıklar Rümeysa'nın
+    çalışma saatlerine göre değiştirilebilir.
+  {%- endcomment -%}
+  <fieldset class="iform-zaman">
+    <legend>Ön görüşme için uygun olduğum zamanlar <span class="iform-istege">(isteğe bağlı, birden çok seçebilirsiniz)</span></legend>
+    <div class="iform-zaman-secenek">
+      <label><input type="checkbox" data-zaman value="Hafta içi sabah (09.00–12.00)"><span>Hafta içi sabah <small>09.00–12.00</small></span></label>
+      <label><input type="checkbox" data-zaman value="Hafta içi öğleden sonra (12.00–17.00)"><span>Hafta içi öğleden sonra <small>12.00–17.00</small></span></label>
+      <label><input type="checkbox" data-zaman value="Hafta içi akşam (17.00–20.00)"><span>Hafta içi akşam <small>17.00–20.00</small></span></label>
+      <label><input type="checkbox" data-zaman value="Hafta sonu"><span>Hafta sonu</span></label>
+    </div>
+    <input type="hidden" name="uygun_zamanlar" value="">
+  </fieldset>
+
   <div class="iform-not">
     <label for="if-mesaj">Kısa bir not <span class="iform-istege">isteğe bağlı</span></label>
     <textarea id="if-mesaj" name="message" rows="2" maxlength="1500" aria-describedby="if-mesaj-y"></textarea>
@@ -70,14 +88,14 @@
     <p class="iform-hata" id="if-onay-h" hidden>Göndermeden önce aydınlatma metnini okuduğunuzu işaretler misiniz?</p>
   </div>
 
-  <button type="submit" class="iform-gonder">Notu gönder</button>
+  <button type="submit" class="iform-gonder">Ön görüşme talebimi gönder</button>
   <p class="iform-durum" role="alert" hidden></p>
   <p class="iform-acil">Bu form acil durumlar için uygun değildir. Kendinizi ya da bir başkasını tehlikede hissediyorsanız lütfen <a href="tel:112">112</a>'yi arayın.</p>
 </form>
 
 <div class="iform-sonuc" id="iform-sonuc" tabindex="-1" hidden>
   <h2>Teşekkür ederim</h2>
-  <p class="iform-sonuc-metin">Notunuz bana ulaştı. Size en kısa sürede e-postayla dönüş yapacağım; birkaç gün içinde bir yanıt görmezseniz Spam klasörüne de bakmanızı rica ederim.</p>
+  <p class="iform-sonuc-metin">Ön görüşme talebiniz bana ulaştı. Ön görüşmemizi planlamak için en kısa sürede e-postayla size dönüş yapacağım; birkaç gün içinde bir yanıt görmezseniz Spam klasörüne de bakmanızı rica ederim.</p>
 </div>
 
 <script>
@@ -140,16 +158,19 @@
     if(!denetle()) return;
 
     var tercih = f.elements.tercih.value;
+    var zamanlar = [].map.call(f.querySelectorAll('input[data-zaman]:checked'), function(k){ return k.value; }).join(', ');
+    f.elements.uygun_zamanlar.value = zamanlar;
     if(!servis){
       // Servis yok: ziyaretçinin e-posta uygulamasında dolu bir taslak açılır.
-      var govde = 'Ad: ' + f.elements.name.value.trim() +
+      var govde = 'Sizinle bir ön görüşme yapmak istiyorum.\n\nAd: ' + f.elements.name.value.trim() +
         '\nE-posta: ' + f.elements.email.value.trim() +
         (f.elements.phone.value.trim() ? '\nTelefon: ' + f.elements.phone.value.trim() : '') +
         (tercih ? '\nGörüşme tercihi: ' + tercih : '') +
+        (zamanlar ? '\nUygun zamanlar: ' + zamanlar : '') +
         (f.elements.message.value.trim() ? '\n\n' + f.elements.message.value.trim() : '');
-      location.href = 'mailto:' + eposta + '?subject=' + encodeURIComponent('Siteden not') +
+      location.href = 'mailto:' + eposta + '?subject=' + encodeURIComponent('Ön görüşme talebi') +
         '&body=' + encodeURIComponent(govde);
-      bitti('E-posta uygulamanızda notunuz hazır. Göndermek için orada "Gönder"e basmanız yeterli. Uygulama açılmadıysa doğrudan ' + eposta + ' adresine yazabilirsiniz.');
+      bitti('E-posta uygulamanızda ön görüşme talebiniz hazır. Göndermek için orada "Gönder"e basmanız yeterli. Uygulama açılmadıysa doğrudan ' + eposta + ' adresine yazabilirsiniz.');
       return;
     }
 
@@ -157,7 +178,7 @@
     fetch(servis, { method:'POST', body:new FormData(f), headers:{ 'Accept':'application/json' } })
       .then(function(r){ if(!r.ok) throw new Error(r.status); bitti(); })
       .catch(function(){
-        durum.textContent = 'Notunuz şu an gönderilemedi. Dilerseniz doğrudan ' + eposta + ' adresine yazabilirsiniz.';
+        durum.textContent = 'Talebiniz şu an gönderilemedi. Dilerseniz doğrudan ' + eposta + ' adresine yazabilirsiniz.';
         durum.hidden = false;
       })
       .then(function(){ gonder.disabled = false; gonder.removeAttribute('aria-busy'); });

@@ -87,7 +87,7 @@ Sayılan tıklamalar (servis panelinde "Events" ya da "Goals" altında):
 | `form-gonderildi` | İletişim formu gönderildi (`servis`: mesaj iletildi, `eposta`: e-posta uygulaması açıldı) |
 | `eposta-tik` | E-posta adresine tıklandı |
 | `instagram-tik` | Instagram bağlantısına tıklandı |
-| `hero-bana-yazin` | Ana sayfadaki "Bana yazın" düğmesi |
+| `hero-on-gorusme` | Ana sayfadaki "Ön görüşme talep edin" düğmesi |
 | `menu-iletisim` | Menüdeki "İletişim" düğmesi |
 
 Plausible'da bunların panelde görünmesi için **Goals → Add goal → Custom event**

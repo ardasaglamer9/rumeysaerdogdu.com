@@ -1181,3 +1181,18 @@ footer :focus-visible,.cta-box :focus-visible{outline-color:#F6EFB6;}
    "ornek@eposta.com") sığsın diye ad alanı biraz genişledi. */
 .iform-bosluk input#if-ad{width:15ch;}
 .iform-cumle .iform-istege{font-family:'Mulish',sans-serif;font-size:13px;}
+
+/* Uygun zamanlar: seçilebilir hap düğmeler. Kutu görünmez ama klavyeyle
+   ulaşılabilir; odak ve seçili hâl etiketin kendisinde görünür. */
+.iform-zaman{border:0;margin:18px 0 0;padding:0;min-width:0;}
+.iform-zaman legend{padding:0;margin:0 0 10px;font-family:'Fraunces',serif;font-size:clamp(17px,1.9vw,19px);color:var(--ink-soft);}
+.iform-zaman legend .iform-istege{font-family:'Mulish',sans-serif;font-size:13px;}
+.iform-zaman-secenek{display:flex;flex-wrap:wrap;gap:8px;}
+.iform-zaman-secenek label{position:relative;display:inline-flex;align-items:center;min-height:44px;cursor:pointer;
+  padding:9px 15px;border:1.5px solid var(--sage-dark);border-radius:999px;background:transparent;
+  font-size:14.5px;font-weight:600;color:var(--forest);transition:background .2s,color .2s;}
+.iform-zaman-secenek small{font-weight:400;font-size:12.5px;margin-left:6px;opacity:.85;}
+.iform-zaman-secenek input{position:absolute;opacity:0;width:1px;height:1px;}
+.iform-zaman-secenek label:has(input:checked){background:var(--forest);color:#fff;border-color:var(--forest);}
+.iform-zaman-secenek label:has(input:focus-visible){outline:3px solid var(--sage);outline-offset:2px;}
+@media(prefers-reduced-motion:reduce){ .iform-zaman-secenek label{transition:none;} }

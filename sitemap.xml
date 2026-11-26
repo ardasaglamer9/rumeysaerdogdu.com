@@ -15,7 +15,23 @@ permalink: /sitemap.xml
     {%- if page.url contains '.' %}{% continue %}{% endif %}
   <url>
     <loc>{{ page.url | absolute_url }}</loc>
-    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    {%- comment -%}
+      Tarih yalnızca sayfa gerçekten değiştiğinde ilerler (her derlemede
+      değil; sürekli değişen tarihe Google güvenmeyi bırakır):
+      - sayfanın front matter'ındaki last_modified_at,
+      - ana sayfa ve blog en son yazıları da listelediği için, en yeni
+        yazının tarihi daha yeniyse o.
+      İkisi de yoksa lastmod hiç yazılmaz.
+    {%- endcomment -%}
+    {%- assign sayfa_tarih = page.last_modified_at | date: "%Y-%m-%d" -%}
+    {%- if page.url == "/" or page.url == "/blog/" -%}
+      {%- assign son_yazi = site.posts.first -%}
+      {%- assign yazi_tarih = son_yazi.last_modified_at | default: son_yazi.date | date: "%Y-%m-%d" -%}
+      {%- if sayfa_tarih == nil or sayfa_tarih == "" or yazi_tarih > sayfa_tarih -%}{%- assign sayfa_tarih = yazi_tarih -%}{%- endif -%}
+    {%- endif -%}
+    {%- if sayfa_tarih and sayfa_tarih != "" %}
+    <lastmod>{{ sayfa_tarih }}</lastmod>
+    {%- endif %}
     {%- if page.url == "/" %}
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

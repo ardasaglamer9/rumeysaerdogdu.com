@@ -10,7 +10,7 @@
     form-gonderildi   iletişim formu gönderildi (yol: servis | eposta)
     eposta-tik        mailto: bağlantısına tıklandı
     instagram-tik     Instagram bağlantısına tıklandı
-    hero-bana-yazin   ana sayfadaki "Bana yazın" düğmesi
+    hero-on-gorusme   ana sayfadaki "Ön görüşme talep edin" düğmesi
     menu-iletisim     menüdeki "İletişim" düğmesi (masaüstü ve mobil)
   Formun gönderildiği bilgisi _includes/iletisim-formu.html içindeki
   bitti() fonksiyonunun yaydığı 'iform:gonderildi' olayından gelir.
@@ -66,7 +66,7 @@
     var href = a.getAttribute('href') || '';
     if(href.indexOf('mailto:') === 0) ilet('eposta-tik');
     else if(/(^|\.|\/)instagram\.com\//i.test(href)) ilet('instagram-tik');
-    else if(a.matches('.hero-cta .btn')) ilet('hero-bana-yazin');
+    else if(a.matches('.hero-cta .btn')) ilet('hero-on-gorusme');
     else if(a.matches('.nav-cta, .drawer-cta') && /\/iletisim\/?([?#].*)?$/.test(href)) ilet('menu-iletisim');
   });
 })();
