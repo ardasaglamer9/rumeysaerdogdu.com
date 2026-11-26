@@ -78,6 +78,7 @@ thumb_color: t2                     # kart zemini: t1 yeşil | t2 altın | t3 li
 image: "/gorsel-adi.jpg"            # yazı başı görseli, 1280x720, kökte (opsiyonel; paylaşım kartında da kullanılır)
 image_alt: "Görselin kısa tarifi"   # görsel varsa erişilebilirlik için
 permalink: /yazi-adi/               # adres — .html'siz
+last_modified_at: 2026-12-01         # yazı sonradan güncellendiyse (opsiyonel; yapısal veride "güncellenme" tarihi olur)
 excerpt_text: "Blog listesindeki kartta görünecek kısa özet."
 summary: "Yazının başındaki Özet kutusunda görünecek metin."
 faq:

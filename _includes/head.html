@@ -65,17 +65,24 @@
 {"@type":"Person","@id":"{{ site.url }}/#person",
  "name":"{{ site.author.name }}",{% if site.author.former_name %}"alternateName":"{{ site.author.former_name }}",{% endif %}"jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/",
  {% if site.contact.email != "" %}"email":"{{ site.contact.email }}",{% endif %}"knowsLanguage":"tr",
+ "image":"{{ '/rumeysa-saglamer.jpeg' | absolute_url }}",
+ "description":{{ site.author.bio | jsonify }},
+ "worksFor":{"@id":"{{ site.url }}/#practice"},
  "sameAs":["{{ site.contact.instagram_url }}"],
  "alumniOf":[{"@type":"CollegeOrUniversity","name":"Orta Doğu Teknik Üniversitesi"},{"@type":"CollegeOrUniversity","name":"Başkent Üniversitesi"}],
- "knowsAbout":["Şema terapi","Psikoterapi","Kaygı","Depresyon","İlişki örüntüleri"]},
+ "knowsAbout":["Şema terapi","Psikoterapi","Kaygı","Panik atak","Depresyon","Özdeğer ve öz-şefkat","İlişkilerde tekrarlayan örüntüler","Yetişkin psikolojisi"]},
 {"@type":["ProfessionalService","MedicalBusiness"],"@id":"{{ site.url }}/#practice",
  "name":"{{ site.author.title }} {{ site.author.name }}",
  "description":"{{ site.description }}",
  "url":"{{ site.url }}/",{% if site.contact.email != "" %}"email":"{{ site.contact.email }}",{% endif %}
- "areaServed":{"@type":"City","name":"{{ site.office.region }}"},
+ "image":"{{ '/rumeysa-saglamer.jpeg' | absolute_url }}",
+ "logo":"{{ '/logo.png' | absolute_url }}",
+ "address":{"@type":"PostalAddress","addressLocality":"{{ site.office.region }}","addressRegion":"{{ site.office.region }}","addressCountry":"TR"},
+ "areaServed":[{"@type":"City","name":"{{ site.office.region }}"},{"@type":"Country","name":"Türkiye"}],
+ "sameAs":["{{ site.contact.instagram_url }}"],
  "availableLanguage":"tr",
  "provider":{"@id":"{{ site.url }}/#person"}},
-{"@type":"WebSite","url":"{{ site.url }}/","name":"{{ site.title }}","inLanguage":"tr-TR","publisher":{"@id":"{{ site.url }}/#person"}}
+{"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}/","name":"{{ site.title }}","alternateName":"{{ site.author.name }}","inLanguage":"tr-TR","publisher":{"@id":"{{ site.url }}/#person"}}
 ]}
 </script>
 {% endif %}
@@ -88,13 +95,15 @@
  "description":{{ desc | jsonify }},
  "inLanguage":"tr-TR",
  "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
- "dateModified":"{{ page.date | date: '%Y-%m-%d' }}",
+ "dateModified":"{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",{% if page.keywords %}
+ "keywords":{{ page.keywords | jsonify }},{% endif %}
  "articleSection":{{ page.category_name | jsonify }},
  "url":"{{ page.url | absolute_url }}",
  "image":{"@type":"ImageObject","url":"{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/og-image.png' | absolute_url }}{% endif %}","width":{% if page.image %}1280{% else %}1200{% endif %},"height":{% if page.image %}720{% else %}630{% endif %}},
  "mainEntityOfPage":{"@type":"WebPage","@id":"{{ page.url | absolute_url }}"},
- "author":{"@type":"Person","name":"{{ site.author.name }}","jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/"},
- "publisher":{"@type":"Person","name":"{{ site.author.title }} {{ site.author.name }}","url":"{{ site.url }}/"}},
+ "author":{"@type":"Person","@id":"{{ site.url }}/#person","name":"{{ site.author.name }}","jobTitle":"{{ site.author.title }}","url":"{{ site.url }}/"},
+ "publisher":{"@type":"Person","@id":"{{ site.url }}/#person","name":"{{ site.author.name }}","url":"{{ site.url }}/","image":"{{ '/rumeysa-saglamer.jpeg' | absolute_url }}"},
+ "isPartOf":{"@id":"{{ site.url }}/#website"}},
 {"@type":"BreadcrumbList","itemListElement":[
  {"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"{{ site.url }}/"},
  {"@type":"ListItem","position":2,"name":"Blog","item":"{{ site.url }}/blog/"},
@@ -106,6 +115,20 @@
 </script>
 {% endif %}
 
+{%- comment -%}
+  Ana sayfa ve yazılar dışındaki sayfalar (blog, iletişim, aydınlatma
+  metni): gezinti yolu. İletişim sayfası ContactPage olarak işaretli.
+{%- endcomment -%}
+{% unless page.url == "/" or page.layout == 'post' or page.url contains '.' %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"{% if page.url == '/iletisim/' %}ContactPage{% else %}WebPage{% endif %}","@id":"{{ page.url | absolute_url }}","url":"{{ page.url | absolute_url }}","name":{{ page.seo_title | default: page.title | jsonify }},"inLanguage":"tr-TR","isPartOf":{"@id":"{{ site.url }}/#website"},"about":{"@id":"{{ site.url }}/#person"}},
+{"@type":"BreadcrumbList","itemListElement":[
+ {"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"{{ site.url }}/"},
+ {"@type":"ListItem","position":2,"name":{{ page.title | jsonify }},"item":"{{ page.url | absolute_url }}"}]}
+]}
+</script>
+{% endunless %}
 {% if page.url == "/blog/" %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Blog","name":"{{ site.title }} | Blog","inLanguage":"tr-TR","url":"{{ site.url }}/blog/",
