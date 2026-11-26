@@ -118,6 +118,7 @@
 
   function bitti(metin){
     if(metin) sonuc.querySelector('.iform-sonuc-metin').textContent = metin;
+    if(!f.elements.botcheck.checked) document.dispatchEvent(new CustomEvent('iform:gonderildi', { detail: { yol: metin ? 'eposta' : 'servis' } }));
     f.hidden = true; sonuc.hidden = false; sonuc.focus();
   }
 

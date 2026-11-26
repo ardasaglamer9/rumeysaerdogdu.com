@@ -34,6 +34,19 @@ contact:
 office:
   region: "Ankara"   # genel konum bilgisi (footer, yapısal veri); belirli bir ofis adresi yok
 
+# ---- Ziyaret ölçümü (kapalı) ----
+# Çerezsiz bir ölçüm servisi seçilince açılır; ayrıntı KURULUM.md → "Ziyaret ölçümü".
+# provider boşken sitede hiçbir ölçüm kodu yoktur. Seçenekler:
+#   "goatcounter" → goatcounter_code: https://KOD.goatcounter.com adresindeki KOD
+#   "plausible"   → plausible_script_id: kurulum kodundaki pa-XXXX.js içindeki XXXX
+#   "umami"       → umami_website_id: Umami'nin verdiği "Website ID"
+# Yalnızca seçilen servisin alanını doldurmak yeterli. Bu kimlikler gizli değildir.
+analytics:
+  provider: ""
+  goatcounter_code: ""
+  plausible_script_id: ""
+  umami_website_id: ""
+
 # ---- Menü (bir kez düzenle, her sayfada değişir) ----
 nav:
   - title: "Hakkımda"
