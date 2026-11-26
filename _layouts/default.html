@@ -5,8 +5,9 @@
 {% include analytics.html %}
 </head>
 <body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
 {% include nav.html %}
-<main id="icerik">
+<main id="icerik" tabindex="-1">
 {{ content }}
 </main>
 {% unless page.hide_footer %}{% include footer.html %}{% endunless %}

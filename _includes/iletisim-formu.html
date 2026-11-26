@@ -35,9 +35,9 @@
   {%- endcomment -%}
   <p class="iform-cumle">
     Merhaba, ben
-    <span class="iform-bosluk"><label class="gorunmez" for="if-ad">Adınız</label><input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="adınız" aria-describedby="if-ad-h"></span>.
+    <span class="iform-bosluk"><label class="gorunmez" for="if-ad">Adınız</label><input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="adınız" data-hata="if-ad-h"></span>.
     <span class="iform-satir-blok">Bana
-    <span class="iform-bosluk iform-genis"><label class="gorunmez" for="if-eposta">E-posta adresiniz</label><input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="e-posta adresiniz" aria-describedby="if-eposta-h"></span>
+    <span class="iform-bosluk iform-genis"><label class="gorunmez" for="if-eposta">E-posta adresiniz</label><input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="e-posta adresiniz" data-hata="if-eposta-h"></span>
     adresinden ulaşabilirsiniz.</span>
   </p>
   <p class="iform-hata" id="if-ad-h" hidden>Size nasıl hitap edeceğimi bilmek için adınızı yazar mısınız?</p>
@@ -63,8 +63,8 @@
 
   <div class="iform-onay">
     <label class="iform-kutu">
-      <input id="if-onay" type="checkbox" required aria-describedby="if-onay-h">
-      <span><a href="{{ '/aydinlatma-metni/' | relative_url }}" target="_blank" rel="noopener">Aydınlatma Metni</a>'ni okudum ve anladım.</span>
+      <input id="if-onay" type="checkbox" required data-hata="if-onay-h">
+      <span><a href="{{ '/aydinlatma-metni/' | relative_url }}" target="_blank" rel="noopener">Aydınlatma Metni<span class="gorunmez"> (yeni sekmede açılır)</span></a>'ni okudum ve anladım.</span>
     </label>
     <p class="iform-hata" id="if-onay-h" hidden>Göndermeden önce aydınlatma metnini okuduğunuzu işaretler misiniz?</p>
   </div>
@@ -89,26 +89,35 @@
   var sonuc = document.getElementById('iform-sonuc');
   var gonder = f.querySelector('.iform-gonder');
 
+  // Hata metni alana yalnızca hata varken bağlanır (aria-describedby).
+  // Gizli metne bağlı kalsaydı ekran okuyucu, alan boşken bile
+  // "adınızı yazar mısınız?" diye okurdu.
   function hata(alan, goster){
-    var h = document.getElementById(alan.getAttribute('aria-describedby'));
+    var id = alan.getAttribute('data-hata'), h = document.getElementById(id);
     if(h) h.hidden = !goster;
+    if(goster) alan.setAttribute('aria-describedby', id); else alan.removeAttribute('aria-describedby');
     alan.setAttribute('aria-invalid', goster ? 'true' : 'false');
     return goster;
   }
+  function gecersiz(alan){
+    if(alan.type === 'checkbox') return !alan.checked;
+    if(alan.type === 'email') return !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(alan.value.trim());
+    return !alan.value.trim();
+  }
   function denetle(){
-    var ad = f.elements.name, ep = f.elements.email, onay = document.getElementById('if-onay');
     var ilk = null;
-    if(hata(ad, !ad.value.trim())) ilk = ilk || ad;
-    if(hata(ep, !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(ep.value.trim()))) ilk = ilk || ep;
-    if(hata(onay, !onay.checked)) ilk = ilk || onay;
+    [f.elements.name, f.elements.email, document.getElementById('if-onay')].forEach(function(a){
+      if(hata(a, gecersiz(a))) ilk = ilk || a;
+    });
     if(ilk) ilk.focus();
     return !ilk;
   }
-  // Hata mesajı, alan düzeltildiği anda kalkar.
+  // Hata mesajı, alan düzeltildiği anda kalkar. Yalnızca o alan denetlenir;
+  // tüm formu denetlemek odağı yazılan alandan başka alana kaydırıyordu.
   ['name','email'].forEach(function(n){
-    f.elements[n].addEventListener('input', function(){ if(this.getAttribute('aria-invalid')==='true') denetle(); });
+    f.elements[n].addEventListener('input', function(){ if(this.getAttribute('aria-invalid')==='true') hata(this, gecersiz(this)); });
   });
-  document.getElementById('if-onay').addEventListener('change', function(){ hata(this, !this.checked); });
+  document.getElementById('if-onay').addEventListener('change', function(){ if(this.getAttribute('aria-invalid')==='true') hata(this, gecersiz(this)); });
   // Mesaj kutusu iki satırla başlar, yazdıkça büyür.
   var mesaj = f.elements.message;
   mesaj.addEventListener('input', function(){

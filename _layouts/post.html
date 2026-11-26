@@ -19,22 +19,22 @@ layout: default
   </figure>
   {% endif %}
 
-  <div class="breadcrumb reveal"><a href="{{ '/' | relative_url }}">Ana sayfa</a> &nbsp;›&nbsp; <a href="{{ '/blog/' | relative_url }}">Blog</a></div>
+  <nav class="breadcrumb reveal" aria-label="Sayfa yolu"><a href="{{ '/' | relative_url }}">Ana sayfa</a> <span aria-hidden="true">&nbsp;›&nbsp;</span> <a href="{{ '/blog/' | relative_url }}">Blog</a></nav>
 
   {% if page.summary %}
   <div class="summary reveal">
-    <h3>
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16l-7-3.5L5 20V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    <h2>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h14v16l-7-3.5L5 20V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
       Özet
-    </h3>
+    </h2>
     <p>{{ page.summary }}</p>
   </div>
   {% endif %}
 
   <nav class="toc reveal" aria-label="İçindekiler">
     <div class="toc-head">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <h3>İçindekiler</h3>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <h2>İçindekiler</h2>
     </div>
     <ol id="tocList"></ol>
   </nav>
@@ -46,14 +46,14 @@ layout: default
     <div class="postfaq">
       <h2 id="sss">Sık sorulan sorular</h2>
       {% for f in page.faq %}
-      <details><summary>{{ f.q }}<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="a">{{ f.a }}</div></details>
+      <details><summary>{{ f.q }}<svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="a">{{ f.a }}</div></details>
       {% endfor %}
     </div>
     {% endif %}
 
     {%- comment -%} Yazıyı bitiren okuru başka sayfaya göndermeden form burada. {%- endcomment -%}
     <div class="cta-box">
-      <h3>Birlikte bakmak ister misiniz?</h3>
+      <h2>Birlikte bakmak ister misiniz?</h2>
       <p>Yetişkinlerle online ve yüz yüze çalışıyorum. Görüşme hakkındaki sorularınız ya da randevu talebiniz için bana buradan yazabilirsiniz.</p>
       <div class="iform-kart">
         {% include iletisim-formu.html sade=true %}

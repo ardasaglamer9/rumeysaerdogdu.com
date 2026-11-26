@@ -1,9 +1,9 @@
-<nav id="nav">
+<nav id="nav" aria-label="Ana menü">
   <div class="wrap">
-    <a href="{{ '/' | relative_url }}" class="brand"><img src="{{ '/logo.png' | relative_url }}" alt="{{ site.author.name }} logo" class="brand-logo" width="128" height="128" fetchpriority="high"><span>{{ site.author.name }}</span></a>
+    <a href="{{ '/' | relative_url }}" class="brand"><img src="{{ '/logo.png' | relative_url }}" alt="" class="brand-logo" width="128" height="128" fetchpriority="high"><span>{{ site.author.name }}</span></a>
     <div class="navlinks">
       {% for item in site.nav %}{% unless item.cta %}
-      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
+      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endunless %}{% endfor %}
     </div>
     {%- comment -%}
@@ -12,10 +12,10 @@
     {%- endcomment -%}
     <div class="nav-actions">
       {% for item in site.nav %}{% if item.cta %}
-      <a href="{{ item.url | relative_url }}" class="nav-cta{% if item.url == page.url %} active{% endif %}">{{ item.title }}</a>
+      <a href="{{ item.url | relative_url }}" class="nav-cta{% if item.url == page.url %} active{% endif %}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endif %}{% endfor %}
-      <button class="navtoggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navDrawer">
-        <span></span><span></span><span></span>
+      <button type="button" class="navtoggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navDrawer">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </div>
   </div>
@@ -24,15 +24,15 @@
 <div class="navdrawer" id="navDrawer" aria-hidden="true">
   <div class="navdrawer-overlay" data-navclose></div>
   <div class="navdrawer-panel" role="dialog" aria-modal="true" aria-label="Menü">
-    <button class="navdrawer-close" data-navclose aria-label="Menüyü kapat">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <button type="button" class="navdrawer-close" data-navclose aria-label="Menüyü kapat">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
     <nav class="navdrawer-links" aria-label="Site menüsü">
       {% for item in site.nav %}{% unless item.cta %}
-      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}>{{ item.title }}</a>
+      <a href="{{ item.url | relative_url }}"{% if item.url == page.url or (page.layout == 'post' and item.url == '/blog/') %} class="active"{% endif %}{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endunless %}{% endfor %}
       {% for item in site.nav %}{% if item.cta %}
-      <a href="{{ item.url | relative_url }}" class="drawer-cta">{{ item.title }}</a>
+      <a href="{{ item.url | relative_url }}" class="drawer-cta"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endif %}{% endfor %}
     </nav>
   </div>
