@@ -38,9 +38,9 @@ office:
 nav:
   - title: "Hakkımda"
     url: "/#hakkimda"
-  - title: "Görüşme Süreci"
+  - title: "Görüşme süreci"
     url: "/#yaklasim"
-  - title: "İlgilendiğim Konular"
+  - title: "İlgilendiğim konular"
     url: "/#alanlar"
   - title: "Blog"
     url: "/blog/"

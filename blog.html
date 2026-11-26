@@ -10,7 +10,7 @@ description: "Kaygı, ilişkiler, çocukluk izleri ve kendini anlama üzerine ya
 permalink: /blog/
 ---
 
-{% include banner.html eyebrow="Blog" title="Notlar &amp; Yazılar" sub="Kaygı, ilişkiler, duygular ve kendini anlama üzerine düşünceler." %}
+{% include banner.html title="Notlar ve yazılar" sub="Kaygı, ilişkiler, duygular ve kendini anlama üzerine düşünceler." %}
 
 {% assign months = "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık" | split: "," %}
 {% assign renkler = "t1,t2,t3,t4" | split: "," %}
@@ -23,16 +23,14 @@ permalink: /blog/
     {% assign mi = one.date | date: "%-m" | plus: 0 | minus: 1 %}
     <a class="featured reveal" href="{{ one.url | relative_url }}">
       <div class="feat-thumb {{ one.thumb_color | default: 't1' }}">
-        <span class="cat">Öne Çıkan · {{ one.category_name }}</span>
+        <span class="cat">{{ one.category_name }}</span>
         {% include thumb-motif.html motif=one.thumb %}
       </div>
       <div class="feat-body">
         <div class="post-date">{{ one.date | date: "%-d" }} {{ months[mi] }} {{ one.date | date: "%Y" }}</div>
         <h2>{{ one.title }}</h2>
         <p>{{ one.excerpt_text | default: one.description }}</p>
-        <span class="feat-cta">Yazıyı oku
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
+        <span class="feat-cta">Yazıyı oku</span>
       </div>
     </a>
     {% endif %}
@@ -50,9 +48,7 @@ permalink: /blog/
           <div class="post-date">{{ post.date | date: "%-d" }} {{ months[mi] }} {{ post.date | date: "%Y" }}</div>
           <h3>{{ post.title }}</h3>
           <p>{{ post.excerpt_text | default: post.description }}</p>
-          <span class="readmore">Devamını oku
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
+          <span class="readmore">Devamını oku</span>
         </div>
       </a>
       {% endfor %}

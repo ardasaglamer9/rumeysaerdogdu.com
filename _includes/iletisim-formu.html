@@ -11,74 +11,72 @@
       action="{{ site.contact.form_action }}" method="post"
       data-eposta="{{ site.contact.email }}">
 
+  {%- unless include.sade %}
   <div class="iform-bas">
-    <h2>Ön görüşme için yazın</h2>
-    <p>Görüşme hakkındaki sorularınız ya da randevu talebiniz için bu formu doldurabilirsiniz. Size en kısa sürede e-posta veya telefonla dönüş yaparım.</p>
+    <h2>Bana kısa bir not bırakın</h2>
+    <p>Sorunuz ya da randevu talebiniz için birkaç kelime yeterli; size en kısa sürede dönüş yaparım.</p>
   </div>
+  {%- endunless %}
 
   {%- if site.contact.form_access_key != "" %}
   <input type="hidden" name="access_key" value="{{ site.contact.form_access_key }}">
   {%- endif %}
-  <input type="hidden" name="subject" value="Siteden yeni mesaj">
+  <input type="hidden" name="subject" value="Siteden yeni not">
   <input type="hidden" name="from_name" value="{{ site.author.name }} – site formu">
-  {%- comment -%} Bot tuzağı: insanlar görmez, doldurulursa gönderim yapılmaz. {%- endcomment -%}
+  {%- comment -%} Bot tuzağı: insanlar görmez, işaretlenirse gönderim yapılmaz. {%- endcomment -%}
   <div class="iform-tuzak" aria-hidden="true">
     <label>Bu kutuyu işaretlemeyin <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
   </div>
 
-  <div class="iform-satir iform-ikili">
-    <div class="iform-alan">
-      <label for="if-ad">Adınız</label>
-      <input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="if-ad-h">
-      <p class="iform-hata" id="if-ad-h" hidden>Size nasıl hitap edeceğimi bilmek için adınızı yazar mısınız?</p>
-    </div>
-    <div class="iform-alan">
-      <label for="if-eposta">E-posta adresiniz</label>
-      <input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" aria-describedby="if-eposta-h">
-      <p class="iform-hata" id="if-eposta-h" hidden>Size dönüş yapabilmem için geçerli bir e-posta adresine ihtiyacım var.</p>
-    </div>
+  {%- comment -%}
+    Form bir mektup cümlesi gibi: alanlar cümlenin içindeki boşluklar.
+    Her alanın görünmeyen bir etiketi var (ekran okuyucular için); yer
+    tutucu metin yalnızca ipucu.
+  {%- endcomment -%}
+  <p class="iform-cumle">
+    Merhaba, ben
+    <span class="iform-bosluk"><label class="gorunmez" for="if-ad">Adınız</label><input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="adınız" aria-describedby="if-ad-h"></span>.
+    <span class="iform-satir-blok">Bana
+    <span class="iform-bosluk iform-genis"><label class="gorunmez" for="if-eposta">E-posta adresiniz</label><input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="e-posta adresiniz" aria-describedby="if-eposta-h"></span>
+    adresinden ulaşabilirsiniz.</span>
+  </p>
+  <p class="iform-hata" id="if-ad-h" hidden>Size nasıl hitap edeceğimi bilmek için adınızı yazar mısınız?</p>
+  <p class="iform-hata" id="if-eposta-h" hidden>Size dönüş yapabilmem için geçerli bir e-posta adresine ihtiyacım var.</p>
+
+  <p class="iform-cumle iform-cumle-ek">
+    İsterseniz telefonla da ulaşabilirsiniz:
+    <span class="iform-bosluk"><label class="gorunmez" for="if-tel">Telefon numaranız (isteğe bağlı)</label><input id="if-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="numaranız"></span>.
+    <span class="iform-satir-blok">Görüşme için tercihim:
+    <span class="iform-bosluk"><label class="gorunmez" for="if-tercih">Görüşme tercihiniz (isteğe bağlı)</label><select id="if-tercih" name="tercih">
+      <option value="">seçin</option>
+      <option value="Yüz yüze (Ankara)">yüz yüze, Ankara'da</option>
+      <option value="Online">online</option>
+      <option value="Henüz karar vermedim">henüz karar vermedim</option>
+    </select></span>.</span>
+  </p>
+
+  <div class="iform-not">
+    <label for="if-mesaj">Eklemek istediğiniz kısa bir not <span class="iform-istege">isteğe bağlı</span></label>
+    <textarea id="if-mesaj" name="message" rows="2" maxlength="1500" aria-describedby="if-mesaj-y"></textarea>
+    <p class="iform-yardim" id="if-mesaj-y">Sağlık bilgisi ya da ayrıntı paylaşmanız gerekmiyor; bunları görüşmede konuşabiliriz.</p>
   </div>
 
-  <div class="iform-alan">
-    <label for="if-tel">Telefon numaranız <span class="iform-istege">isteğe bağlı</span></label>
-    <input id="if-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" aria-describedby="if-tel-y">
-    <p class="iform-yardim" id="if-tel-y">Telefonla dönüş tercih ederseniz.</p>
-  </div>
-
-  <fieldset class="iform-alan iform-secim">
-    <legend>Görüşme tercihiniz <span class="iform-istege">isteğe bağlı</span></legend>
-    <div class="iform-secenekler">
-      <label><input type="radio" name="tercih" value="Yüz yüze (Ankara)"> <span>Yüz yüze (Ankara)</span></label>
-      <label><input type="radio" name="tercih" value="Online"> <span>Online</span></label>
-      <label><input type="radio" name="tercih" value="Henüz karar vermedim"> <span>Henüz karar vermedim</span></label>
-    </div>
-  </fieldset>
-
-  <div class="iform-alan">
-    <label for="if-mesaj">Mesajınız <span class="iform-istege">isteğe bağlı</span></label>
-    <textarea id="if-mesaj" name="message" rows="4" maxlength="1500" aria-describedby="if-mesaj-y"></textarea>
-    <p class="iform-yardim" id="if-mesaj-y">Kısa bir not yeterli. Sağlık durumunuza ya da yaşadıklarınıza dair ayrıntıları burada paylaşmanız gerekmiyor; bunları görüşmede konuşabiliriz.</p>
-  </div>
-
-  <div class="iform-alan iform-onay">
+  <div class="iform-onay">
     <label class="iform-kutu">
       <input id="if-onay" type="checkbox" required aria-describedby="if-onay-h">
-      <span><a href="{{ '/aydinlatma-metni/' | relative_url }}" target="_blank" rel="noopener">İletişim Formu Aydınlatma Metni</a>'ni okudum ve anladım.</span>
+      <span><a href="{{ '/aydinlatma-metni/' | relative_url }}" target="_blank" rel="noopener">Aydınlatma Metni</a>'ni okudum ve anladım.</span>
     </label>
     <p class="iform-hata" id="if-onay-h" hidden>Göndermeden önce aydınlatma metnini okuduğunuzu işaretler misiniz?</p>
   </div>
 
-  <p class="iform-acil">Bu form acil durumlar için uygun değildir. Kendinizi ya da bir başkasını tehlikede hissediyorsanız lütfen <a href="tel:112">112</a>'yi arayın.</p>
-
-  <button type="submit" class="btn iform-gonder">Mesajı gönder
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
+  <button type="submit" class="iform-gonder">Notu gönder</button>
   <p class="iform-durum" role="alert" hidden></p>
+  <p class="iform-acil">Bu form acil durumlar için uygun değildir. Kendinizi ya da bir başkasını tehlikede hissediyorsanız lütfen <a href="tel:112">112</a>'yi arayın.</p>
 </form>
 
 <div class="iform-sonuc" id="iform-sonuc" tabindex="-1" hidden>
   <h2>Teşekkür ederim</h2>
-  <p class="iform-sonuc-metin">Mesajınız bana ulaştı. En kısa sürede size dönüş yapacağım.</p>
+  <p class="iform-sonuc-metin">Notunuz bana ulaştı. Size en kısa sürede e-postayla dönüş yapacağım; birkaç gün içinde bir yanıt görmezseniz Spam klasörüne de bakmanızı rica ederim.</p>
 </div>
 
 <script>
@@ -111,6 +109,12 @@
     f.elements[n].addEventListener('input', function(){ if(this.getAttribute('aria-invalid')==='true') denetle(); });
   });
   document.getElementById('if-onay').addEventListener('change', function(){ hata(this, !this.checked); });
+  // Mesaj kutusu iki satırla başlar, yazdıkça büyür.
+  var mesaj = f.elements.message;
+  mesaj.addEventListener('input', function(){
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight + 2, 260) + 'px';
+  });
 
   function bitti(metin){
     if(metin) sonuc.querySelector('.iform-sonuc-metin').textContent = metin;
@@ -124,17 +128,17 @@
     if(f.elements.botcheck.checked){ bitti(); return; }
     if(!denetle()) return;
 
-    var tercih = f.querySelector('input[name="tercih"]:checked');
+    var tercih = f.elements.tercih.value;
     if(!servis){
       // Servis yok: ziyaretçinin e-posta uygulamasında dolu bir taslak açılır.
       var govde = 'Ad: ' + f.elements.name.value.trim() +
         '\nE-posta: ' + f.elements.email.value.trim() +
         (f.elements.phone.value.trim() ? '\nTelefon: ' + f.elements.phone.value.trim() : '') +
-        (tercih ? '\nGörüşme tercihi: ' + tercih.value : '') +
+        (tercih ? '\nGörüşme tercihi: ' + tercih : '') +
         (f.elements.message.value.trim() ? '\n\n' + f.elements.message.value.trim() : '');
-      location.href = 'mailto:' + eposta + '?subject=' + encodeURIComponent('Ön görüşme talebi') +
+      location.href = 'mailto:' + eposta + '?subject=' + encodeURIComponent('Siteden not') +
         '&body=' + encodeURIComponent(govde);
-      bitti('E-posta uygulamanızda mesajınız hazır. Göndermek için orada "Gönder"e basmanız yeterli. Uygulama açılmadıysa doğrudan ' + eposta + ' adresine yazabilirsiniz.');
+      bitti('E-posta uygulamanızda notunuz hazır. Göndermek için orada "Gönder"e basmanız yeterli. Uygulama açılmadıysa doğrudan ' + eposta + ' adresine yazabilirsiniz.');
       return;
     }
 
@@ -142,7 +146,7 @@
     fetch(servis, { method:'POST', body:new FormData(f), headers:{ 'Accept':'application/json' } })
       .then(function(r){ if(!r.ok) throw new Error(r.status); bitti(); })
       .catch(function(){
-        durum.textContent = 'Mesajınız şu an gönderilemedi. Dilerseniz doğrudan ' + eposta + ' adresine yazabilirsiniz.';
+        durum.textContent = 'Notunuz şu an gönderilemedi. Dilerseniz doğrudan ' + eposta + ' adresine yazabilirsiniz.';
         durum.hidden = false;
       })
       .then(function(){ gonder.disabled = false; gonder.removeAttribute('aria-busy'); });

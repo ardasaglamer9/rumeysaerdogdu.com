@@ -407,8 +407,8 @@
   .cta-box{max-width:720px;margin:52px auto 0;background:var(--forest);border-radius:22px;padding:38px 40px;text-align:center;}
   .cta-box h3{color:#fff;font-size:24px;margin-bottom:12px;}
   .cta-box p{color:rgba(255,255,255,.84);font-size:16.5px;margin-bottom:24px;}
-  .cta-box a{display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:#fff;font-weight:700;font-size:15px;padding:15px 32px;border-radius:999px;transition:background .2s,gap .2s;}
-  .cta-box a:hover{background:var(--sage-dark);gap:13px;}
+  .cta-box > a{display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:#fff;font-weight:700;font-size:15px;padding:15px 32px;border-radius:999px;transition:background .2s,gap .2s;}
+  .cta-box > a:hover{background:var(--sage-dark);gap:13px;}
 
 /* güvenlik: içindekiler asla yapışmasın */
 .toc{position:static !important;top:auto !important;backdrop-filter:none !important;}
@@ -945,54 +945,132 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
 @media(min-width:900px){ .hero .b2{bottom:40px;right:-230px;} }
 
 /* =========================================================
-   12) İLETİŞİM FORMU (/iletisim/) ve AYDINLATMA METNİ
-   Form, iletişim kartının altında ayrı bir beyaz kartta. Alanlar az ve
-   sade; hata mesajları yalnızca gönderimde ve alanın altında görünür.
+   12) İLETİŞİM FORMU — "bana kısa bir not bırakın"
+   Bir psikoloğa ilk kez yazmak başvuru formu gibi değil, kısa bir not
+   yazmak gibi hissettirsin diye alanlar bir mektup cümlesinin içindeki
+   boşluklar. Yazılanlar Fraunces'le (mektup), yardım ve yasal metinler
+   Mulish'le. Akılda kalan tek unsur cümle; geri kalanı sade.
+   Renkler: kâğıt #FCFAF5, mürekkep var(--ink), yazılan var(--forest),
+   alan çizgisi var(--sage-dark) (kâğıtta 4.5:1), hata #9A3F28.
+   Formun olduğu yerler: /iletisim/ (en üstte), ana sayfa sonu, yazı sonu.
    ========================================================= */
-.iform-kart{max-width:660px;margin:28px auto 0;background:#fff;border:1px solid var(--line);
-  border-radius:28px;padding:clamp(24px,4vw,40px);box-shadow:0 18px 44px rgba(34,49,42,.10);}
-.iform-bas h2,.iform-sonuc h2{font-size:clamp(23px,2.8vw,27px);color:var(--forest);margin:0 0 10px;}
-.iform-bas p{font-size:16px;line-height:1.7;color:var(--ink-soft);margin:0 0 26px;}
-.iform-alan{margin:0 0 20px;padding:0;border:0;min-width:0;}
-.iform-ikili{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;}
-@media(max-width:560px){.iform-ikili{grid-template-columns:1fr;}}
-.iform label,.iform legend{display:block;font-size:15px;font-weight:700;color:var(--ink);margin:0 0 8px;padding:0;}
+.iform-kart{max-width:680px;margin:28px auto 0;background:#FCFAF5;border:1px solid var(--line);
+  border-radius:20px;padding:clamp(24px,4.4vw,44px);box-shadow:0 22px 50px rgba(32,54,42,.14);text-align:left;}
+.iform-kart .iform-bas h2,.iform-kart .iform-sonuc h2{display:block;font-family:'Fraunces',serif;
+  font-size:clamp(24px,3vw,30px);line-height:1.2;color:var(--forest);margin:0 0 8px;}
+.iform-kart .iform-sonuc h2::before{content:none;}
+.iform-kart .iform-bas p{font-size:15.5px;line-height:1.65;color:var(--ink-soft);margin:0 0 24px;max-width:52ch;}
+.gorunmez{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0;}
+
+/* Cümle ve içindeki boşluklar */
+.iform-kart .iform-cumle{font-family:'Fraunces',serif;font-size:clamp(19px,2.1vw,21px);line-height:2.1;
+  color:var(--ink);margin:0;}
+.iform-kart .iform-cumle-ek{font-size:clamp(17px,1.9vw,19px);color:var(--ink-soft);margin-top:12px;}
+.iform-bosluk{display:inline-block;max-width:100%;}
+.iform-bosluk input,.iform-bosluk select{font:inherit;color:var(--forest);background-color:transparent;
+  border:0;border-bottom:1.5px solid var(--sage-dark);border-radius:0;padding:0 4px 1px;margin:0 2px;
+  width:11ch;max-width:100%;line-height:1.35;transition:border-color .2s,background-color .2s;}
+.iform-genis input{width:18ch;}
+.iform-satir-blok{display:block;}  /* her cümle kendi satırında başlar */
+.iform-bosluk input::placeholder{color:#627168;opacity:1;}
+.iform-bosluk select{width:12ch;field-sizing:content;min-width:6ch;cursor:pointer;appearance:none;-webkit-appearance:none;padding-right:22px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 8l5 5 5-5' stroke='%232C4A38' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 3px center;}
+.iform-bosluk input:focus-visible,.iform-bosluk select:focus-visible{outline:none;
+  border-bottom:2.5px solid var(--forest);background-color:rgba(138,163,153,.18);}
+.iform-bosluk [aria-invalid=true]{border-bottom-color:#B4533A;}
+.iform-kart .iform-hata{font-size:13.5px;line-height:1.5;color:#9A3F28;font-weight:600;margin:6px 0 0;}
+
+/* Not: çizgili defter sayfası; iki satırla başlar, yazdıkça uzar */
+.iform-not{margin:26px 0 0;}
+.iform-not label{display:block;font-size:14.5px;font-weight:700;color:var(--ink);margin:0 0 4px;}
 .iform-istege{font-weight:400;font-size:13px;color:var(--ink-soft);margin-left:6px;}
-.iform input[type=text],.iform input[type=email],.iform input[type=tel],.iform textarea{
-  width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--cream-soft);
-  border:1.5px solid var(--line);border-radius:14px;padding:13px 15px;min-height:50px;
-  transition:border-color .2s,box-shadow .2s,background .2s;}
-.iform textarea{resize:vertical;min-height:118px;line-height:1.6;}
-.iform input:focus-visible,.iform textarea:focus-visible{outline:none;background:#fff;
-  border-color:var(--sage-dark);box-shadow:0 0 0 4px rgba(138,163,153,.28);}
-.iform [aria-invalid=true]{border-color:#B4533A !important;}
-.iform-yardim{font-size:13.5px;line-height:1.6;color:var(--ink-soft);margin:8px 0 0;}
-.iform-hata{font-size:13.5px;line-height:1.5;color:#9A3F28;font-weight:600;margin:8px 0 0;}
-.iform-secenekler{display:flex;flex-wrap:wrap;gap:10px;}
-.iform-secenekler label{display:inline-flex;align-items:center;gap:8px;margin:0;font-weight:600;font-size:15px;
-  padding:11px 16px;min-height:46px;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;
-  background:var(--cream-soft);transition:border-color .2s,background .2s;}
-.iform-secenekler label:has(input:checked){border-color:var(--sage-dark);background:#EEF3F0;}
-.iform-secenekler input,.iform-kutu input{accent-color:var(--forest);width:18px;height:18px;margin:0;flex:0 0 auto;}
-.iform-kutu{display:flex !important;align-items:flex-start;gap:11px;font-weight:400 !important;
-  font-size:15px !important;line-height:1.55;cursor:pointer;}
-.iform-kutu input{margin-top:2px;}
-.iform-kutu a,.iform-acil a{color:var(--forest);font-weight:700;text-decoration:underline;text-underline-offset:3px;}
-.iform-acil{font-size:14px;line-height:1.6;color:var(--ink-soft);background:var(--cream);
-  border-radius:14px;padding:12px 15px;margin:4px 0 22px;}
-.iform-gonder{font-family:inherit;font-size:16px;}  /* buton fontu kendiliğinden miras almıyor */
+.iform-not textarea{display:block;width:100%;font-family:'Fraunces',serif;font-size:18px;line-height:34px;
+  color:var(--forest);border:0;border-radius:0;padding:0 4px;min-height:68px;resize:none;overflow:hidden;
+  background-color:transparent;background-attachment:local;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 33px,rgba(94,122,106,.55) 33px 34px);}
+.iform-not textarea:focus-visible{outline:none;background-color:rgba(138,163,153,.12);
+  background-image:repeating-linear-gradient(to bottom,transparent 0 32px,var(--forest) 32px 34px);}
+.iform-kart .iform-yardim{font-size:13.5px;line-height:1.6;color:var(--ink-soft);margin:8px 0 0;}
+
+/* Onay, buton, acil durum notu */
+.iform-onay{margin:24px 0 22px;}
+.iform-kutu{display:flex;align-items:flex-start;gap:11px;font-size:15px;line-height:1.55;color:var(--ink);cursor:pointer;}
+.iform-kutu input{accent-color:var(--forest);width:18px;height:18px;margin:2px 0 0;flex:0 0 auto;}
+.iform-kart .iform-kutu a,.iform-kart .iform-acil a{color:var(--forest);font-weight:700;
+  text-decoration:underline;text-underline-offset:3px;}
+.iform-gonder{font-family:'Mulish',sans-serif;font-weight:700;font-size:16px;color:#fff;background:var(--forest);
+  border:0;border-radius:999px;padding:15px 36px;min-height:50px;cursor:pointer;transition:background .2s;}
+.iform-gonder:hover{background:var(--forest-deep);}
+.iform-gonder:focus-visible{outline:3px solid var(--sage);outline-offset:3px;}
 .iform-gonder:disabled{opacity:.6;cursor:progress;}
-.iform-durum{font-size:14.5px;line-height:1.6;color:#9A3F28;font-weight:600;margin:14px 0 0;}
+.iform-kart .iform-durum{font-size:14.5px;line-height:1.6;color:#9A3F28;font-weight:600;margin:14px 0 0;}
+.iform-kart .iform-acil{font-size:13px;line-height:1.6;color:var(--ink-soft);margin:16px 0 0;}
 .iform-tuzak{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;}
 .iform-sonuc{text-align:center;padding:12px 0;outline:none;}
-.iform-sonuc p{font-size:16.5px;line-height:1.7;color:var(--ink-soft);margin:0;}
-@media(max-width:680px){
-  .iform-kart{margin-top:22px;border-radius:22px;}
-  .iform-gonder{width:100%;justify-content:center;}
+.iform-kart .iform-sonuc p{font-size:16.5px;line-height:1.7;color:var(--ink-soft);margin:0;}
+@media(max-width:560px){
+  .iform-kart{border-radius:16px;}
+  .iform-gonder{width:100%;}
+}
+@media(prefers-reduced-motion:reduce){
+  .iform-bosluk input,.iform-bosluk select,.iform-gonder{transition:none;}
 }
 
+/* İletişim sayfası: form banner'a biner, iletişim kartı altında */
+.iform-kart.iform-ust{position:relative;z-index:2;margin-top:-96px;box-shadow:0 26px 60px rgba(32,54,42,.18);}
+.iform-ust + .iletisim-kart{margin-top:28px;box-shadow:0 18px 44px rgba(34,49,42,.10);}
+@media(max-width:680px){
+  .iform-kart.iform-ust{margin-top:-72px;}
+  .iform-ust + .iletisim-kart{margin-top:22px;}
+}
+/* Ana sayfanın koyu iletişim bölümünde */
+.contact-inner .iform-kart{margin:0 auto 34px;border-color:transparent;box-shadow:0 26px 60px rgba(0,0,0,.24);}
+.iletisim-alternatif{font-size:15px;color:rgba(255,255,255,.75);margin:0 0 16px;}
+/* Yazı sonundaki koyu kutuda */
+.cta-box .iform-kart{margin:6px auto 0;border-color:transparent;box-shadow:none;}
+@media(max-width:600px){
+  .cta-box{padding:30px 16px 18px;}
+  .cta-box .iform-kart{padding:24px 18px;}
+}
+
+/* Aydınlatma metni sayfası ve altbilgi bağlantısı */
 .aydinlatma a{color:var(--forest);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
 .aydinlatma-tarih{font-size:14px !important;color:var(--ink-soft) !important;margin-top:40px;}
 .footer-bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center;}
 .footer-yasal{color:rgba(255,255,255,.72);text-decoration:underline;text-underline-offset:3px;}
 .footer-yasal:hover{color:#fff;}
+
+/* =========================================================
+   17) GENEL TARAMA (frontend-design rehberi) — şablon hissini azaltan
+   küçük, tutarlı düzeltmeler. Gradyanlı başlıklar, hero ve renkler
+   bilerek korunuyor; sitenin akılda kalan unsuru onlar.
+   ========================================================= */
+
+/* Her bölümün kaydırınca soluklaşarak belirmesi kaldırıldı: tüm sayfada
+   aynı efekt dikkat çekmiyor, yalnızca yavaşlatıyordu (JS çalışmazsa
+   içerik görünmez de kalıyordu). Tek hareketli an hero'nun açılışı. */
+.reveal,.reveal.in{opacity:1 !important;transform:none !important;transition:none !important;}
+
+/* Üst etiketler: aralıklı BÜYÜK HARF yerine sakin cümle düzeni.
+   Ana sayfadaki bölüm etiketleri tamamen kaldırıldı (başlığı tekrar
+   ediyorlardı); kalanlar yalnızca bilgi taşıyanlar (yazı kategorisi). */
+.hero .eyebrow,.page-hero .eyebrow{text-transform:none;letter-spacing:0;font-size:15.5px;font-weight:600;}
+@media(max-width:600px){ .hero .eyebrow{font-size:14.5px;letter-spacing:0;} }
+
+/* Yazı başlığı altındaki bilgi satırı: ara noktalar yerine boşluk */
+.page-hero .post-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;}
+
+/* Hakkımda: altı ifadedeki sarı fosfor kaldırıldı; vurgu yalnızca kalınlık */
+.vurgu,.sec-forest .vurgu{background-image:none;}
+
+/* Öne çıkan yazının "Yazıyı oku" butonu açık yeşil üzerinde beyaz
+   yazıydı (2.7:1). Koyu yeşil zemin + beyaz yazı (9.8:1). */
+.feat-cta{background:var(--forest);}
+.featured:hover .feat-cta{background:var(--forest-deep);}
+
+/* Hero butonu: açık yeşil üzerinde koyu yazı koyu zeminde bulanık
+   duruyordu. Krem zemin + koyu yeşil yazı (9.3:1), koyu bölümde net. */
+.hero .hero-cta .btn{background:var(--cream);color:var(--forest);font-weight:700;box-shadow:0 10px 26px rgba(0,0,0,.22);}
+.hero .hero-cta .btn:hover{background:#fff;color:var(--forest-deep);}

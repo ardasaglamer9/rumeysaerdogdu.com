@@ -7,7 +7,7 @@ layout: default
 {% assign kelime = content | number_of_words %}
 {% assign sure = kelime | divided_by: 140 | plus: 1 %}
 
-{% capture metaline %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ months[mi] }} {{ page.date | date: "%Y" }}</time> · {{ sure }} dk okuma · {{ site.author.title }} {{ site.author.name }}{% endcapture %}
+{% capture metaline %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ months[mi] }} {{ page.date | date: "%Y" }}</time><span>{{ sure }} dakikalık okuma</span><span>{{ site.author.title }} {{ site.author.name }}</span>{% endcapture %}
 {% include banner.html eyebrow=page.category_name title=page.title meta=metaline %}
 
 <div class="article-wrap">
@@ -49,12 +49,13 @@ layout: default
     </div>
     {% endif %}
 
+    {%- comment -%} Yazıyı bitiren okuru başka sayfaya göndermeden form burada. {%- endcomment -%}
     <div class="cta-box">
       <h3>Birlikte bakmak ister misiniz?</h3>
-      <p>Yetişkinlerle online ve yüz yüze çalışıyorum.</p>
-      <a href="{{ '/iletisim/' | relative_url }}">İletişime geç
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <p>Yetişkinlerle online ve yüz yüze çalışıyorum. Görüşme hakkındaki sorularınız ya da randevu talebiniz için bana buradan yazabilirsiniz.</p>
+      <div class="iform-kart">
+        {% include iletisim-formu.html sade=true %}
+      </div>
     </div>
 
     {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
@@ -74,10 +75,10 @@ layout: default
       <div>
         <h3>{{ site.author.title }} {{ site.author.name }}</h3>
         <p>{{ site.author.bio }}</p>
-        <a href="{{ '/#hakkimda' | relative_url }}">Hakkımda →</a>
+        <a href="{{ '/#hakkimda' | relative_url }}">Hakkımda</a>
       </div>
     </div>
 
-    <a href="{{ '/blog/' | relative_url }}" class="backblog">← Tüm yazılara dön</a>
+    <a href="{{ '/blog/' | relative_url }}" class="backblog">Tüm yazılar</a>
   </article>
 </div>

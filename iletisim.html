@@ -8,10 +8,15 @@ keywords: "Ankara klinik psikolog, Ankara psikolog, yetişkin psikolojisi, onlin
 permalink: /iletisim/
 ---
 
-{% include banner.html eyebrow="İletişim" title="Bana ulaşın" sub="Sorularınız ya da randevu talebiniz için formu doldurabilir, e-posta ile de yazabilirsiniz." %}
+{% include banner.html title="Bana ulaşın" sub="Sorularınız ya da randevu talebiniz için formu doldurabilir, e-posta ile de yazabilirsiniz." %}
 
 <section class="sec-cream iletisim-bolum">
   <div class="wrap">
+    {%- comment -%} Form en üstte: sayfaya gelenin ilk gördüğü şey o olsun. {%- endcomment -%}
+    <div class="iform-kart iform-ust reveal">
+      {% include iletisim-formu.html %}
+    </div>
+
     <div class="iletisim-kart reveal">
       <figure class="iletisim-portre">
         <img src="{{ '/psikolog-rumeysa-saglamer-portre.jpg' | relative_url }}" alt="{{ site.author.title }} {{ site.author.name }}" width="720" height="900" loading="lazy">
@@ -32,8 +37,5 @@ permalink: /iletisim/
       </div>
     </div>
 
-    <div class="iform-kart reveal">
-      {% include iletisim-formu.html %}
-    </div>
   </div>
 </section>
