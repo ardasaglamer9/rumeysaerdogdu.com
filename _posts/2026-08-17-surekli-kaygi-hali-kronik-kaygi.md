@@ -28,7 +28,7 @@ Ortada somut bir tehlike yok ama bir türlü rahatlayamıyorsunuz. Omuzlarınız
 
 Kısa süreli kaygı bizi korur ve harekete geçirir. Ama alarm sistemi **kapanmayı unuttuğunda**, sürekli düşük yoğunluklu bir stres hâli ortaya çıkar. Bu kronik uyarılmışlık, zamanla bedene de yük bindirir (McEwen, 1998).
 
-Sürekli açık duran bu alarm, zaman zaman ani ve yoğun bir dalgaya da dönüşebilir. Panik atağın bedene zarar verip vermediğini [ayrı bir yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) ele alıyorum.
+Sürekli açık duran bu alarm, zaman zaman [ani ve yoğun bir dalgaya]({{ '/panik-atak-aninda-ne-yapmali/' | relative_url }}) da dönüşebilir. Panik atağın bedene zarar verip vermediğini [ayrı bir yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) ele alıyorum.
 
 ## Bu "tetikte" hâlin altında ne var?
 

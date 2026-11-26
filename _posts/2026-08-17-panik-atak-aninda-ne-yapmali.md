@@ -84,7 +84,7 @@ Sakin yanınızdan, korkan yanınıza şöyle diyebilirsiniz:
 
 Panik ataklar sık tekrarlıyorsa, "yine olur mu" korkusuyla yerlerden veya durumlardan [kaçınmaya]({{ '/kaygi-neden-tekrar-eder/' | relative_url }}) başladıysanız ya da günlük hayatınızı daraltıyorsa, bir uzmandan destek almak çok değerli. Bilişsel davranışçı terapi bu alanda en yerleşik yöntemdir; **şema terapisi de** özellikle tekrarlayan, kökleri eskiye dayanan kaygılarda umut verici sonuçlar göstermektedir (Peeters ve ark., 2022).
 
-Kaygı yalnızca atak anlarında değil, gün boyu süren bir zemin hâline geldiyse [sürekli tetikte olma hâlini ele aldığım yazıya]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}) da bakabilirsiniz.
+Kaygı yalnızca atak anlarında değil, gün boyu süren bir zemin hâline geldiyse [sürekli tetikte olma hâlini ele aldığım yazıya]({{ '/surekli-kaygi-hali-kronik-kaygi/' | relative_url }}), özellikle geceleri yoğunlaşıyorsa [gece kaygısı yazısına]({{ '/gece-kaygisi-uyku-oncesi-anksiyete/' | relative_url }}) da bakabilirsiniz.
 
 ---
 

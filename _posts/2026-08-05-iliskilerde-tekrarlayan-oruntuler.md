@@ -52,7 +52,7 @@ Bu şemalar tek tek değil, çoğu zaman **birlikte** çalışır; modelde buna 
 
 ## Döngüyü sürdüren baş etme biçimleri
 
-Bir şema tetiklendiğinde ortaya çıkan duyguyla baş etmek için farkında olmadan bir yol geliştiririz. Şema terapide bu yollar üç genel biçim altında toplanır ve bunlar tehdide verdiğimiz üç temel yanıta karşılık gelir: **donakal, kaç, savaş.**
+Bir şema tetiklendiğinde ortaya çıkan duyguyla baş etmek için farkında olmadan bir yol geliştiririz. Şema terapide bu yollar [üç genel biçim]({{ '/cocukluk-anilari-ve-bas-etme/' | relative_url }}) altında toplanır ve bunlar tehdide verdiğimiz üç temel yanıta karşılık gelir: **donakal, kaç, savaş.**
 
 - **Teslim olma (donakal).** Örüntüyü doğrulayan biçimde davranmak. Örneğin bağlanmaya hazır olmayan bir partner seçip ilişkide kalmak, ihtiyaçlarını hiç dile getirmemek, ya da eleştirel yakınlıklara yönelmek.
 - **Kaçınma (kaç).** Yakınlığın kendisinden uzaklaşmak. İlişkilere hiç girmemek, duyguları paylaşmamak, yakınlık arttığında mesafe koymak, kişinin kendisini duygusal olarak "kapatması".

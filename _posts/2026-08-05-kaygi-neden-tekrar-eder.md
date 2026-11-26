@@ -72,7 +72,7 @@ Kaçınma tek yol değil. Bazı kişilerde kaygı, şemanın tam tersini kanıtl
 
 Bu, kısa vadede sonuç verdiği için pekişir. Ancak iki bedeli olur. Birincisi, yorucudur ve sürdürülebilir değildir. İkincisi, yeterince güçlü bir aksilik yaşandığında bu telafi çöker ve altındaki duygu bütün şiddetiyle geri döner. Uzun süre "her şeyi tutan" kişilerin ani tükenmişlik yaşamasının bir sebebi budur.
 
-Bazı kişilerde ise **teslim olma** öne çıkar: kaygının söylediğine baştan boyun eğmek, "ben zaten yapamam" diyerek denemekten vazgeçmek ve böylece o beklentiyi doğrulamak.
+Bazı kişilerde ise **[teslim olma]({{ '/cocukluk-anilari-ve-bas-etme/' | relative_url }})** öne çıkar: kaygının söylediğine baştan boyun eğmek, "ben zaten yapamam" diyerek denemekten vazgeçmek ve böylece o beklentiyi doğrulamak.
 
 Üç yol da anlaşılırdır. Üçü de bir zamanlar korumuştur. Ve üçü de bugün, farkında olmadan örüntüyü sürdürür.
 
