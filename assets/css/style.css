@@ -1171,3 +1171,8 @@ footer :focus-visible,.cta-box :focus-visible{outline-color:#F6EFB6;}
   .uline{stroke-dashoffset:0 !important;opacity:1 !important;}
   *,*::before,*::after{transition-duration:.01ms !important;}
 }
+
+/* "İlgili yazılar" başlığı h3'ten h2'ye geçti (başlık sırası); görünüm
+   eski h3 ile aynı kalsın, yazı içi h2 süsü (çizgi) gelmesin. */
+.related .related-baslik{display:block;font-size:20px;color:var(--forest);margin:0 0 18px;}
+.related .related-baslik::before{content:none;}
