@@ -60,6 +60,9 @@ Gemfile              → Jekyll bağımlılıkları
 ### İletişim ve adres bilgileri
 `_config.yml` içindeki `contact:` (e-posta, Instagram) ve `office:` (ofis adı, adres) bölümleri. `footer.html` ve `head.html` içindeki yapısal veri bu değerlerden okur; bu bilgileri şablonlara elle gömme.
 
+### İletişim formu
+`_includes/iletisim-formu.html` (iletişim sayfasında). `contact.form_action` boşsa form ziyaretçinin e-posta uygulamasını açar; doluysa o servise gönderir. Form bilerek sağlık bilgisi istemez ve yalnızca "okudum ve anladım" onayı alır (KVKK 2026/347 ilke kararı: açık rıza gereksizse istenmez). Alan eklerken `aydinlatma-metni.html`'deki "Hangi bilgiler işlenir?" listesini de güncelle.
+
 ### Yeni blog yazısı ekleme
 `_posts/` klasörüne `YYYY-AA-GG-yazi-adi.md` biçiminde bir dosya oluştur. Front matter şablonu:
 

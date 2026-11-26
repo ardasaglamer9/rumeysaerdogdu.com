@@ -41,6 +41,18 @@ robots.txt           → Otomatik üretilir
 
 `_config.yml` içindeki `contact:` ve `office:` bölümlerini düzenleyin.
 
+## İletişim formu
+
+Form `/iletisim/` sayfasında, aydınlatma metni `/aydinlatma-metni/` adresinde.
+
+- `_config.yml` → `contact.form_action` **boşken** form, ziyaretçinin kendi
+  e-posta uygulamasını dolu bir taslakla açar. Araya hiçbir servis girmez.
+- Bir form servisi bağlamak için hesabı açın ve verdiği adresi
+  `form_action`'a yazın (Web3Forms kullanılırsa anahtarı `form_access_key`'e).
+  Servisin adını `form_provider`'a yazın; aydınlatma metninde otomatik geçer.
+- Aydınlatma metnindeki aktarım ve saklama süresi kısımları avukat
+  kontrolünden geçmeli; dosyanın başındaki yorumda listeli.
+
 ## Yeni blog yazısı eklemek
 
 `_posts/` klasörüne şu isim biçiminde bir dosya oluşturun:

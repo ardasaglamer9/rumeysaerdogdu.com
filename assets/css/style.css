@@ -943,3 +943,56 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
    görünüyordu. Işık tamamen hero'nun içinde kalacak kadar yukarı alındı. */
 .hero .b2{bottom:70px;}
 @media(min-width:900px){ .hero .b2{bottom:40px;right:-230px;} }
+
+/* =========================================================
+   12) İLETİŞİM FORMU (/iletisim/) ve AYDINLATMA METNİ
+   Form, iletişim kartının altında ayrı bir beyaz kartta. Alanlar az ve
+   sade; hata mesajları yalnızca gönderimde ve alanın altında görünür.
+   ========================================================= */
+.iform-kart{max-width:660px;margin:28px auto 0;background:#fff;border:1px solid var(--line);
+  border-radius:28px;padding:clamp(24px,4vw,40px);box-shadow:0 18px 44px rgba(34,49,42,.10);}
+.iform-bas h2,.iform-sonuc h2{font-size:clamp(23px,2.8vw,27px);color:var(--forest);margin:0 0 10px;}
+.iform-bas p{font-size:16px;line-height:1.7;color:var(--ink-soft);margin:0 0 26px;}
+.iform-alan{margin:0 0 20px;padding:0;border:0;min-width:0;}
+.iform-ikili{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;}
+@media(max-width:560px){.iform-ikili{grid-template-columns:1fr;}}
+.iform label,.iform legend{display:block;font-size:15px;font-weight:700;color:var(--ink);margin:0 0 8px;padding:0;}
+.iform-istege{font-weight:400;font-size:13px;color:var(--ink-soft);margin-left:6px;}
+.iform input[type=text],.iform input[type=email],.iform input[type=tel],.iform textarea{
+  width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--cream-soft);
+  border:1.5px solid var(--line);border-radius:14px;padding:13px 15px;min-height:50px;
+  transition:border-color .2s,box-shadow .2s,background .2s;}
+.iform textarea{resize:vertical;min-height:118px;line-height:1.6;}
+.iform input:focus-visible,.iform textarea:focus-visible{outline:none;background:#fff;
+  border-color:var(--sage-dark);box-shadow:0 0 0 4px rgba(138,163,153,.28);}
+.iform [aria-invalid=true]{border-color:#B4533A !important;}
+.iform-yardim{font-size:13.5px;line-height:1.6;color:var(--ink-soft);margin:8px 0 0;}
+.iform-hata{font-size:13.5px;line-height:1.5;color:#9A3F28;font-weight:600;margin:8px 0 0;}
+.iform-secenekler{display:flex;flex-wrap:wrap;gap:10px;}
+.iform-secenekler label{display:inline-flex;align-items:center;gap:8px;margin:0;font-weight:600;font-size:15px;
+  padding:11px 16px;min-height:46px;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;
+  background:var(--cream-soft);transition:border-color .2s,background .2s;}
+.iform-secenekler label:has(input:checked){border-color:var(--sage-dark);background:#EEF3F0;}
+.iform-secenekler input,.iform-kutu input{accent-color:var(--forest);width:18px;height:18px;margin:0;flex:0 0 auto;}
+.iform-kutu{display:flex !important;align-items:flex-start;gap:11px;font-weight:400 !important;
+  font-size:15px !important;line-height:1.55;cursor:pointer;}
+.iform-kutu input{margin-top:2px;}
+.iform-kutu a,.iform-acil a{color:var(--forest);font-weight:700;text-decoration:underline;text-underline-offset:3px;}
+.iform-acil{font-size:14px;line-height:1.6;color:var(--ink-soft);background:var(--cream);
+  border-radius:14px;padding:12px 15px;margin:4px 0 22px;}
+.iform-gonder{font-family:inherit;font-size:16px;}  /* buton fontu kendiliğinden miras almıyor */
+.iform-gonder:disabled{opacity:.6;cursor:progress;}
+.iform-durum{font-size:14.5px;line-height:1.6;color:#9A3F28;font-weight:600;margin:14px 0 0;}
+.iform-tuzak{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;}
+.iform-sonuc{text-align:center;padding:12px 0;outline:none;}
+.iform-sonuc p{font-size:16.5px;line-height:1.7;color:var(--ink-soft);margin:0;}
+@media(max-width:680px){
+  .iform-kart{margin-top:22px;border-radius:22px;}
+  .iform-gonder{width:100%;justify-content:center;}
+}
+
+.aydinlatma a{color:var(--forest);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+.aydinlatma-tarih{font-size:14px !important;color:var(--ink-soft) !important;margin-top:40px;}
+.footer-bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center;}
+.footer-yasal{color:rgba(255,255,255,.72);text-decoration:underline;text-underline-offset:3px;}
+.footer-yasal:hover{color:#fff;}

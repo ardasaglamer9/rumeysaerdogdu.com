@@ -21,6 +21,15 @@ contact:
   email: "iletisim@rumeysasaglamer.com"   # posta kutusu ms7.guzel.net.tr üzerinde
   instagram_url: "https://www.instagram.com/pskrumeysasaglamer/"
   instagram_handle: "@pskrumeysasaglamer"
+  # İletişim formu (/iletisim/). form_action boşken form, ziyaretçinin kendi
+  # e-posta uygulamasını dolu bir taslakla açar; araya hiçbir servis girmez.
+  # Bir form servisi bağlanınca adresini buraya yaz, form mesajı doğrudan
+  # gönderir. Örnekler:
+  #   Formspree: form_action: "https://formspree.io/f/xxxxxxx"
+  #   Web3Forms: form_action: "https://api.web3forms.com/submit" + form_access_key (kullanılan)
+  form_action: "https://api.web3forms.com/submit"
+  form_access_key: "e47f9fea-345a-4395-8594-5d0133b4c766"   # herkese açık anahtar; gizli değil
+  form_provider: "Web3Forms"   # aydınlatma metninde adı geçecek servis, örn. "Formspree"
 
 office:
   region: "Ankara"   # genel konum bilgisi (footer, yapısal veri); belirli bir ofis adresi yok
