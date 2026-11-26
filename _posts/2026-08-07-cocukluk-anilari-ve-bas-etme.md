@@ -60,7 +60,7 @@ Diğer baş etme yolları olan [kaçınma]({{ '/kaygi-neden-tekrar-eder/' | rela
 
 Çünkü hatırlama biçimimiz, terapide üzerinde çalışabileceğimiz bir şey.
 
-Birinin geçmişini nasıl anlattığını dinlemek, o kişinin bugün hâlâ hangi baş etme örüntüsünün içinde sıkışıp kaldığına dair de bir şeyler söyleyebilir. Ve terapide o zor anıya birlikte, güvenli bir şekilde geri dönmek; kişiyi o "kabullenmiş, çaresiz" yerden yavaş yavaş çıkararak anıyı yeniden ele almak mümkün.
+Birinin geçmişini nasıl anlattığını dinlemek, o kişinin bugün hâlâ hangi [baş etme örüntüsünün]({{ '/iliskilerde-tekrarlayan-oruntuler/' | relative_url }}) içinde sıkışıp kaldığına dair de bir şeyler söyleyebilir. Ve terapide o zor anıya birlikte, güvenli bir şekilde geri dönmek; kişiyi o "kabullenmiş, çaresiz" yerden yavaş yavaş çıkararak anıyı yeniden ele almak mümkün.
 
 Belki de bazen bir anıyı bir türlü toparlayamıyor oluşumuz, onu unutmuş olmamızdan değildir; onunla nasıl baş ettiğimizdendir.
 

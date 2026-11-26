@@ -27,7 +27,7 @@ Birkaç sebep bir araya gelir:
 - **Yorgun zihin daha az filtreler.** Gün sonunda öz-denetim tükenmiştir; endişeler daha kolay büyür ve dönüp durur (ruminasyon).
 - **Beden ipuçlarını daha çok fark edersiniz.** Sessizlikte kalp atışınızı, nefesinizi duyarsınız; bu duyumlar kaygıyı tetikleyebilir.
 
-Bu duyumların bazı gecelerde panik atağa dönüştüğünü fark ediyorsanız, panik atağın gerçekten zarar verip vermediğini [şu yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) ele alıyorum.
+Bu duyumların bazı gecelerde [panik atağa dönüştüğünü]({{ '/panik-atak-aninda-ne-yapmali/' | relative_url }}) fark ediyorsanız, panik atağın gerçekten zarar verip vermediğini [şu yazıda]({{ '/panik-atak-zarar-verir-mi/' | relative_url }}) ele alıyorum.
 
 ## Geceleri yüzeye çıkan aslında ne?
 Gündüz meşgulken sesini duyuramayan bir taraf, gece sahne alır: içinizdeki **kırılgan, güvende hissetmeyen çocuk tarafı.** Karanlık ve yalnızlık, onun karşılanmamış temel ihtiyaçlarını uyandırır: **güvende hissetmek, yatıştırılmak, yalnız olmadığını bilmek** (Lockwood & Perris, 2012). "Yatınca düşünceler susmuyor" dediğiniz şey, çoğu zaman bu tarafın "beni fark et, beni sakinleştir" çağrısıdır.
