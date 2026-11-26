@@ -3,21 +3,50 @@
   window.addEventListener('scroll',function(){ if(window.scrollY>12){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');} },{passive:true});
 
   // --- Mobil menü: hamburger çekmeceyi açar/kapatır ---
+  // Erişilebilirlik: açılınca odak çekmeceye girer, Tab çekmecenin içinde
+  // döner, arkadaki sayfa "inert" olur (odak alamaz, okunmaz); Escape ya
+  // da kapatma ile odak hamburger düğmesine geri döner.
   (function(){
     var toggle=document.getElementById('navToggle'), drawer=document.getElementById('navDrawer');
     if(!toggle||!drawer)return;
+    var panel=drawer.querySelector('.navdrawer-panel');
+    var arka=[document.getElementById('nav'),document.getElementById('icerik'),document.querySelector('body > footer'),document.querySelector('.atla')].filter(Boolean);
+    function odaklanabilir(){ return [].slice.call(panel.querySelectorAll('a[href],button:not([disabled])')); }
+    function acik(){ return drawer.classList.contains('open'); }
     function open(){
       drawer.classList.add('open'); drawer.setAttribute('aria-hidden','false');
       toggle.setAttribute('aria-expanded','true'); document.body.classList.add('nav-open');
+      arka.forEach(function(el){ el.setAttribute('inert',''); });
+      var ilk=panel.querySelector('.navdrawer-close'); if(ilk) ilk.focus();
     }
-    function close(){
+    function close(odakGeri){
+      if(!acik())return;
       drawer.classList.remove('open'); drawer.setAttribute('aria-hidden','true');
       toggle.setAttribute('aria-expanded','false'); document.body.classList.remove('nav-open');
+      arka.forEach(function(el){ el.removeAttribute('inert'); });
+      if(odakGeri!==false) toggle.focus();
     }
     toggle.addEventListener('click',open);
-    drawer.querySelectorAll('[data-navclose]').forEach(function(el){ el.addEventListener('click',close); });
-    drawer.querySelectorAll('.navdrawer-links a').forEach(function(a){ a.addEventListener('click',close); });
-    document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+    drawer.querySelectorAll('[data-navclose]').forEach(function(el){ el.addEventListener('click',function(){ close(); }); });
+    // Bağlantıya basınca sayfa değişeceği için odak geri taşınmaz.
+    drawer.querySelectorAll('.navdrawer-links a').forEach(function(a){ a.addEventListener('click',function(){ close(false); }); });
+    document.addEventListener('keydown',function(e){
+      if(!acik())return;
+      if(e.key==='Escape'){ e.preventDefault(); close(); return; }
+      if(e.key==='Tab'){
+        var l=odaklanabilir(); if(!l.length)return;
+        var ilk=l[0], son=l[l.length-1];
+        if(e.shiftKey && document.activeElement===ilk){ e.preventDefault(); son.focus(); }
+        else if(!e.shiftKey && document.activeElement===son){ e.preventDefault(); ilk.focus(); }
+        else if(!panel.contains(document.activeElement)){ e.preventDefault(); ilk.focus(); }
+      }
+    });
+    // Ekran genişleyip çekmece CSS ile gizlenirse sayfa kilitli kalmasın.
+    if(window.matchMedia){
+      var mq=window.matchMedia('(min-width:861px)');
+      var degisti=function(m){ if(m.matches) close(false); };
+      if(mq.addEventListener) mq.addEventListener('change',degisti); else if(mq.addListener) mq.addListener(degisti);
+    }
   })();
 
   (function(){
@@ -37,7 +66,9 @@
       return t.toLowerCase().replace(/[çğıöşüâîû]/g,function(c){return map[c]||c;})
         .replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-').substring(0,50);
     }
-    var hs=art.querySelectorAll('h2'), used={};
+    // Yazı sonundaki iletişim kutusunun başlıkları ("Birlikte bakmak...",
+    // gizli "Teşekkür ederim") yazının bölümü değil; listeye girmez.
+    var hs=[].filter.call(art.querySelectorAll('h2'),function(h){ return !h.closest('.cta-box'); }), used={};
     if(!hs.length){ var box=document.querySelector('.toc'); if(box) box.style.display='none'; return; }
     hs.forEach(function(h){
       var id=h.id||slug(h.textContent);

@@ -1074,3 +1074,100 @@ h1.grad-title,h2.grad-title{color:#F9D8C0;}
    duruyordu. Krem zemin + koyu yeşil yazı (9.3:1), koyu bölümde net. */
 .hero .hero-cta .btn{background:var(--cream);color:var(--forest);font-weight:700;box-shadow:0 10px 26px rgba(0,0,0,.22);}
 .hero .hero-cta .btn:hover{background:#fff;color:var(--forest-deep);}
+
+/* =========================================================
+   18) ERİŞİLEBİLİRLİK (WCAG 2.2 AA taraması, Kasım 2026)
+   Görünüm bilerek korunuyor; yalnızca bir düzeltmenin gerektirdiği
+   yerde (odak halkası, kontrast) değişiyor. Oranlar WCAG formülüyle,
+   gerçek zemin renkleri üzerinden hesaplandı.
+   ========================================================= */
+
+/* --- İçeriğe geç bağlantısı (2.4.1) ---
+   Klavyeyle ilk Tab'da sol üstte belirir; menüyü atlayıp <main>'e gider. */
+.atla{position:absolute;left:16px;top:-120px;z-index:100;
+  background:var(--forest);color:#fff;font-weight:700;font-size:15px;line-height:1.4;
+  padding:12px 22px;border-radius:999px;box-shadow:0 8px 24px rgba(32,54,42,.25);}
+.atla:focus{top:12px;}
+/* <main> yalnızca programla odak alır (tabindex=-1); halka gerekmez */
+#icerik:focus{outline:none;}
+
+/* --- Yapışkan menü odağı örtmesin (2.4.11) ---
+   Geri Tab'la ya da bağlantıyla kaydırılan öğe çubuğun altında kalmasın. */
+html{scroll-padding-top:96px;}
+
+/* --- Görünür odak (2.4.7, 1.4.11) ---
+   Eski halkalar (krem üstünde altın 1.97:1, kâğıt üstünde adaçayı 2.59:1)
+   zemine karşı seçilmiyordu. Açık zeminde orman yeşili (krem 8.70:1,
+   beyaz 9.80:1), koyu zeminde başlık gradyanının açık durağı #F6EFB6
+   (orman 8.37:1, koyu orman 11.06:1). */
+:focus-visible{outline:3px solid var(--forest);outline-offset:3px;}
+.hero :focus-visible,.page-hero :focus-visible,.sec-forest :focus-visible,
+footer :focus-visible,.cta-box :focus-visible{outline-color:#F6EFB6;}
+/* koyu bölümlerin içindeki form kartı açık zeminli */
+.iform-kart :focus-visible{outline-color:var(--forest);}
+.nav-cta:focus-visible,.iform-gonder:focus-visible{outline:3px solid var(--forest);outline-offset:3px;}
+.iform-kart .iform-sonuc:focus{outline:none;}
+/* İçindekiler kutusu taşanı kırpıyor; halka içeri çizilir */
+.toc li a:focus-visible{outline-offset:-3px;border-radius:4px;}
+.postfaq summary:focus-visible{outline-offset:4px;border-radius:6px;}
+/* Form alanlarının kendi odak biçimi (kalınlaşan alt çizgi + zemin)
+   12. bölümde; daha özgül olduğu için yukarıdaki genel kural onu ezmiyor. */
+
+/* --- Mobil menü çekmecesi (2.4.3) ---
+   Açılırken visibility .3s geçişle değişiyordu; ilk karede çekmece hâlâ
+   gizli olduğu için odak içeri taşınamıyordu. Açılışta anında görünür
+   olur (soluklaşma opacity ile sürer); kapanış geçişi aynı kalır. */
+.navdrawer.open{transition:opacity .3s ease,visibility 0s;}
+
+/* --- Kontrast düzeltmeleri (1.4.3, 1.4.11) --- */
+/* sage-dark krem zeminde 4.17:1 kalıyordu (yazı içi bağlantılar,
+   breadcrumb, "Tüm yazılar"). Aynı tonun bir kademe koyusu: krem 4.81:1. */
+:root{--sage-text:#557061;}
+.breadcrumb,
+.article p a,.article ul li a,.postfaq .a a,
+.backblog{color:var(--sage-text);}
+/* İçindekiler numarası beyaz üstünde adaçayı 2.70:1 → sage-dark 4.70:1 */
+.toc li a::before{color:var(--sage-dark);}
+/* .btn üstüne gelince zemin sage-dark, yazı #173425 kalıyordu (2.87:1).
+   Beyaz yazı 4.70:1. Hero butonunun kendi hover rengi daha özgül, etkilenmez. */
+.btn:hover{color:#fff;}
+/* 404'teki ikinci buton aynı sorunu düz hâlde taşıyordu → orman + beyaz 9.80:1 */
+.btn-koyu{background:var(--forest);color:#fff;}
+.btn-koyu:hover{background:var(--forest-deep);color:#fff;}
+/* Not alanının sınırı olan satır çizgileri kâğıtta 2.08:1'di (eşik 3:1).
+   Yoğunluk .55 → .8: 3.11:1. */
+.iform-not textarea{background-image:repeating-linear-gradient(to bottom,transparent 0 33px,rgba(94,122,106,.8) 33px 34px);}
+.iform-not textarea:focus-visible{background-image:repeating-linear-gradient(to bottom,transparent 0 32px,var(--forest) 32px 34px);}
+
+/* --- Başlık sırası (1.3.1) ---
+   Yazıda h1'den sonra doğrudan h3 geliyordu (Özet, İçindekiler); altbilgi
+   başlıkları da sayfanın son h2'sinin alt başlığı gibi okunuyordu. Bunlar
+   h2 yapıldı; görünüm eski h3 kurallarıyla aynı. */
+.footer-col h2{font-family:'Fraunces',serif;font-weight:600;color:#fff;font-size:18px;margin:0 0 20px;}
+.summary h2{display:flex;align-items:center;gap:11px;font-size:17px;color:var(--forest);margin:0 0 14px;letter-spacing:.2px;}
+.summary h2 svg{color:var(--sage-dark);flex:0 0 auto;}
+.toc-head h2{font-size:16px;color:var(--forest);letter-spacing:.3px;margin:0;}
+.article .cta-box h2{display:block;font-size:24px;color:#fff;margin:0 0 12px;}
+.article .cta-box h2::before{content:none;}
+
+/* --- Dokunma hedefi (2.5.8) ---
+   Altbilgideki "Aydınlatma Metni" 13px'lik satırda 22px yüksekti. */
+.footer-yasal{display:inline-block;padding:4px 0;margin:-4px 0;}
+@media(hover:none) and (pointer:coarse){
+  .footer-yasal,.breadcrumb a{display:inline-block;padding:10px 0;margin:-10px 0;}
+}
+
+/* --- Hareketi azalt (2.3.3, 2.2.2) ---
+   Önceki kural tüm animasyonları kapatıyordu ama hero öğeleri opacity:0
+   ile başlayıp animasyonla görünür oluyordu: hareketi azaltan ziyaretçi
+   başlığı, fotoğrafı ve butonu hiç göremiyordu. Ayrıca banner'daki kalem
+   ucu SVG (SMIL) animasyonu CSS kuralından etkilenmiyordu. */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .hero-portrait,.hero .eyebrow,.hero h1,.hero p,.hero .btn,
+  .hero .hero-cta .btn,.hero-link,.hero .hero-note{opacity:1 !important;transform:none !important;}
+  /* kalem ucu gizlenir, altın çizgi çizilmiş hâliyle durur */
+  .penwrite .pennib{display:none;}
+  .uline{stroke-dashoffset:0 !important;opacity:1 !important;}
+  *,*::before,*::after{transition-duration:.01ms !important;}
+}
