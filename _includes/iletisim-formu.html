@@ -30,33 +30,34 @@
 
   {%- comment -%}
     Form bir mektup cümlesi gibi: alanlar cümlenin içindeki boşluklar.
+    Cümleler ve yer tutucular hep ziyaretçinin ağzından ("ben", "adresim");
+    başlık ise Rümeysa'nın sesi. İkisini karıştırma.
     Her alanın görünmeyen bir etiketi var (ekran okuyucular için); yer
     tutucu metin yalnızca ipucu.
   {%- endcomment -%}
   <p class="iform-cumle">
     Merhaba, ben
-    <span class="iform-bosluk"><label class="gorunmez" for="if-ad">Adınız</label><input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="adınız" data-hata="if-ad-h"></span>.
-    <span class="iform-satir-blok">Bana
-    <span class="iform-bosluk iform-genis"><label class="gorunmez" for="if-eposta">E-posta adresiniz</label><input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="e-posta adresiniz" data-hata="if-eposta-h"></span>
-    adresinden ulaşabilirsiniz.</span>
+    <span class="iform-bosluk"><label class="gorunmez" for="if-ad">Adınız</label><input id="if-ad" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="adım ve soyadım" data-hata="if-ad-h"></span>.
+    <span class="iform-satir-blok">E-posta adresim:
+    <span class="iform-bosluk iform-genis"><label class="gorunmez" for="if-eposta">E-posta adresiniz</label><input id="if-eposta" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="ornek@eposta.com" data-hata="if-eposta-h"></span></span>
   </p>
   <p class="iform-hata" id="if-ad-h" hidden>Size nasıl hitap edeceğimi bilmek için adınızı yazar mısınız?</p>
   <p class="iform-hata" id="if-eposta-h" hidden>Size dönüş yapabilmem için geçerli bir e-posta adresine ihtiyacım var.</p>
 
   <p class="iform-cumle iform-cumle-ek">
-    İsterseniz telefonla da ulaşabilirsiniz:
-    <span class="iform-bosluk"><label class="gorunmez" for="if-tel">Telefon numaranız (isteğe bağlı)</label><input id="if-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="numaranız"></span>.
+    Telefonum <span class="iform-istege">(isteğe bağlı)</span>:
+    <span class="iform-bosluk"><label class="gorunmez" for="if-tel">Telefon numaranız (isteğe bağlı)</label><input id="if-tel" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="05xx xxx xx xx"></span>
     <span class="iform-satir-blok">Görüşme için tercihim:
     <span class="iform-bosluk"><label class="gorunmez" for="if-tercih">Görüşme tercihiniz (isteğe bağlı)</label><select id="if-tercih" name="tercih">
       <option value="">seçin</option>
       <option value="Yüz yüze (Ankara)">yüz yüze, Ankara'da</option>
       <option value="Online">online</option>
       <option value="Henüz karar vermedim">henüz karar vermedim</option>
-    </select></span>.</span>
+    </select></span></span>
   </p>
 
   <div class="iform-not">
-    <label for="if-mesaj">Eklemek istediğiniz kısa bir not <span class="iform-istege">isteğe bağlı</span></label>
+    <label for="if-mesaj">Kısa bir not <span class="iform-istege">isteğe bağlı</span></label>
     <textarea id="if-mesaj" name="message" rows="2" maxlength="1500" aria-describedby="if-mesaj-y"></textarea>
     <p class="iform-yardim" id="if-mesaj-y">Sağlık bilgisi ya da ayrıntı paylaşmanız gerekmiyor; bunları görüşmede konuşabiliriz.</p>
   </div>

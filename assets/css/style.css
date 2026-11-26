@@ -1176,3 +1176,8 @@ footer :focus-visible,.cta-box :focus-visible{outline-color:#F6EFB6;}
    eski h3 ile aynı kalsın, yazı içi h2 süsü (çizgi) gelmesin. */
 .related .related-baslik{display:block;font-size:20px;color:var(--forest);margin:0 0 18px;}
 .related .related-baslik::before{content:none;}
+
+/* Cümle formu, ziyaretçinin ağzından: yer tutucular ("adım ve soyadım",
+   "ornek@eposta.com") sığsın diye ad alanı biraz genişledi. */
+.iform-bosluk input#if-ad{width:15ch;}
+.iform-cumle .iform-istege{font-family:'Mulish',sans-serif;font-size:13px;}
